@@ -7,3 +7,6 @@
 meteor-platform
 autopublish
 insecure
+materialize:materialize
+meteorhacks:flow-router
+meteorhacks:flow-layout
