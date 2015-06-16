@@ -1,3 +1,10 @@
 nav.banner {
-  height: 122px;
+  height: 222px;
+}
+
+nav .banner-name {
+  font-size: 75px;
+  color: pink;
+  margin-top: 20px;
+  font-weight: 200;
 }
