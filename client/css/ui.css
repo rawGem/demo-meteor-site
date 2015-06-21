@@ -8,3 +8,7 @@ nav .banner-name {
   margin-top: 20px;
   font-weight: 200;
 }
+
+.mdi-navigation-menu:before {
+  font-size: 30px;
+}
