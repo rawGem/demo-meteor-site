@@ -19,10 +19,13 @@ nav .banner-name {
   width: 100%;
 }
 
-.incard {
-  color: grey;
+
+
+.row.thumbs {
+  margin-bottom: 0px;
 }
 
-.incard:hover {
-  color: pink;
+.card-action.white.thumbs {
+  padding: 10px;
 }
+
