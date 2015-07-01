@@ -25,6 +25,14 @@ nav .banner-name {
   margin-bottom: 0px;
 }
 
+.card .card-action a {
+  color: black;
+}
+
+.card .card-action a:hover {
+  color: grey;
+}
+
 .card-action.white.thumbs {
   padding: 10px;
 }
