@@ -12,3 +12,9 @@ nav .banner-name {
 .mdi-navigation-menu:before {
   font-size: 30px;
 }
+
+.test-banner {
+  height: 350px;
+  background-color: blue;
+  width: 100%;
+}
