@@ -18,3 +18,11 @@ nav .banner-name {
   background-color: blue;
   width: 100%;
 }
+
+.incard {
+  color: grey;
+}
+
+.incard:hover {
+  color: pink;
+}
