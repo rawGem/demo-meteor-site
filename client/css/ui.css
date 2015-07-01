@@ -20,7 +20,6 @@ nav .banner-name {
 }
 
 
-
 .row.thumbs {
   margin-bottom: 0px;
 }
@@ -35,5 +34,10 @@ nav .banner-name {
 
 .card-action.white.thumbs {
   padding: 10px;
+}
+
+.fa.fa-bars {
+  font-size: 25px;
+  margin-left: 3px;
 }
 
