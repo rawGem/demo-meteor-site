@@ -10,8 +10,9 @@ Template.card.helpers({
   }
 });
 
-Template.main.helpers({
-  sections: function() {
-    return Sections.find();
-  }
-});
+
+//Template.main.helpers({
+//  sections: function() {
+//    return Sections.find();
+//  }
+//});
