@@ -6,19 +6,39 @@ Meteor.startup(function(){
 
     Sections.insert( 
       {
-        subject: "Education", 
+        subject: "education",
         subsections : [
-          { heading : "School 1", text_region: "i lernt da codez"},
-          { heading : "School 2", text_region: "lernt moar cdez"}
+          {
+            heading     : "School 1",
+            text_region : "i lernt da codez",
+            upvotes     : 5,
+            downvotes   : 1
+          },
+          {
+            heading     : "School 2",
+            text_region : "lernt moar cdez",
+            upvotes     : 10,
+            downvotes   : 0
+          }
         ]
       });
 
     Sections.insert(
       {
-        subject: "Coursework", 
+        subject     : "coursework",
         subsections : [
-          { heading : "cs101", text_region: "i lernt da codez"},
-          { heading : "cs102", text_region: "lernt moar cdez"}
+          {
+            heading     : "cs101",
+            text_region : "i lernt da codez",
+            upvotes     : 0,
+            downvotes   : 0
+          },
+          {
+            heading     : "cs102",
+            text_region : "lernt moar cdez",
+            upvotes     : 0,
+            downvotes   : 0
+          }
         ]
       });
   }
