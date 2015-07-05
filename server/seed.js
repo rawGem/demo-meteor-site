@@ -6,7 +6,7 @@ Meteor.startup(function(){
 
     Sections.insert({
       subject: "Education", 
-      sections : [
+      subsections : [
         {
         heading: "cs101",
         description: "I lernt da codez"

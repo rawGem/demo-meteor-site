@@ -5,7 +5,13 @@ Template.side.onRendered( function() {
 });
 
 Template.card.helpers({
-  heading: function() {
-    return "This Heading"
+  testHeading: function() {
+    return "Test Heading";
   }
-})
+});
+
+Template.main.helpers({
+  sections: function() {
+    return Sections.find();
+  }
+});

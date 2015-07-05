@@ -5,6 +5,10 @@
 
 <template name="main">
   {{> side}}
-  {{> card heading=heading}}
+  {{#each sections}}
+    {{#each  subsections   }}
+      {{> card heading=heading}}
+    {{/each}}
+  {{/each}}
 </template>
 
