@@ -9,11 +9,11 @@ Meteor.startup(function(){
       subsections : [
         {
         heading: "cs101",
-        description: "I lernt da codez"
+        text: "I lernt da codez"
         },
         {
         heading: "cs102",
-        description: "I lernt moar codez"
+        text: "I lernt moar codez"
         }
       ]
     });
