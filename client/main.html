@@ -4,7 +4,7 @@
 </head>
 
 <template name="main">
-  {{> side}}
+  {{> Template.dynamic template=nav}}
   {{#each sections}}
     {{#each  subsections   }}
       {{> card }}

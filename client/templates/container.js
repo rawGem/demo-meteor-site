@@ -13,7 +13,8 @@ Template.card.helpers({
 
 Template.side.events({
   'click a': function(e,t) {
-    SBJCTX.set(e.target.innerText);
+    FlowRouter.go('/section/'+e.target.innerText.toLowerCase())
+    //SBJCTX.set(e.target.innerText);
   }
 })
 

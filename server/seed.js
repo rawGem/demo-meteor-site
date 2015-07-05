@@ -6,7 +6,7 @@ Meteor.startup(function(){
 
     Sections.insert( 
       {
-        subject: "Education", 
+        subject: "education", 
         subsections : [
           { heading : "School 1", text_region: "i lernt da codez"},
           { heading : "School 2", text_region: "lernt moar cdez"}
@@ -15,7 +15,7 @@ Meteor.startup(function(){
 
     Sections.insert(
       {
-        subject: "Coursework", 
+        subject: "coursework", 
         subsections : [
           { heading : "cs101", text_region: "i lernt da codez"},
           { heading : "cs102", text_region: "lernt moar cdez"}
