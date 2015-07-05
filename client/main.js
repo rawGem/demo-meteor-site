@@ -1,5 +1,5 @@
 Template.main.onCreated( function() {
-  this.subscribe('sections');
+  this.subscribe('sections', 'Coursework');
 });
 
 Template.main.helpers({

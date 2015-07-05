@@ -1,4 +1,4 @@
 
 Meteor.publish('sections', function( sectionName ) {
-  return Sections.find();
+  return Sections.find( { subject : sectionName } );
 });
