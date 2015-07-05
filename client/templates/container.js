@@ -1,5 +1,5 @@
 /* container helpers */
-renderTemplate = new ReactiveVar();
+SBJCTX = new ReactiveVar();
 
 Template.side.onRendered( function() {
   $(".button-collapse").sideNav();
@@ -13,7 +13,7 @@ Template.card.helpers({
 
 Template.side.events({
   'click a': function(e,t) {
-    renderTemplate.set(e.target.innerText);
+    SBJCTX.set(e.target.innerText);
   }
 })
 
