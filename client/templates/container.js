@@ -2,7 +2,9 @@
 SBJCTX = new ReactiveVar();
 
 Template.side.onRendered( function() {
-  $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav(
+    {closeOnClick: true}
+  );
 });
 
 Template.card.helpers({
@@ -13,7 +15,8 @@ Template.card.helpers({
 
 Template.side.events({
   'click a': function(e,t) {
-    FlowRouter.go('/section/'+e.target.innerText.toLowerCase())
+    e.preventDefault();
+    FlowRouter.go('/section/'+e.target.innerText.toLowerCase());
     //SBJCTX.set(e.target.innerText);
   }
 })
