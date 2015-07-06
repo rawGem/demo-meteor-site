@@ -7,12 +7,6 @@ Template.side.onRendered( function() {
   });
 });
 
-Template.card.helpers({
-  testHeading: function() {
-    return "Test Heading";
-  }
-});
-
 Template.side.events({
   'click a': function(e,t) {
     e.preventDefault();
