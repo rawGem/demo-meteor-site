@@ -20,8 +20,13 @@ Template.card.events({
     Meteor.call('upvoteWithHeadingField', [Template.parentData()._id, t.data.heading])
   },
   'click': function(e,t) {
+  },
+  'click i.fa.fa-thumbs-o-down' : function(e,t) {
+    e.preventDefault();
+    Meteor.call('downvoteWithHeadingField', [Template.parentData()._id, t.data.heading])
+  },
+  'click': function(e,t) {
   }
-  
 });
 
 
