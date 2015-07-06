@@ -17,7 +17,7 @@ Template.side.events({
 Template.card.events({
   'click i.fa.fa-thumbs-o-up' : function(e,t) {
     e.preventDefault();
-    Meteor.call('updateWithHeadingField', [Template.parentData()._id, t.data.heading])
+    Meteor.call('upvoteWithHeadingField', [Template.parentData()._id, t.data.heading])
   },
   'click': function(e,t) {
   }
