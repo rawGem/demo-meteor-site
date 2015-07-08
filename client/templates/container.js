@@ -1,6 +1,7 @@
 /* container helpers */
 SBJCTX = new ReactiveVar();
 
+
 Template.side.onRendered( function() {
   $(".button-collapse").sideNav({
     closeOnClick : true
@@ -28,6 +29,13 @@ Template.card.events({
   'click': function(e,t) {
   }
 });
+
+Template.card.onRendered( function() {
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  }); 
+} )
 
 
 //Template.main.helpers({
