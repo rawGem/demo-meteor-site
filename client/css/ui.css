@@ -1,3 +1,70 @@
+          
+/* colors 
+ * bright: 5DA0E5
+ * greenish-grey: 7E98B2
+ * greyish-green: 677F7F
+ * brown: 8C5B4E
+ * light-brown: B2827E
+ */
+
+.navbar-fixed nav {
+  background-color: white;
+}
+
+.side-nav a {
+  color: white; 
+}
+
+li#crswrk-li {
+  background-color: #7E98B2;
+}
+
+li#edu-li {
+  background-color: #677F7F;
+}
+
+nav.banner {
+  height: 222px;
+}
+
+nav .banner-name {
+  font-size: 45px;
+  color: pink;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+.mdi-navigation-menu:before {
+  font-size: 30px;
+}
+
+.row.thumbs {
+  margin-bottom: 0px;
+}
+
+.card .card-action a {
+  color: black;
+}
+
+.card .card-action a:hover {
+  color: grey;
+}
+
+.card-action.white.thumbs {
+  padding: 10px;
+}
+
+.fa.fa-bars {
+  font-size: 25px;
+  margin-left: 3px;
+  color: #5DA0E5;
+}
+
+.fa-thumbs {
+  margin-right: 10px;
+}
+
+
 nav.banner {
   height: 222px;
 }
@@ -18,7 +85,7 @@ nav .banner-name {
   height:100%;
   background-size:50px 50px;
   height: 350px;
-  background-color: blue;
+  background-color: #5DA0E5;
   width: 100%;
 }
 
