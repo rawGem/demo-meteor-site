@@ -56,3 +56,8 @@ nav .banner-name {
   margin-left: 20px;
 }
 
+section#message-modal {
+  height: 100px;
+  overflow: hidden;
+}
+
