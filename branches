@@ -1,0 +1,71 @@
+! [FR] displays upvote and downvote
+ ! [clr-gemtle-on-the-eyes] kinda diggin
+  ! [complementary-indigomain] i don't completely hate it
+   ! [gentle-on-eyes-no-router] basic components for messaging
+    * [master] background for body always fills page
+     ! [monochrome-header] [cherry-pick master/72b489c] reduces size of nav icon
+      ! [orange-green-pink] that looks like izod-fucking-easter
+       ! [yellow-blue-red] no yellow; ugly
+--------
+    *    [master] background for body always fills page
+    *    [master^] card size
+    *    [master~2] sizes message model, removes inline style
+   -     [gentle-on-eyes-no-router] basic components for messaging
+   +*    [master~3] adds basic components for messaging
+ + +     [clr-gemtle-on-the-eyes] kinda diggin
+   +*    [master~4] icon spacing in side nav
+ + +*    [master~5] quick fix, inner link not expected to end with space
+ + +*    [master~6] adds icons to side-bar links
+  +      [complementary-indigomain] i don't completely hate it
+ +++*    [master~7] grid background
+ +++*    [master~8] implements downvote Meteor call
+ +++*    [master~9] changes method name for incrementing upvote
+ +++*    [master~10] upvote is functional and persisted in db
+ +++*    [master~11] [DEBUG ME] can only use _id as selector to update in mongo on client
+ +++*    [master~12] remove test
+ +++*    [master~13] displays upvote and downvote
+ +++*    [master~14] adds votes counter to seed, lower case subject
+ +++*    [master~15] close sidenav on click
+ +++*    [master~16] fixed navbar
++        [FR] displays upvote and downvote
++        [FR^] adds votes counters
++        [FR~2] add base route
++        [FR~3] fixed navbar
++        [FR~4] sideNav closes on click
++        [FR~5] passes data from ui to subscription via flow router
+++++*    [master~17] no more hours on passing data
+++++*    [master~18] remove prints
+++++*    [master~19] reactive subscribe via reactive var
+++++*    [master~20] subscribe with parameter
+++++*    [master~21] adds a section in seeds
+++++*    [master~22] subscribe through main template
+++++*    [master~23] underscores for mongo fields
+++++*    [master~24] change seed, data to description in card
+++++*    [master~25] debugs not data context in template, adds mongol
+++++*    [master~26] changed description to text, still no love
+++++*    [master~27] card for subsection
+++++*    [master~28] adds collection and seed data to test against
+++++*    [master~29] placeholder from literal to helper
+++++*    [master~30] placeholder heading
+++++*    [master~31] column size change
+++++*    [master~32] replaces mdi nav icon with fa icon
+++++*    [master~33] adds envelope icon
+++++*    [master~34] unnecessary link in head...?
+++++*    [master~35] removes more placeholder html, renames row tempalte to card
+++++*    [master~36] removes extra card, some alignment cleanup
+++++*    [master~37] organizes size and columns for icons
+++++*    [master~38] changes the link color in card action
+++++*    [master~39] font awesome icons replace material icons
+++++*    [master~40] just icons
+++++*    [master~41] thumb up as icon instead of button
+++++*    [master~42] changes button display with columns
+++++*    [master~43] add shadow to splash
+++++*    [master~44] adds splash screen placeholder
+++++*    [master~45] fontawesome
+++++*    [master~46] reduces size of banner font
+++++*    [master~47] changes size of nav icon
+     +   [monochrome-header] [cherry-pick master/72b489c] reduces size of nav icon
+     +   [monochrome-header^] indigo nav and banner name
+       + [yellow-blue-red] no yellow; ugly
+      +  [orange-green-pink] that looks like izod-fucking-easter
+++++*+++ [master~48] adds name in banner
