@@ -1,7 +1,7 @@
           
 /* colors 
  * bright: 5DA0E5
- * greenish-grey: 7E98B2
+ * greenish-grey: 7E98B2 darker: 516272
  * greyish-green: 677F7F
  * brown: 8C5B4E
  * light-brown: B2827E
@@ -46,9 +46,6 @@ nav .banner-name {
   color: lightblue;
 }
 
-.card .card-action a:hover {
-  color: grey;
-}
 
 .card-action.white.thumbs {
   padding: 10px;
@@ -150,9 +147,6 @@ nav .banner-name {
   color: black;
 }
 
-.card .card-action a:hover {
-  color: pink;
-}
 
 .card-action.white.thumbs {
   padding: 10px;
@@ -180,11 +174,11 @@ section#message-modal {
   overflow: hidden;
 }
 
-.fa-thumbs-o-up {
-  color: pink;
+.card-action .fa {
+  color: #7E98B2;
 }
 
-.fa-thumbs-o-up:hover {
-  color: blue;
+.card-action .fa:hover {
+  color: #516272;
 }
 
