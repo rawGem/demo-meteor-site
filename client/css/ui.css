@@ -74,6 +74,7 @@ nav .banner-name {
  */
 
 #t-dwn, #t-up {
+  margin-right: 5px;
   /*width: 85px !important;*/
 }
 
@@ -81,12 +82,21 @@ nav .banner-name {
   margin-right: 5px;
 }
 
+#t-dwn a {
+  margin-left: 5px;
+}
+
 #cmnt, #env {
   margin-right: 0px;
 }
 
+#env {
+  padding-left: 0px;
+}
+
 #cmnt {
-  margin-left: 3px;
+  padding-left: 0px;
+  margin-left: 10px;
 }
 
 .card-content p {
