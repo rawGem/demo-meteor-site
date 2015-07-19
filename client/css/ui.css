@@ -6,6 +6,22 @@
  * light: F7E9F0
  */
 
+#t-dwn, #t-up {
+  /*width: 85px !important;*/
+}
+
+#t-dwn a, #t-up a {
+  margin-right: 5px;
+}
+
+#cmnt, #env {
+  margin-right: 0px;
+}
+
+#cmnt {
+  margin-left: 3px;
+}
+
 .card-content p {
   color: #DED1D7 !important; 
 }
