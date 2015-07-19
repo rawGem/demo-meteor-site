@@ -1,3 +1,18 @@
+/* grays
+ * dark: 383536
+ * mediumdark: 787174
+ * medium: B8ADB2
+ * mediumlight: DED1D7
+ * light: F7E9F0
+ */
+
+.card-content p {
+  color: #DED1D7 !important; 
+}
+.card-title {
+  color: #B8ADB2 !important;
+}
+
 nav.banner {
   height: 222px;
 }
