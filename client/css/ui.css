@@ -43,7 +43,7 @@ nav .banner-name {
 }
 
 .card .card-action a {
-  color: black;
+  color: lightblue;
 }
 
 .card .card-action a:hover {
@@ -151,7 +151,7 @@ nav .banner-name {
 }
 
 .card .card-action a:hover {
-  color: grey;
+  color: pink;
 }
 
 .card-action.white.thumbs {
@@ -178,5 +178,13 @@ nav .banner-name {
 section#message-modal {
   height: 100px;
   overflow: hidden;
+}
+
+.fa-thumbs-o-up {
+  color: pink;
+}
+
+.fa-thumbs-o-up:hover {
+  color: blue;
 }
 
