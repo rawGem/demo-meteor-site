@@ -21,12 +21,22 @@ $bright-green         : #72E98B;
 }
 
 li#crswrk-li {
-  background-color: #7E98B2;
+  //background-color: #7E98B2;
+  background-color: white;
+  a {
+    color: $greyish-green; 
+  }
 }
 
 li#edu-li {
-  background-color: #677F7F;
+  //background-color: #677F7F;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  a {
+    color: $greyish-green;
+  }
 }
+
 
 nav.banner {
   height: 222px;
@@ -167,13 +177,18 @@ nav .banner-name {
 .fa-thumbs {
   margin-right: 10px;
 }
-
+a span {
+  margin-right: 20px;
+}
 .fa-graduation-cap {
-  margin-left: 30px;
+  //padding-left: 30px !important;
+
+  color: $greenish-grey;
 }
 
 .fa-book {
-  margin-left: 20px;
+  //margin-left: 20px;
+  color: $brownish-maroon;
 }
 
 section#message-modal {
