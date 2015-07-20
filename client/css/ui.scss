@@ -4,7 +4,7 @@ $greenish-grey        : #7E98B2;
 $greenish-grey-darker : #516272;
 $greyish-green        : #677F7F;
 $brown                : #8C5B4E;
-$light-brown          : #B2827E;
+$brownish-maroon      : #B2827E;
 
 /* bright colors */
 $bright-green         : #72E98B;
@@ -55,9 +55,15 @@ nav .banner-name {
 }
 
 .fa.fa-bars {
+  font-size: 15px;
+  margin-left: 15px;
+  color: $greyish-green;
+}
+
+.fa.fa-long-arrow-right {
   font-size: 25px;
-  margin-left: 3px;
-  color: #5DA0E5;
+  margin-left: 8px;
+  color: $greyish-green;
 }
 
 .fa-thumbs {
@@ -104,7 +110,7 @@ nav .banner-name {
 }
 .card-title {
   /*color: #B8ADB2 !important;*/
-  color: $brown !important;
+  color: $bright !important;
 }
 
 nav.banner {
@@ -129,7 +135,7 @@ nav .banner-name {
   min-height: 100%;
   background-size:25px 25px;
   /*height: 350px;*/
-  background-color: $light-brown;
+  background-color: $brownish-maroon;
   width: 100%;
 }
 
@@ -156,11 +162,6 @@ nav .banner-name {
   padding: 10px;
 }
 
-.fa.fa-bars {
-  font-size: 25px;
-  margin-left: 3px;
-}
-
 .fa-thumbs {
   margin-right: 10px;
 }
@@ -180,7 +181,7 @@ section#message-modal {
 
 .card-action .fa {
   //color: $greyish-green:;
-  color: $bright-green;
+  color: $greyish-green;
 }
 
 .card-action .fa:hover {
