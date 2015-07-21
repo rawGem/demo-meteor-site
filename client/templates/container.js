@@ -11,7 +11,7 @@ Template.side.onRendered( function() {
 Template.side.events({
   'click a': function(e,t) {
     e.preventDefault();
-    SBJCTX.set(e.target.innerText.toLowerCase());
+    SBJCTX.set(e.target.innerText.toLowerCase().trim());
   }
 })
 

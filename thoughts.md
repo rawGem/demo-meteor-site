@@ -6,3 +6,8 @@
 
 ## Refactorings 
 - Make a template for each kind of card
+
+## (known) BUGS
+- Clicking on icon in side nav does not render the template
+-> (a?) disable listening events on icons in side nav? 
+
