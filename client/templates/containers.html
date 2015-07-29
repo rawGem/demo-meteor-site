@@ -2,31 +2,50 @@
   <div class="container">
     <div class="row">
       <div class="col s12 m12 l12">
-        <div class="card brown lighten-5">
-          <div class="card-content white-text">
+        <div class="card white small">
+          <div class="card-content">
             <span class="card-title"> {{heading}}</span>
+            <p>Description: {{text_region}} </p>
+            <p>Description: {{text_region}} </p>
             <p>Description: {{text_region}} </p>
           </div>
           <div class="card-action white thumbs">
             <div class="row thumbs">
-              <div class="col l2 m2 s3">
+              <div class="col l1 m2 s3" id="t-dwn">
                 <a href="">
                   <i class="fa fa-thumbs-o-down fa-lg"></i>
                 </a>
                 {{downvotes}}
               </div>
-              <div class="col l2 m2 s3">
+              <div class="col l1 m2 s3" id="t-up">
                 <a href="">
                   <i class="fa fa-thumbs-o-up fa-lg"></i>
                 </a>
                 {{upvotes}}
               </div>
-              <a href="#" class="col l1 m1 s2">
+              <a href="#" class="col l1  m2 s2" id="cmnt">
                 <i class="fa fa-comment fa-lg"></i>
               </a>
-              <a href="#" class="col l1 m2 s2">
+              <a href="#modal1" class="col l1 m2 s2 modal-trigger" id="env">
                 <i class="fa fa-envelope-o fa-lg"></i>
               </a>
+
+              <div class="row">
+              <div id="modal1" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
+                <div class="modal-content">
+                  <section id="message-modal" contenteditable="true">
+                    <h4>Enter a title</h4>
+                    Edit me!
+                  </section>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
+                    Send<i class="fa fa-paper-plane"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -39,15 +58,29 @@
   <div class="navbar-fixed">
     <nav>
       <ul id="slide-out" class="side-nav">
-        <li><a href="#!">Education</a></li>
-        <li><a href="#!">Coursework</a></li>
+        <li id="edu-li">
+          <a href="#!">
+            <span>
+              <i class="fa fa-graduation-cap"></i>
+            </span>
+            Education
+          </a>
+        </li>
+        <li id="crswrk-li">
+          <a href="#!">
+            <span>
+              <i class="fa fa-book"></i>
+            </span>
+            Coursework
+          </a>
+        </li>
       </ul>
       <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="fa fa-bars"></i></a>
     </nav>
   </div>
 
-  <div class="container col l12 test-banner z-depth-1">
-  </div>
+  <!--<div class="container col l12 test-banner z-depth-1">
+  </div>-->
   <!--<nav class="banner red lighten-5">
     <div class="nav-wrapper">
       <div class="brand-logo banner-name center"> S.J. Browne</div>
