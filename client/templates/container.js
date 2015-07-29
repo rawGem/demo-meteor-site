@@ -1,14 +1,6 @@
 /* container helpers */
 SBJCTX = new ReactiveVar();
 
-<<<<<<< HEAD
-Template.side.onRendered( function() {
-  $(".button-collapse").sideNav(
-    {closeOnClick: true}
-  );
-});
-=======
->>>>>>> master
 
 Template.side.onRendered( function() {
   $(".button-collapse").sideNav({
