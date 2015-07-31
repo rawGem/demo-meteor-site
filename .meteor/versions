@@ -34,7 +34,7 @@ materialize:materialize@0.96.1
 meteor@1.1.6
 meteor-platform@1.2.2
 meteorhacks:flow-layout@1.4.0
-meteorhacks:flow-router@1.15.0
+meteorhacks:flow-router@1.16.1
 meteortoys:toykit@0.8.1
 minifiers@1.1.5
 minimongo@1.0.8
