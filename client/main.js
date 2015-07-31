@@ -1,13 +1,13 @@
 Session.setDefault("sectionSession", null);
 
-Template.main.onRendered( function() {
+Template.sections.onRendered( function() {
   var instance = this;
   this.autorun(function() {
     instance.subscribe('sections', SBJCTX.get());
   });
 });
 
-Template.main.helpers({
+Template.sections.helpers({
   sections: function() {
     return Sections.find();
   }
