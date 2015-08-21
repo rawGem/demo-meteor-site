@@ -73,18 +73,28 @@ li#crswrk-top {
   }
 }
 
+
 li#edu-top {
   height: 64px;
   box-sizing: border-box;
   background-color: white;
-  -webkit-transition: background-color 0.3s ease 0;
-  transition: background-color 0.3s ease 0;
-  &:hover {
-    border-bottom: 4px solid $greenish-grey; 
-  }
+  -webkit-transition: border-bottom 0.3s ease 0;
+  transition: border-bottom 0.3s ease 0;
   a {
     color: $greyish-green;
   }
+}
+
+li#edu-top.active-false {
+  @extend li#edu-top;
+  &:hover {
+    border-bottom: 4px solid $greenish-grey; 
+  }
+}
+
+li#edu-top.active-true {
+  @extend li#edu-top;
+  border-bottom: 4px solid $greenish-grey;
 }
 
 nav.banner {

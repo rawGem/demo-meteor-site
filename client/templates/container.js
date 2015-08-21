@@ -29,6 +29,14 @@ Template.side.events({
   }
 })
 
+Template.educationTopNavLink.helpers({
+  active: function() {
+    var bool = FlowRouter.getParam("name") == "education" ? "true" : "false";
+    console.log("education route is active? :: " + bool)
+    return "active-"+bool
+  }
+});
+
 Template.card.events({
   'click i.fa.fa-thumbs-o-up' : function(e,t) {
     e.preventDefault();

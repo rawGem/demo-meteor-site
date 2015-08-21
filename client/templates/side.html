@@ -3,43 +3,14 @@
     <nav> 
 
       <ul class="hide-on-med-and-down links">
-      <div class="row">
-        <li class="col l2 offset-l4" id="edu-top">
-          <a href="#!">
-            <span>
-              <i class="fa fa-graduation-cap"></i>
-            </span>
-            Education
-          </a>
-        </li>
-        <li id="crswrk-top" class="col l2">
-          <a href="#!">
-            <span>
-              <i class="fa fa-book"></i>
-            </span>
-            Coursework
-          </a>
-        </li>
+        <div class="row">
+          {{> educationTopNavLink}}
+          {{> courseworkTopNavLink}}
         </div>
       </ul>
-
       <ul id="slide-out" class="side-nav">
-        <li id="edu-side">
-          <a href="#!">
-            <span>
-              <i class="fa fa-graduation-cap"></i>
-            </span>
-            Education
-          </a>
-        </li>
-        <li id="crswrk-side">
-          <a href="#!">
-            <span>
-              <i class="fa fa-book"></i>
-            </span>
-            Coursework
-          </a>
-        </li>
+        {{> educationSideNavLink}}
+        {{> courseworkSideNavLink}}
       </ul>
       <!--<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="fa fa-bars"></i></a>-->
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
@@ -52,4 +23,48 @@
       <div class="brand-logo banner-name center"> S.J. Browne</div>
     </div>
   </nav>-->
+</template>
+
+<template name="educationTopNavLink">
+        <li class="col l2 offset-l4 {{active}}" id="edu-top">
+          <a href="#!">
+            <span>
+              <i class="fa fa-graduation-cap"></i>
+            </span>
+            Education
+          </a>
+        </li>
+</template>
+
+<template name="courseworkTopNavLink">
+        <li id="crswrk-top" class="col l2">
+          <a href="#!">
+            <span>
+              <i class="fa fa-book"></i>
+            </span>
+            Coursework
+          </a>
+        </li>
+</template>
+
+<template name="educationSideNavLink">
+        <li id="edu-side">
+          <a href="#!">
+            <span>
+              <i class="fa fa-graduation-cap"></i>
+            </span>
+            Education
+          </a>
+        </li>
+</template>
+
+<template name="courseworkSideNavLink">
+        <li id="crswrk-side">
+          <a href="#!">
+            <span>
+              <i class="fa fa-book"></i>
+            </span>
+            Coursework
+          </a>
+        </li>
 </template>
