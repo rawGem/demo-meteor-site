@@ -42,7 +42,6 @@ li.nav-link:hover {
 }
 
 li#crswrk-side {
-  //background-color: #7E98B2;
   background-color: white;
   a {
     color: $greyish-green; 
@@ -50,7 +49,6 @@ li#crswrk-side {
 }
 
 li#edu-side {
-  //background-color: #677F7F;
   background-color: white;
   border-bottom: 1px solid lightgrey;
   a {
@@ -59,17 +57,31 @@ li#edu-side {
 }
 
 li#crswrk-top {
-  //background-color: #7E98B2;
+  height: 64px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
   background-color: white;
+  -webkit-transition: border-bottom 0.3s ease 0;
+  transition: border-bottom 0.3s ease 0;
+  &:hover {
+    border-bottom: 4px solid $brownish-maroon; 
+  }
+  
   a {
     color: $greyish-green; 
   }
 }
 
 li#edu-top {
-  //background-color: #677F7F;
+  height: 64px;
+  box-sizing: border-box;
   background-color: white;
-  border-bottom: 1px solid lightgrey;
+  -webkit-transition: background-color 0.3s ease 0;
+  transition: background-color 0.3s ease 0;
+  &:hover {
+    border-bottom: 4px solid $greenish-grey; 
+  }
   a {
     color: $greyish-green;
   }
