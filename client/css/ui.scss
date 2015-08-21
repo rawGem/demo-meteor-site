@@ -57,52 +57,57 @@ li#edu-side {
 }
 
 li#crswrk-top {
+  font-weight: 300;
   height: 64px;
   box-sizing: border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   background-color: white;
-  -webkit-transition: border-bottom 0.3s ease 0;
-  transition: border-bottom 0.3s ease 0;
+  -webkit-transition: border-bottom 100ms ease 0;
+  transition: border-bottom 100ms ease 0;
+  border-right: 1px solid #ececec;
   a {
-    color: $greyish-green; 
+    color: $ocean-blue; 
   }
 }
 
 li#crswrk-top.active-true {
-  @extend li#crswrk-top;
-  border-bottom: 4px solid $brownish-maroon;
+  //@extend li#crswrk-top;
+  border-bottom: 4px solid $ocean-blue;
 }
 
 li#crswrk-top.active-false {
-  @extend li#crswrk-top;
+  //@extend li#crswrk-top;
   &:hover {
-    border-bottom: 4px solid $brownish-maroon; 
+    border-bottom: 4px solid $ocean-blue; 
   }
 }
 
 
 li#edu-top {
+  font-weight: 300;
   height: 64px;
   box-sizing: border-box;
   background-color: white;
-  -webkit-transition: border-bottom 0.3s ease 0;
-  transition: border-bottom 0.3s ease 0;
+  -webkit-transition: border-bottom 100ms ease 0;
+  transition: border-bottom 100ms ease 0;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
   a {
-    color: $greyish-green;
+    color: $medium-blue;
   }
 }
 
 li#edu-top.active-false {
-  @extend li#edu-top;
+  //@extend li#edu-top;
   &:hover {
-    border-bottom: 4px solid $greenish-grey; 
+    border-bottom: 4px solid $medium-blue; 
   }
 }
 
 li#edu-top.active-true {
-  @extend li#edu-top;
-  border-bottom: 4px solid $greenish-grey;
+  //@extend li#edu-top;
+  border-bottom: 4px solid $medium-blue;
 }
 
 nav.banner {
@@ -255,7 +260,8 @@ a span {
 
 .fa-book {
   //margin-left: 20px;
-  color: $brownish-maroon;
+  //color: $brownish-maroon;
+  color: #ececec;
 }
 
 section#message-modal {
