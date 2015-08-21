@@ -42,17 +42,21 @@ li.nav-link:hover {
 }
 
 li#crswrk-side {
+  font-weight: 300;
   background-color: white;
+  border-bottom: 1px solid #ececec;
   a {
-    color: $greyish-green; 
+    color: #696969; 
   }
 }
 
 li#edu-side {
+  font-weight: 300;
   background-color: white;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #ececec;
   a {
-    color: $greyish-green;
+    //color: $medium-blue;
+    color: #696969;
   }
 }
 
@@ -249,19 +253,31 @@ nav .banner-name {
 .fa-thumbs {
   margin-right: 10px;
 }
-a span {
-  margin-right: 20px;
+
+li#edu-side a span {
+  margin-right: 10px;
+  margin-left: 23px;
 }
+
+li#crswrk-side a span {
+  margin-right: 15px;
+  margin-left: 27px;
+}
+
 .fa-graduation-cap {
   //padding-left: 30px !important;
-
-  color: $greenish-grey;
+  //color: $greenish-grey;
+  color: #d3d3d3;
+  font-size: 20px;
+  transform: translate(0px, 2px);
 }
 
 .fa-book {
   //margin-left: 20px;
   //color: $brownish-maroon;
-  color: #ececec;
+  font-size: 20px;
+  color: #d3d3d3;
+  transform: translate(0px, 2px);
 }
 
 section#message-modal {
@@ -280,5 +296,8 @@ section#message-modal {
 
 #t-dwn, #t-up {
   color: $greyish-green;
+}
+
+.fa-graduation-cap, .fa-book {
 }
 
