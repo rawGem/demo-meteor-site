@@ -64,12 +64,20 @@ li#crswrk-top {
   background-color: white;
   -webkit-transition: border-bottom 0.3s ease 0;
   transition: border-bottom 0.3s ease 0;
-  &:hover {
-    border-bottom: 4px solid $brownish-maroon; 
-  }
-  
   a {
     color: $greyish-green; 
+  }
+}
+
+li#crswrk-top.active-true {
+  @extend li#crswrk-top;
+  border-bottom: 4px solid $brownish-maroon;
+}
+
+li#crswrk-top.active-false {
+  @extend li#crswrk-top;
+  &:hover {
+    border-bottom: 4px solid $brownish-maroon; 
   }
 }
 
