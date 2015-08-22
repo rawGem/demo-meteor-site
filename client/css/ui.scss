@@ -55,7 +55,6 @@ li#edu-side {
   background-color: white;
   border-bottom: 1px solid #ececec;
   a {
-    //color: $medium-blue;
     color: #696969;
   }
 }
@@ -64,16 +63,9 @@ li#crswrk-top {
   font-weight: 300;
   height: 64px;
   box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -o-box-sizing:border-box;
   background-color: white;
-  -webkit-transition: border-bottom 100ms ease 0;
-  -moz-transition: border-bottom 100ms ease 0;
-  -o-transition: border-bottom 100ms ease 0;
-  transition: border-bottom 100ms ease 0;
+  transition: border-bottom 100ms ease 0s;
   a {
-    //color: $ocean-blue; 
     color: #696969; 
   }
 }
@@ -88,16 +80,13 @@ li#crswrk-top.active-false {
   }
 }
 
-
 li#edu-top {
   font-weight: 300;
   height: 64px;
   box-sizing: border-box;
   background-color: white;
-  -webkit-transition: border-bottom 100ms ease 0;
-  transition: border-bottom 100ms ease 0;
+  transition: border-bottom 100ms ease 0s;
   a {
-    //color: $medium-blue;
     color: #696969;
   }
 }
