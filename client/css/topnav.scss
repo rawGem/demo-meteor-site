@@ -32,14 +32,25 @@ li#edu-top {
   }
 }
 
+li .top-link-container {
+  height: inherit;
+  box-sizing: border-box;
+  width: 150px;
+  transition: border-bottom 100ms ease 0s;
+}
+
 li#edu-top.active-false {
   &:hover {
-    border-bottom: 7px solid $medium-blue; 
+    .top-link-container {
+       border-bottom: 7px solid $medium-blue; 
+    }
   }
 }
 
 li#edu-top.active-true {
-  border-bottom: 7px solid $medium-blue;
+  .top-link-container {
+     border-bottom: 7px solid $medium-blue; 
+  }
 }
 
 nav.banner {
