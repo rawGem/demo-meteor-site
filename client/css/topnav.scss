@@ -1,5 +1,12 @@
 @import "colors.scss";
 
+li .top-link-container {
+  height: inherit;
+  box-sizing: border-box;
+  width: 150px;
+  transition: border-bottom 100ms ease 0s;
+}
+
 li#crswrk-top {
   font-weight: 300;
   height: 64px;
@@ -12,12 +19,16 @@ li#crswrk-top {
 }
 
 li#crswrk-top.active-true {
-  border-bottom: 7px solid $ocean-blue;
+  .top-link-container {
+     border-bottom: 7px solid $ocean-blue; 
+  }
 }
 
 li#crswrk-top.active-false {
   &:hover {
-    border-bottom: 7px solid $ocean-blue; 
+    .top-link-container {
+       border-bottom: 7px solid $ocean-blue; 
+    }
   }
 }
 
@@ -32,12 +43,6 @@ li#edu-top {
   }
 }
 
-li .top-link-container {
-  height: inherit;
-  box-sizing: border-box;
-  width: 150px;
-  transition: border-bottom 100ms ease 0s;
-}
 
 li#edu-top.active-false {
   &:hover {
