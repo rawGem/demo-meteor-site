@@ -5,9 +5,13 @@
 
 <template name="sections">
   {{#each sections}}
+    <div class="container">
+    <div class="row">
     {{#each  subsections   }}
-      {{> card }}
+      {{> cardContent }}
     {{/each}}
+    </div>
+    </div>
   {{/each}}
 </template>
 
