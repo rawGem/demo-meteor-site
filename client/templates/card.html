@@ -1,9 +1,15 @@
 <template name="card">
 <div class="container">
 <div class="row">
+  {{> cardContent}}
+</div>
+</div>
+</template>
+
+<template name="cardContent">
 <div class="col s12 m12 l12">
 <div class="card white small">
-<div class="card-content">
+  <div class="card-content">
     <span class="card-title"> {{heading}}</span>
     <p>Description: {{text_region}} </p>
     <p>Description: {{text_region}} </p>
@@ -31,25 +37,24 @@
       </a>
 
       <div class="row">
-      <div id="modal1" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
-        <div class="modal-content">
-          <section id="message-modal" contenteditable="true">
-            <h4>Enter a title</h4>
-            Edit me!
-          </section>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
-            Send<i class="fa fa-paper-plane"></i>
-          </a>
+       <div id="modal1" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
+          <div class="modal-content">
+            <section id="message-modal" contenteditable="true">
+              <h4>Enter a title</h4>
+              Edit me!
+            </section>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
+              Send<i class="fa fa-paper-plane"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
+
 </template>
