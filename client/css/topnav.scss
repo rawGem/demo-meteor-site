@@ -1,5 +1,7 @@
 @import "colors.scss";
 
+$active-link-bb-width : 2px;
+
 li .top-link-container {
   height: inherit;
   box-sizing: border-box;
@@ -20,14 +22,14 @@ li#crswrk-top {
 
 li#crswrk-top.active-true {
   .top-link-container {
-     border-bottom: 7px solid $ocean-blue; 
+     border-bottom: $active-link-bb-width solid $ocean-blue;
   }
 }
 
 li#crswrk-top.active-false {
   &:hover {
     .top-link-container {
-       border-bottom: 7px solid $ocean-blue; 
+       border-bottom: $active-link-bb-width solid $ocean-blue;
     }
   }
 }
@@ -47,14 +49,14 @@ li#edu-top {
 li#edu-top.active-false {
   &:hover {
     .top-link-container {
-       border-bottom: 7px solid $medium-blue; 
+       border-bottom: $active-link-bb-width solid $medium-blue;
     }
   }
 }
 
 li#edu-top.active-true {
   .top-link-container {
-     border-bottom: 7px solid $medium-blue; 
+     border-bottom: $active-link-bb-width solid $medium-blue;
   }
 }
 
