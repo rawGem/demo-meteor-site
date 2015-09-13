@@ -107,12 +107,23 @@ nav .banner-name {
 }
 
 .fa-github {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
+  display: inline-block;
   font-size: 25px;
+  position: relative;
+  bottom: 2px;
 }
 
 .mdi-navigation-menu:before {
   font-size: 30px;
+}
+
+div.bl-icon {
+  display: inline-block;
+}
+
+#sclicons {
+  position: absolute;
+  left: 47%;
+  bottom: 0px;
+  height: 55px;
 }
