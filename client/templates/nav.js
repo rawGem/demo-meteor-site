@@ -2,7 +2,7 @@ Template.side.onRendered( function() {
   $(".button-collapse").sideNav({
     closeOnClick : true
   });
-  d3MakeBlIcon();
+  //d3MakeBlIcon();
 });
 
 

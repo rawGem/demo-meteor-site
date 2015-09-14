@@ -110,7 +110,7 @@ nav .banner-name {
   display: inline-block;
   font-size: 25px;
   position: relative;
-  bottom: 2px;
+  bottom: 6px;
   color: $greyish-green;
 }
 
@@ -127,4 +127,8 @@ div.bl-icon {
   left: 47%;
   bottom: 0px;
   height: 55px;
+}
+
+path {
+  stroke: $greyish-green;
 }
