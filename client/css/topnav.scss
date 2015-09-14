@@ -111,7 +111,7 @@ nav .banner-name {
   font-size: 30px;
   position: relative;
   bottom: 4px;
-  color: $greyish-green;
+  color: $greenish-grey;
 }
 
 .mdi-navigation-menu:before {
@@ -127,6 +127,10 @@ div.bl-icon {
   left: 47%;
   bottom: 0px;
   height: 55px;
+}
+
+path {
+  stroke: $greenish-grey;
 }
 
 svg {
