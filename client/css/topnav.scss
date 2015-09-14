@@ -26,18 +26,21 @@ li#crswrk-top {
 
 li#crswrk-top.active-true {
   .top-link-container {
-     border-bottom: $active-link-bb-width solid $ocean-blue;
+     //border-bottom: $active-link-bb-width solid $ocean-blue;
+     border-bottom: $active-link-bb-width solid $greenish-grey-darker;
   }
   a {
     font-weight: 500;
-    color: $ocean-blue;
+    //color: $ocean-blue;
+    color: $greenish-grey-darker;
   }
 }
 
 li#crswrk-top.active-false {
   &:hover {
     .top-link-container {
-       border-bottom: $active-link-bb-width solid $ocean-blue;
+       //border-bottom: $active-link-bb-width solid $ocean-blue;
+       border-bottom: $active-link-bb-width solid $greenish-grey-darker;
     }
   }
 }
@@ -60,18 +63,21 @@ li#edu-top {
 li#edu-top.active-false {
   &:hover {
     .top-link-container {
-       border-bottom: $active-link-bb-width solid $medium-blue;
+      //border-bottom: $active-link-bb-width solid $medium-blue;
+      border-bottom: $active-link-bb-width solid $greenish-grey-darker;
     }
   }
 }
 
 li#edu-top.active-true {
   .top-link-container {
-     border-bottom: $active-link-bb-width solid $medium-blue;
+     //border-bottom: $active-link-bb-width solid $medium-blue;
+     border-bottom: $active-link-bb-width solid $greenish-grey-darker;
   }
   a {
     font-weight: 500;
-    color: $medium-blue;
+    //color: $medium-blue;
+    color: $greenish-grey-darker;
   }
 }
 
