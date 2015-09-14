@@ -8,14 +8,18 @@
 </body>
 
 <template name="sections">
-  {{#each sections}}
-    <div class="container">
-    <div class="row">
-    {{#each  subsections   }}
-      {{> cardContent }}
+  {{#if Template.subscriptionsReady}}
+    {{#each sections}}
+      <div class="container">
+      <div class="row">
+      {{#each  subsections   }}
+        {{> cardContent }}
+      {{/each}}
+      </div>
+      </div>
     {{/each}}
-    </div>
-    </div>
-  {{/each}}
+  {{else}}
+    Loading...
+  {{/if}}
 </template>
 
