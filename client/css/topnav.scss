@@ -131,4 +131,7 @@ div.bl-icon {
 
 path {
   stroke: $greyish-green;
+  &:hover {
+    stroke: pink; 
+  }
 }
