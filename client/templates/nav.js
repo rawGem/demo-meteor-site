@@ -42,8 +42,6 @@ Template.courseworkTopNavLink.helpers({
     return "active-"+bool
   }
 });
-<<<<<<< HEAD:client/templates/nav.js
-=======
 
 
 Template.cardContent.events({
@@ -86,4 +84,3 @@ function d3MakeBlIcon() {
                    .attr("height", 20)
                    .style("fill", "white")
 }
->>>>>>> adds bl.ock icon logic via d3:client/templates/container.js
