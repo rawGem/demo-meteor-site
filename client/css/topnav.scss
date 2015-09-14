@@ -108,9 +108,9 @@ nav .banner-name {
 
 .fa-github {
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
   position: relative;
-  bottom: 6px;
+  bottom: 4px;
   color: $greyish-green;
 }
 
@@ -129,9 +129,11 @@ div.bl-icon {
   height: 55px;
 }
 
-path {
-  stroke: $greyish-green;
+svg {
   &:hover {
-    stroke: pink; 
+    cursor: pointer;
+    path {
+      stroke: pink; 
+    }
   }
 }
