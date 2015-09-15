@@ -112,6 +112,10 @@ nav .banner-name {
   position: relative;
   bottom: 4px;
   color: $greenish-grey;
+  &:hover {
+    color: pink;
+    cursor: pointer;
+  }
 }
 
 .mdi-navigation-menu:before {
