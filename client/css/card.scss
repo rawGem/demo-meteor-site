@@ -1,0 +1,36 @@
+@import "colors.scss";
+
+.card .card-action a {
+  color: lightblue;
+}
+
+.card-action.white.thumbs {
+  padding: 10px;
+}
+
+.card-content p {
+  color: #B2827E !important; 
+}
+
+.card-title {
+  /*color: #B8ADB2 !important;*/
+  color: $bright !important;
+}
+
+.card .card-action a {
+  color: black;
+}
+
+
+.card-action.white.thumbs {
+  padding: 10px;
+}
+
+.card-action .fa {
+  //color: $greyish-green:;
+  color: $greyish-green;
+}
+
+.card-action .fa:hover {
+  color: #516272;
+}
