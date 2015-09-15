@@ -8,6 +8,10 @@
   padding: 10px;
 }
 
+.card-content {
+  margin-top: 50px;
+}
+
 .card-content p {
   color: #B2827E !important; 
 }
@@ -15,6 +19,7 @@
 .card-title {
   /*color: #B8ADB2 !important;*/
   color: $bright !important;
+  font-weight: 500 !important;
 }
 
 .card .card-action a {
