@@ -9,16 +9,27 @@
 }
 
 .card-content {
-  margin-top: 50px;
+  margin-top: 20px;
+  height: inherit !important;
 }
 
 .card-content p {
   color: #B2827E !important; 
+  color: $medium-grey !important; 
+}
+
+h5 {
+  color: $medium-dark-grey;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1em;
+  margin-bottom: 0px;
 }
 
 .card-title {
   /*color: #B8ADB2 !important;*/
   color: $bright !important;
+  color: $greenish-grey-darker !important;
   font-weight: 500 !important;
 }
 
