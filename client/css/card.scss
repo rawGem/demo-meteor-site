@@ -1,12 +1,12 @@
 @import "colors.scss";
 
-.card .card-action a {
-  color: lightblue;
+.card-title {
+  /*color: #B8ADB2 !important;*/
+  color: $bright !important;
+  color: $greenish-grey-darker !important;
+  font-weight: 600 !important;
 }
 
-.card-action.white.thumbs {
-  padding: 10px;
-}
 
 .card-content {
   margin-top: 20px;
@@ -16,22 +16,24 @@
 .card-content p {
   color: #B2827E !important; 
   color: $medium-light-grey !important; 
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h5 {
   color: $medium-grey;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1em;
   margin-bottom: 0px;
 }
 
-.card-title {
-  /*color: #B8ADB2 !important;*/
-  color: $bright !important;
-  color: $greenish-grey-darker !important;
-  font-weight: 500 !important;
+
+.card .card-action a {
+  color: lightblue;
+}
+
+.card-action.white.thumbs {
+  padding: 10px;
 }
 
 .card .card-action a {
