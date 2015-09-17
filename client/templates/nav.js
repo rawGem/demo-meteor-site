@@ -24,6 +24,15 @@ Template.side.events({
   'click li#crswrk-top': function(e,t) {
     e.preventDefault();
     FlowRouter.go('/section/coursework');
+  },
+  'click li#ov-top': function(e,t) {
+    e.preventDefault();
+    //FlowRouter.go('/section/'+e.target.innerText.toLowerCase().trim());
+    FlowRouter.go('/section/overview');
+  },
+  'click li#crswrk-top': function(e,t) {
+    e.preventDefault();
+    FlowRouter.go('/section/overview');
   }
 })
 
@@ -43,6 +52,13 @@ Template.courseworkTopNavLink.helpers({
   }
 });
 
+Template.overviewTopNavLink.helpers({
+  active: function() {
+    var bool = FlowRouter.getParam("name") == "overview" ? "true" : "false";
+    console.log("overview route is active? :: " + bool)
+    return "active-"+bool
+  }
+});
 
 Template.cardContent.events({
   'click i.fa.fa-thumbs-o-up' : function(e,t) {
