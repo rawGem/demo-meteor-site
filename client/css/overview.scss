@@ -1,0 +1,103 @@
+$blue-grey            : #7E98B2;
+$blue-grey-darker     : #516272;
+$blue-grey-ttbg       : #3C4854;
+$blue-grey-text       : #283038;
+$maroon               : #B2827E;
+$maroon-light         : #E4A7A2;
+$maroon-dark          : #654A48;
+$maroon-text          : #4C3837;
+$green                : #76A57B;
+$green-light          : #A3E5AB;
+$green-dark           : #48654C;
+$green-text           : #314534;
+$yellow               : #B2B262; 
+$yellow-light         : #E4E57E;
+$yellow-dark          : #656538;
+$yellow-text          : #454526;
+
+
+/*body {
+  font-family: Helvetica Neue;
+  background-color: rgb(126, 152, 178); 
+  background-color: #666;
+  margin: 0px;
+}*/
+
+
+div.container {
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 80px;
+  margin-bottom: 0px;
+  margin-left: 0.55em;
+}
+
+p {
+  margin-top: 0px;
+  margin-left: 5em;
+  margin-bottom: 0px;
+}
+
+/* education section*/
+div#education {
+  background: $blue-grey-darker;
+}
+
+h3#education {
+  text-shadow: 0px 1px 1px $blue-grey;
+  color: $blue-grey-ttbg;
+}
+
+p#education {
+  color: #283038;
+
+}
+
+/* tools section*/
+h3#tools {
+  text-shadow: 0px 1px 1px $green-light;
+  color: $green-dark;
+}
+
+div#tools {
+  background: $green;
+}
+
+p#tools {
+  color: $green-text;
+}
+
+/* skills section*/
+h3#skills {
+  text-shadow: 0px 1px 1px $maroon-light;
+  color: $maroon-dark;
+}
+
+div#skills {
+  background: $maroon;
+}
+
+p#skills {
+  color: $maroon-text;
+}
+
+/* experience section*/
+h3#experience {
+  text-shadow: 0px 1px 1px $yellow-light;
+  color: $yellow-dark 
+}
+
+
+div#experience {
+  background: $yellow; 
+}
+
+p#experience {
+  color: $yellow-text;
+}
+
+
