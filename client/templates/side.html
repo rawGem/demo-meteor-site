@@ -9,6 +9,7 @@
         <div class="row">
           {{> educationTopNavLink}}
           {{> courseworkTopNavLink}}
+          {{> overviewTopNavLink}}
         </div>
       </ul>
       <ul id="slide-out" class="side-nav">
@@ -29,7 +30,7 @@
 </template>
 
 <template name="educationTopNavLink">
-        <li class="col l2 offset-l4 {{active}}" id="edu-top">
+        <li class="col l2 offset-l3 {{active}}" id="edu-top">
         <div class="top-link-container">
           <a class="center-align" href="#!">
             <!--<span>
@@ -51,6 +52,19 @@
               Coursework
             </a>
           </div>
+        </li>
+</template>
+
+<template name="overviewTopNavLink">
+        <li class="col l2 {{active}}" id="ov-top">
+        <div class="top-link-container">
+          <a class="center-align" href="#!">
+            <!--<span>
+              <i class="fa fa-graduation-cap"></i>
+            </span>-->
+            Overview
+          </a>
+        </div>
         </li>
 </template>
 
