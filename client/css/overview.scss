@@ -16,28 +16,21 @@ $yellow-dark          : #656538;
 $yellow-text          : #454526;
 
 
-/*body {
+div.ov-container {
   font-family: Helvetica Neue;
-  background-color: rgb(126, 152, 178); 
-  background-color: #666;
-  margin: 0px;
-}*/
-
-
-div.container {
   width: 100%;
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
-h3 {
+h3.ov {
   font-size: 80px;
   margin-bottom: 0px;
   margin-left: 0.55em;
 }
 
-p {
-  margin-top: 0px;
+p.overview {
+  margin-top: 18px;
   margin-left: 5em;
   margin-bottom: 0px;
 }
@@ -53,8 +46,7 @@ h3#education {
 }
 
 p#education {
-  color: #283038;
-
+  color: $blue-grey-text;
 }
 
 /* tools section*/
