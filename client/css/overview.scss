@@ -42,7 +42,8 @@ div#education {
 }
 
 h3#education {
-  text-shadow: 0px 1px 1px $blue-grey-light;
+  text-shadow: 0px 1px 1px $blue-grey-light,
+               0px -2px 2px black;
   color: $blue-grey-dark;
 }
 
@@ -52,7 +53,8 @@ p#education {
 
 /* tools section*/
 h3#tools {
-  text-shadow: 0px 1px 1px $green-light;
+  text-shadow: 0px 1px 1px $green-light,
+               0px -2px 2px black;
   color: $green-dark;
 }
 
@@ -66,7 +68,8 @@ p#tools {
 
 /* skills section*/
 h3#skills {
-  text-shadow: 0px 1px 1px $maroon-light;
+  text-shadow: 0px 1px 1px $maroon-light,
+               0px -2px 2px black;
   color: $maroon-dark;
 }
 
@@ -80,7 +83,8 @@ p#skills {
 
 /* experience section*/
 h3#experience {
-  text-shadow: 0px 1px 1px $yellow-light;
+  text-shadow: 0px 1px 1px $yellow-light,
+               0px -2px 2px black;
   color: $yellow-dark 
 }
 
