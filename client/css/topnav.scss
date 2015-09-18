@@ -168,7 +168,7 @@ nav .banner-name {
   bottom: 4px;
   color: $greenish-grey;
   &:hover {
-    color: pink;
+    color: white;
     cursor: pointer;
   }
 }
@@ -196,7 +196,7 @@ svg {
   &:hover {
     cursor: pointer;
     path {
-      stroke: pink; 
+      stroke: white; 
     }
   }
 }
