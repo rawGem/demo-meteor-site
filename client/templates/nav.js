@@ -2,6 +2,9 @@ Template.side.onRendered( function() {
   $(".button-collapse").sideNav({
     closeOnClick : true
   });
+  $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 10});
+  });
   //d3MakeBlIcon();
 });
 
