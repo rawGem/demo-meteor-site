@@ -15,6 +15,7 @@
       <ul id="slide-out" class="side-nav">
         {{> educationSideNavLink}}
         {{> courseworkSideNavLink}}
+        {{> overviewSideNavLink}}
       </ul>
       <!--<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="fa fa-bars"></i></a>-->
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
@@ -86,6 +87,17 @@
               <i class="fa fa-book"></i>
             </span>
             Coursework
+          </a>
+        </li>
+</template>
+
+<template name="overviewSideNavLink">
+        <li id="ov-side">
+          <a href="#!">
+            <span>
+              <i class="fa fa-file-text-o"></i>
+            </span>
+            Overview
           </a>
         </li>
 </template>

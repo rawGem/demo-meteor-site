@@ -30,7 +30,7 @@ Template.side.events({
     //FlowRouter.go('/section/'+e.target.innerText.toLowerCase().trim());
     FlowRouter.go('/section/overview');
   },
-  'click li#crswrk-top': function(e,t) {
+  'click li#ov-side': function(e,t) {
     e.preventDefault();
     FlowRouter.go('/section/overview');
   }
