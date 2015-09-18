@@ -1,6 +1,6 @@
-$blue-grey            : #89A5C2;
-$blue-grey-darker     : #516272;
-$blue-grey-ttbg       : #3C4854;
+$blue-grey            : #5B6E7F;
+$blue-grey-light      : #89A5C2;
+$blue-grey-dark       : #3C4854;
 $blue-grey-text       : #283038;
 $maroon               : #B2827E;
 $maroon-light         : #E4A7A2;
@@ -37,12 +37,12 @@ p.overview {
 
 /* education section*/
 div#education {
-  background: $blue-grey-darker;
+  background: $blue-grey;
 }
 
 h3#education {
-  text-shadow: 0px 1px 1px $blue-grey;
-  color: $blue-grey-ttbg;
+  text-shadow: 0px 1px 1px $blue-grey-light;
+  color: $blue-grey-dark;
 }
 
 p#education {
