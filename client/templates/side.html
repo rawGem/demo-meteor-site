@@ -7,10 +7,10 @@
 
       <ul class="hide-on-med-and-down links">
         <div class="row">
+          {{> aboutTopNavLink}}
           {{> educationTopNavLink}}
           {{> courseworkTopNavLink}}
           {{> overviewTopNavLink}}
-          {{> aboutTopNavLink}}
         </div>
       </ul>
       <ul id="slide-out" class="side-nav">
@@ -32,7 +32,7 @@
 </template>
 
 <template name="educationTopNavLink">
-        <li class="col l2 offset-l2 {{active}}" id="edu-top">
+        <li class="col l2 {{active}}" id="ab-top">
         <div class="top-link-container">
           <a class="center-align" href="#!">
             <!--<span>
@@ -71,7 +71,7 @@
 </template>
 
 <template name="aboutTopNavLink">
-        <li class="col l2 {{active}}" id="ab-top">
+        <li class="col l2 offset-l2 {{active}}" id="edu-top">
         <div class="top-link-container">
           <a class="center-align" href="#!">
             <!--<span>
