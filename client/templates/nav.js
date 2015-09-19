@@ -12,8 +12,11 @@ Template.side.onRendered( function() {
 Template.side.events({
   'click li#edu-side': function(e,t) {
     e.preventDefault();
-    //FlowRouter.go('/section/'+e.target.innerText.toLowerCase().trim());
     FlowRouter.go('/section/education');
+  },
+  'click li#ov-side': function(e,t) {
+    e.preventDefault();
+    FlowRouter.go('/section/overview');
   },
   'click li#crswrk-side': function(e,t) {
     e.preventDefault();
@@ -21,7 +24,6 @@ Template.side.events({
   },
   'click li#edu-top': function(e,t) {
     e.preventDefault();
-    //FlowRouter.go('/section/'+e.target.innerText.toLowerCase().trim());
     FlowRouter.go('/section/education');
   },
   'click li#crswrk-top': function(e,t) {
@@ -30,12 +32,11 @@ Template.side.events({
   },
   'click li#ov-top': function(e,t) {
     e.preventDefault();
-    //FlowRouter.go('/section/'+e.target.innerText.toLowerCase().trim());
     FlowRouter.go('/section/overview');
   },
-  'click li#ov-side': function(e,t) {
+  'click li#ab-top': function(e,t) {
     e.preventDefault();
-    FlowRouter.go('/section/overview');
+    FlowRouter.go('/about');
   }
 })
 
@@ -56,6 +57,14 @@ Template.courseworkTopNavLink.helpers({
 Template.overviewTopNavLink.helpers({
   active: function() {
     var bool = FlowRouter.getParam("name") == "overview" ? "true" : "false";
+    return "active-"+bool
+  }
+});
+
+Template.aboutTopNavLink.helpers({
+  active: function() {
+    console.log(FlowRouter.current().path);
+    var bool = FlowRouter.current().path == "/about" ? "true" : "false";
     return "active-"+bool
   }
 });

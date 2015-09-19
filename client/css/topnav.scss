@@ -129,6 +129,42 @@ li#ov-top.active-true {
   }
 }
 
+li#ab-top {
+  font-weight: 300;
+  letter-spacing: .05em;
+  height: 64px;
+  box-sizing: border-box;
+  background-color: white;
+  transition: border-bottom 100ms ease 0s;
+  a {
+    color: #696969;
+    &:hover {
+      font-weight: 400;
+    }
+  }
+}
+
+
+li#ab-top.active-false {
+  &:hover {
+    .top-link-container {
+      //border-bottom: $active-link-bb-width solid $medium-blue;
+      border-bottom: $active-link-bb-width solid $greenish-grey-darker;
+    }
+  }
+}
+
+li#ab-top.active-true {
+  .top-link-container {
+     //border-bottom: $active-link-bb-width solid $medium-blue;
+     border-bottom: $active-link-bb-width solid $greenish-grey-darker;
+  }
+  a {
+    font-weight: 500;
+    //color: $medium-blue;
+    color: $greenish-grey-darker;
+  }
+}
 
 
 
