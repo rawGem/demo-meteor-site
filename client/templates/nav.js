@@ -42,7 +42,6 @@ Template.side.events({
 Template.educationTopNavLink.helpers({
   active: function() {
     var bool = FlowRouter.getParam("name") == "education" ? "true" : "false";
-    console.log("education route is active? :: " + bool)
     return "active-"+bool
   }
 });
@@ -50,7 +49,6 @@ Template.educationTopNavLink.helpers({
 Template.courseworkTopNavLink.helpers({
   active: function() {
     var bool = FlowRouter.getParam("name") == "coursework" ? "true" : "false";
-    console.log("education route is active? :: " + bool)
     return "active-"+bool
   }
 });
@@ -58,7 +56,6 @@ Template.courseworkTopNavLink.helpers({
 Template.overviewTopNavLink.helpers({
   active: function() {
     var bool = FlowRouter.getParam("name") == "overview" ? "true" : "false";
-    console.log("overview route is active? :: " + bool)
     return "active-"+bool
   }
 });
