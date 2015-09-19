@@ -36,7 +36,7 @@ Template.side.events({
   },
   'click li#ab-top': function(e,t) {
     e.preventDefault();
-    FlowRouter.go('/about');
+    FlowRouter.go('/section/about');
   }
 })
 
@@ -63,8 +63,8 @@ Template.overviewTopNavLink.helpers({
 
 Template.aboutTopNavLink.helpers({
   active: function() {
-    console.log(FlowRouter.current().path);
-    var bool = FlowRouter.current().path == "/about" ? "true" : "false";
+    console.log("path: ", FlowRouter.current().path);
+    var bool = FlowRouter.getParam("name") == "about" ? "true" : "false";
     return "active-"+bool
   }
 });
