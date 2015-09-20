@@ -24,3 +24,12 @@ Template.cardContent.onRendered( function() {
     }); 
   }
 })
+
+Template.cardContent.helpers({
+  visitor: function() {
+  if (!Meteor.user()) return false;
+  else {
+    return true;
+  }
+ }
+})

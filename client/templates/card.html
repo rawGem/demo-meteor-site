@@ -6,7 +6,9 @@
     <h5>Topics</h5><p>python, pymongo, bash</p>
     <h5>Tools</h5><p>{{text_region}}</p>
   </div>
-  {{> thumbs}}
+  {{#if visitor}}
+    {{> thumbs}}
+  {{/if}}
 </div>
 </div>
 </template>
