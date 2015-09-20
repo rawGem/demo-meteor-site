@@ -18,7 +18,8 @@ Template.cardContent.events({
 Template.cardContent.onRendered( function() {
   if (Meteor.userId()) {
     $(document).ready(function(){
-      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      // the "href" attribute of .modal-trigger must 
+      // specify the modal ID that wants to be triggered
       $('.modal-trigger').leanModal();
     }); 
   }
