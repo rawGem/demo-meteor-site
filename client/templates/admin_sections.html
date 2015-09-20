@@ -1,13 +1,16 @@
 <template name="adminSections">
  {{#each sections}}
-  {{> adminSection}}
+   {{#each subsections}}
+    {{> adminSection}}
+   {{/each}}
  {{/each}}
 </template>
 
 <template name="adminSection">
 <div class="container">
 <div class="row">
-<div class="col l12 m12 s12">
+<div class="col l12 m12 s12 z-depth-1">
+  <h1 class="center-align">{{heading}}</h1>
 </div>
 </div>
 </div>
