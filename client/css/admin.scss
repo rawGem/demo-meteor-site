@@ -1,0 +1,13 @@
+@import "colors.scss";
+
+h3.title {
+  color: red;
+}
+
+div.admin-sec {
+  background-color: white;
+  h3 {
+    color: $bright;
+  }
+}
+
