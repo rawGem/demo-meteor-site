@@ -5,7 +5,6 @@ Template.side.onRendered( function() {
   $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 10});
   });
-  //d3MakeBlIcon();
 });
 
 
@@ -69,14 +68,3 @@ Template.aboutTopNavLink.helpers({
   }
 });
 
-
-function d3MakeBlIcon() {
-  var svg = d3.select("div.bl-icon").append("svg")
-               .attr("width", 20)
-               .attr("height", 20)
-
-  var blocks = svg.append("rect")
-                   .attr("width", 20)
-                   .attr("height", 20)
-                   .style("fill", "white")
-}
