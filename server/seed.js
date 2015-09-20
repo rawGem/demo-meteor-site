@@ -42,4 +42,15 @@ Meteor.startup(function(){
         ]
       });
   }
+  if (Meteor.users.find({username : "sjb"}).count() === 0) {
+    var options = { 
+                    email : "me@here.now",
+                    username : "sjb",
+                    password : "apple8",
+                    profile : { admin : true }
+                  }
+
+    Accounts.createUser(options)
+    console.log("created admin user")
+  }
 });
