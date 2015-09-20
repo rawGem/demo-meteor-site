@@ -1,15 +1,15 @@
-Template.adminSections.onRendered( function() {
+Template.admin.onRendered( function() {
   var instance = this;
-  instance.autorun(function() {
-    instance.subscribe('sections');
+  this.autorun(function() {
+    instance.subscribe('allsections');
   })
 });
 
 Template.adminSections.helpers({
   sections: function() {
-        if (!Meteor.user()) { //add admin check
-            return null
-        }
-        return Sections.find()
+      if (!Meteor.user()) { //add admin check
+        return null;
+      }
+      return Sections.find();
     }
 });
