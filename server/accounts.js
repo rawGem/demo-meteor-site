@@ -1,5 +1,5 @@
 Accounts.onCreateUser(function(options, user) {
-   if (options && !options.profile.admin ) { 
+   if (!options.hasOwnProperty("profile")) { 
      console.log("this must not be an admin");
      user.profile = {admin: false}
      return user
