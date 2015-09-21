@@ -1,4 +1,10 @@
 <template name="admin">
  <h3 class="center-align title">ADMIN</h3>
- {{> adminSections }}
+ {{#if Template.subscriptionsReady}}
+   {{#if admin}}
+     {{> adminSections }}
+   {{/if}}
+ {{else}}
+   <div class="center-align">Loading...</div>
+ {{/if}}
 </template>

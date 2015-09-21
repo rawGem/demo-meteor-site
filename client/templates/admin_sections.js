@@ -5,6 +5,14 @@ Template.admin.onRendered( function() {
   })
 });
 
+Template.admin.helpers({
+  admin: function() {
+    if (Meteor.userId()) {
+      return Meteor.user().profile.admin
+    } else FlowRouter.go("/sign-in");
+  }
+});
+
 Template.adminSections.helpers({
   sections: function() {
       if (!Meteor.user()) { //add admin check
