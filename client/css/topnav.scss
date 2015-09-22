@@ -186,7 +186,8 @@ nav.top {
 }
 
 nav.bottom {
-  box-shadow: 0px 10px 5px -8px rgba(0, 0, 0, 0.16), 0px 10px 10px -8px rgba(0, 0, 0, 0.12)
+  box-shadow: 0px 10px 5px -8px rgba(0, 0, 0, 0.16), 0px 10px 10px -8px rgba(0, 0, 0, 0.12);
+  background-color: $greenish-grey-darker !important;
 }
 
 nav.banner {
