@@ -13,6 +13,16 @@ li .top-link-container {
   transition: border-bottom 100ms ease 0s;
 }
 
+.top-link-container {
+  a {
+    font-size: 18px;
+    color: $greenish-grey; 
+    &:hover {
+      color: $bright;
+    }
+  }
+}
+
 li#crswrk-top {
   font-weight: 300;
   letter-spacing: .05em;
@@ -20,13 +30,6 @@ li#crswrk-top {
   box-sizing: border-box;
   background-color: white;
   transition: border-bottom 100ms ease 0s;
-  a {
-    color: $greenish-grey; 
-    &:hover {
-      color: $bright;
-    }
-  }
-  
 }
 
 li#crswrk-top.active-true {
@@ -57,12 +60,6 @@ li#edu-top {
   box-sizing: border-box;
   background-color: white;
   transition: border-bottom 100ms ease 0s;
-  a {
-    color: $greenish-grey;
-    &:hover {
-      color: $bright;
-    }
-  }
 }
 
 
@@ -99,12 +96,6 @@ li#ov-top {
   box-sizing: border-box;
   background-color: white;
   transition: border-bottom 100ms ease 0s;
-  a {
-    color: $greenish-grey;
-    &:hover {
-      color: $bright;
-    }
-  }
 }
 
 
@@ -136,12 +127,6 @@ li#ab-top {
   box-sizing: border-box;
   background-color: white;
   transition: border-bottom 100ms ease 0s;
-  a {
-    color: $greenish-grey;
-    &:hover {
-      color: $bright;
-    }
-  }
 }
 
 
@@ -247,3 +232,5 @@ svg {
 li {
   background-color: $greenish-grey-darker !important;
 }
+
+ 
