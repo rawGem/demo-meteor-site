@@ -28,22 +28,17 @@ li.top-nav {
   background-color: white;
 }
 
-li.top-nav.active-true {
-  .top-link-container {
-     border-bottom: $active-link-bb-width solid $bright;
-  }
+div.top-link-container.active-true {
+  border-bottom: $active-link-bb-width solid $bright;
   a {
     font-weight: 400;
     color: $bright;
   }
 }
 
-li.top-nav.active-false {
+div.top-link-container.active-false {
   &:hover {
-    .top-link-container {
-       //border-bottom: $active-link-bb-width solid $ocean-blue;
-       border-bottom: $active-link-bb-width solid $bright;
-    }
+     border-bottom: $active-link-bb-width solid $bright;
   }
 }
 
