@@ -176,11 +176,11 @@ li#ab-top.active-true {
 
 
 .navbar-fixed.top {
-  height: 200px;
+  height: 100px;
 }
 
 nav.top {
-  height: 200px;
+  height: 100px;
   background-color: $greenish-grey-darker !important;
   z-index: 1002;
 }
@@ -190,7 +190,7 @@ nav.bottom {
 }
 
 nav.banner {
-  height: 222px;
+  height: 122px;
 }
 
 nav .banner-name {
@@ -225,7 +225,7 @@ div.bl-icon {
 #sclicons {
   position: absolute;
   left: 15px;
-  top: 60px;
+  bottom: 60px;
   height: 45px;
   line-height: 1.2em;
 }
