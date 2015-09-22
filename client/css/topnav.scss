@@ -38,39 +38,11 @@ li.top-nav.active-true {
   }
 }
 
-
-li#crswrk-top.active-false {
+li.top-nav.active-false {
   &:hover {
     .top-link-container {
        //border-bottom: $active-link-bb-width solid $ocean-blue;
        border-bottom: $active-link-bb-width solid $bright;
-    }
-  }
-}
-
-li#edu-top.active-false {
-  &:hover {
-    .top-link-container {
-      //border-bottom: $active-link-bb-width solid $medium-blue;
-      border-bottom: $active-link-bb-width solid $bright;
-    }
-  }
-}
-
-li#ov-top.active-false {
-  &:hover {
-    .top-link-container {
-      //border-bottom: $active-link-bb-width solid $medium-blue;
-      border-bottom: $active-link-bb-width solid $bright;
-    }
-  }
-}
-
-li#ab-top.active-false {
-  &:hover {
-    .top-link-container {
-      //border-bottom: $active-link-bb-width solid $medium-blue;
-      border-bottom: $active-link-bb-width solid $bright;
     }
   }
 }
