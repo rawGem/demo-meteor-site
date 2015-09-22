@@ -217,15 +217,17 @@ nav .banner-name {
 }
 
 div.bl-icon {
-  margin-left: 8px;
-  display: inline-block;
+  margin-left: 0px;
+  margin-bottom: 2px;
+  //display: inline-block;
 }
 
 #sclicons {
   position: absolute;
-  left: 45%;
-  top: 5px;
-  height: 55px;
+  left: 2%;
+  top: 60px;
+  height: 45px;
+  line-height: 1.2em;
 }
 
 path {
