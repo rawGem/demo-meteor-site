@@ -6,14 +6,11 @@ $active-link-bb-width : 3px;
   background-color: $greenish-grey-ttbg !important;  
 }
 
-li .top-link-container {
+.top-link-container {
   height: inherit;
   box-sizing: border-box;
   width: 150px;
   transition: border-bottom 100ms ease 0s;
-}
-
-.top-link-container {
   a {
     font-size: 18px;
     color: $greenish-grey; 
