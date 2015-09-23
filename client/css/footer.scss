@@ -14,7 +14,7 @@ footer.page-footer {
   //margin-left: auto;
   //margin-right: auto;
   bottom: 50px;
-  height: 45px;
+  height: 65px;
   line-height: 1.2em;
 }
 
@@ -42,5 +42,17 @@ svg {
     path {
       stroke: white; 
     }
+  }
+}
+
+.fa-github {
+  display: inline-block;
+  font-size: 57px;
+  position: relative;
+  bottom: 4px;
+  color: $greenish-grey;
+  &:hover {
+    color: white;
+    cursor: pointer;
   }
 }
