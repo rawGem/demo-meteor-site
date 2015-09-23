@@ -1,4 +1,5 @@
 Session.setDefault("sectionSession", null);
+BlazeLayout.setRoot('body');
 
 Template.sections.onRendered( function() {
   var instance = this;
