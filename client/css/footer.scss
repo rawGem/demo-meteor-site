@@ -23,3 +23,20 @@ div.bl-icon-hoz {
   margin-bottom: 2px;
   display: inline-block;
 }
+
+path {
+  stroke: $greenish-grey;
+}
+
+path#block {
+  stroke: $medium-blue; 
+}
+
+svg {
+  &:hover {
+    cursor: pointer;
+    path {
+      stroke: white; 
+    }
+  }
+}
