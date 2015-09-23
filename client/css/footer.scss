@@ -1,12 +1,18 @@
 @import "colors.scss";
 
 footer.page-footer {
-  margin-top: 50px;
+  margin-top: 100px;
   background-color: $greenish-grey-darker;
-  h2 {
-    color: $greenish-grey-darker;
+  h1 {
+    font-weight: 200;
+    color: white;
   }
   //height: 125px;
+}
+
+.footer-copyright {
+  padding-top: 20px;
+  height: 100px !important;
 }
 
 #hsclicons {
