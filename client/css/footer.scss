@@ -32,6 +32,10 @@ path#block {
   stroke: $medium-blue; 
 }
 
+path#ce {
+  stroke: $medium-blue; 
+}
+
 svg {
   &:hover {
     cursor: pointer;
