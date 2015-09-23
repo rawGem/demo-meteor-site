@@ -2,26 +2,52 @@
 <footer class="page-footer">
 <div class="container">
 <div class="row">
-<div class="col l6 s12">
-<h5 class="white-text">Footer Content</h5>
-<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-</div>
-<div class="col l4 offset-l2 s12">
-<h5 class="white-text">Links</h5>
-<ul>
-<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-</ul>
-</div>
+  {{> footerSample}}
 </div>
 </div>
 <div class="footer-copyright">
-<div class="container">
-© 2014 Copyright Text
-<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-</div>
 </div>
 </footer>
 </template>
+
+
+<template name="footerSample">
+<div class="col l12 m12 s12">
+<h2>FILLER</h2>
+</div>
+<div class="col l12 m12 s12 center-align">
+  {{> hsclIcons}}
+</div>
+</template>
+
+
+<template name="hsclIcons">
+<div id="hsclicons">
+  <a href="https://www.github.com/sjbrowne">
+    <i class="fa fa-github tooltipped" data-position="left" data-delay="10" data-tooltip="github"></i>
+  </a>
+  <div class="bl-icon-hoz">
+ <svg class="tooltipped" data-position="left" data-delay="10" data-tooltip="bl.ocks"
+      xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0, 0, 600, 600">
+      <a xlink:href="http://bl.ocks.org/rawGem">
+      <g stroke="#000" stroke-width="41" fill="none">
+      <path d="M47.065 351.794h208.57v208.568H47.064V351.794zM345.366 351.794h208.57v208.568h-208.57V351.794zM192.898 68.638h208.57v208.568h-208.57V68.638z"/>
+      </g>
+      </a>
+  </svg> 
+  </div> 
+  <div class="bl-icon-hoz">
+<!--a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">Hover me!</a>-->
+  <svg  class="tooltipped" data-position="left" data-delay="10" data-tooltip="CodeEval"
+        width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+        <a xlink:href="https://www.codeeval.com">
+        <g fill="none" stroke="#000">
+        <path d="M27.1 15.02A12.1 11.8 0 0 1 15 26.82 12.1 11.8 0 0 1 2.9 15 12.1 11.8 0 0 1 15 3.22a12.1 11.8 0 0 1 12.1 11.8z" stroke-width="5.06"/>
+        <path d="M25.17 12.1h-8.04V7.43l-5.2 7.24 5.18 7.92.14-4.7 8.16.1 1.77-1.5" stroke-width="1.9"/>
+        </g>
+        </a>
+  </svg>
+  </div> 
+</div>
+</template>
+
