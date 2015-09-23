@@ -26,7 +26,10 @@ li.top-nav {
   letter-spacing: .05em;
   height: 64px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: $greenish-grey-darker;
+  &:hover {
+    background-color: $greenish-grey-darker;
+  }
 }
 
 div.top-link-container.active-true {
@@ -122,8 +125,5 @@ svg {
   }
 }
 
-li {
-  background-color: $greenish-grey-darker !important;
-}
 
  
