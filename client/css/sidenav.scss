@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .side-nav a {
   color: white; 
 }
@@ -9,6 +11,9 @@ li.nav-side {
   border-bottom: 1px solid #ececec;
   a {
     color: #696969; 
+  }
+  &:hover {
+    background-color: $light-grey;
   }
 }
 
