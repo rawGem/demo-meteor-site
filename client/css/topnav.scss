@@ -112,18 +112,5 @@ div.bl-icon {
   line-height: 1.2em;
 }
 
-path {
-  stroke: $greenish-grey;
-}
-
-svg {
-  &:hover {
-    cursor: pointer;
-    path {
-      stroke: white; 
-    }
-  }
-}
-
 
  
