@@ -21,6 +21,10 @@ Template.side.events({
     e.preventDefault();
     FlowRouter.go('/section/coursework');
   },
+  'click li#ab-side': function(e,t) {
+    e.preventDefault();
+    FlowRouter.go('/section/about');
+  },
   'click li#edu-top': function(e,t) {
     e.preventDefault();
     FlowRouter.go('/section/education');
