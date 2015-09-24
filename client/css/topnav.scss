@@ -17,7 +17,7 @@ $active-link-bb-width : 3px;
     color: white; 
     padding: 0;
     &:hover {
-      color: $bright;
+      //color: $bright;
     }
   }
 }
@@ -36,8 +36,8 @@ li.top-nav {
 div.top-link-container.active-true {
   border-bottom: $active-link-bb-width solid $bright;
   a {
-    font-weight: 400;
-    color: $bright;
+    //font-weight: 400;
+    color: $icon-grey;
   }
 }
 
