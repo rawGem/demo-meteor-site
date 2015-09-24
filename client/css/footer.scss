@@ -51,9 +51,6 @@ path {
 path#ce {
   fill: $icon-grey;
   stroke: none;
-  &:hover {
-    fill: white;
-  }
 }
 
 svg {
@@ -61,6 +58,13 @@ svg {
     cursor: pointer;
     path {
       stroke: white; 
+    }
+  }
+  &.ce {
+    &:hover {
+      path#ce {
+        fill: white;
+      }
     }
   }
 }
