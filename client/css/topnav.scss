@@ -15,6 +15,7 @@ $active-link-bb-width : 3px;
     font-size: 16px;
     font-weight: 200;
     color: white; 
+    padding: 0;
     &:hover {
       color: $bright;
     }
@@ -110,6 +111,22 @@ div.bl-icon {
   bottom: 85px;
   height: 45px;
   line-height: 1.2em;
+}
+
+li#ab-top .top-link-container {
+  width: 80px;
+}
+
+li#edu-top .top-link-container {
+  width: 105px;
+}
+
+li#crswrk-top .top-link-container {
+  width: 120px;
+}
+
+li#ov-top .top-link-container {
+  width: 100px;
 }
 
 
