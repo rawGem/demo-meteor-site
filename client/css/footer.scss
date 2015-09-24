@@ -35,6 +35,14 @@ path {
   stroke: $icon-grey;
 }
 
+path#ce {
+  fill: $icon-grey;
+  stroke: none;
+  &:hover {
+    fill: white;
+  }
+}
+
 /*path#block {
   stroke: $medium-blue; 
 }
