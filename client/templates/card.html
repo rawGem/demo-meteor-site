@@ -17,28 +17,33 @@
 <div class="card-action white thumbs">
     <div class="row thumbs">
       {{> thumbsUp}}
-      {{> message}}
-      {{> messageForm}}
+      {{> msgIcon}}
+      {{> messageForm title=heading votes=upvotes}}
     </div>
   </div>
 </template>
 
 <template name="messageForm">
 <div class="row">
-       <div id="modal1" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
-          <div class="modal-content">
-            <section id="message-modal" contenteditable="true">
-              <h4>Enter a title</h4>
-              Edit me!
-            </section>
-          </div>
-          <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
-              Send<i class="fa fa-paper-plane"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+<div id="modal1" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
+<div class="modal-content">
+  <section class="title" id="message-modal">
+    <h5>Subject: {{title}} | {{votes}}</h5>
+  </section>
+  <section 
+     class="content"  
+     id="message-modal" 
+     contenteditable="true">
+    Edit me.
+  </section>
+</div>
+<div class="modal-footer">
+  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
+    Send<i class="fa fa-paper-plane"></i>
+  </a>
+</div>
+</div>
+</div>
 </template>
 
 <template name="thumbsDown">
@@ -65,7 +70,7 @@
 </a>
 </template>
 
-<template name="message">
+<template name="msgIcon">
 <a href="#modal1" class="col l2 m2 s2 modal-trigger" id="env">
   <i class="fa fa-envelope-o fa-lg"></i>
 </a>

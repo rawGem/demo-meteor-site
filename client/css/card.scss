@@ -53,3 +53,23 @@ h5 {
 .card-action .fa:hover {
   color: #516272;
 }
+
+section.title {
+  height: 33px !important;
+  border-bottom: 1px solid $icon-grey;
+  margin-bottom: 20px;
+  h5 {
+    color: black;
+    font-size: 18px;
+  }
+}
+
+section.content {
+  background-color: #EFEFEF;
+  &:focus {
+    outline: none;
+    border: 1px solid $icon-grey;
+    background-color: white;
+    color: darkgrey;
+  }
+}
