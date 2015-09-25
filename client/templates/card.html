@@ -19,7 +19,7 @@
       {{> thumbsUp}}
 
 
-<a href="#modal-{{heading}}-{{sindex}}" class="col l2 m2 s2 modal-trigger {{subject}}-{{sindex}}" id="env">
+<a href="#modal-{{heading_id}}-{{sindex}}" class="col l2 m2 s2 modal-trigger " id="env">
   <i class="fa fa-envelope-o fa-lg"></i>
 </a>
 
@@ -30,7 +30,7 @@
 
 <template name="messageForm">
 <div class="row">
-<div id="modal-{{heading}}-{{sindex}}" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
+<div id="modal-{{heading_id}}-{{sindex}}" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
 <div class="modal-content">
   <section class="title" id="message-modal">
     <h5>Subject: {{title}} | {{votes}}</h5>
