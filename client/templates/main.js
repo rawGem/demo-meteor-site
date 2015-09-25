@@ -11,6 +11,13 @@ Template.sections.onRendered( function() {
 
 Template.sections.helpers({
   sections: function() {
-    return Sections.find();
+    var sections =  Sections.find().map(function(item, index) {
+      _.each(item.subsections, function(subsection, sindex) {
+        subsection.sindex = sindex
+      })
+      return item
+    })
+    console.log("sections w/map ", sections)
+    return sections
   }
 });
