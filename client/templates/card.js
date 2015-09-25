@@ -20,7 +20,13 @@ Template.cardContent.onRendered( function() {
     $(document).ready(function(){
       // the "href" attribute of .modal-trigger must 
       // specify the modal ID that wants to be triggered
-      $('.modal-trigger').leanModal();
+      Sections.find().forEach(function(item, index, cursor) {
+          _.each(item.subsections, function(subsec, sbindex) {
+          console.log("identifier ",subsec.heading_id+'-'+sbindex);
+            var identifier = '#'+subsec.heading_id+'-'+sbindex;
+            $(identifier).leanModal();
+          });
+      });
     }); 
   }
 })

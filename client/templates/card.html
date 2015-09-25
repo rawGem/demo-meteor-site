@@ -19,18 +19,20 @@
       {{> thumbsUp}}
 
 
-<a href="#modal-{{heading_id}}-{{sindex}}" class="col l2 m2 s2 modal-trigger " id="env">
+<a href="#modal{{heading_id}}" class="col l2 m2 s2 modal-trigger " id="{{heading_id}}-{{sindex}}">
+<!--<a href="#modal-cs101-0" class="col l2 m2 s2 modal-trigger " id="cs101-0">-->
   <i class="fa fa-envelope-o fa-lg"></i>
 </a>
 
-      {{> messageForm title=heading votes=upvotes}}
+      {{> messageForm heading_id=heading_id votes=upvotes}}
     </div>
   </div>
 </template>
 
 <template name="messageForm">
 <div class="row">
-<div id="modal-{{heading_id}}-{{sindex}}" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
+<div id="modal{{heading_id}}" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet {{heading_id}}">
+<!--<div id="modal-cs101-0" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">-->
 <div class="modal-content">
   <section class="title" id="message-modal">
     <h5>Subject: {{title}} | {{votes}}</h5>
