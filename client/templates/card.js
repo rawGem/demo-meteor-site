@@ -1,4 +1,5 @@
 Template.cardContent.events({
+
   'click i.fa.fa-thumbs-o-up' : function(e,t) {
     e.preventDefault();
     if (Meteor.userId()) {
@@ -6,12 +7,25 @@ Template.cardContent.events({
                 [Template.parentData()._id, t.data.heading])
     }
   },
+
   'click i.fa.fa-thumbs-o-down' : function(e,t) {
     e.preventDefault();
     if (Meteor.userId()) {
         Meteor.call('downvoteWithHeadingField', 
                 [Template.parentData()._id, t.data.heading])
     }
+  },
+
+  'click i.fa-paper-plane' : function(e,t) {
+    console.log("send ", e);
+    console.log("send ", t.$("section.content"));
+    var text = t.$("section.content")
+    Messages.insert( {
+                       author : Meteor.userId(),  
+                       date   : new Date(),
+                       text   : text["0"].innerText
+                      })
+    text["0"].innerText = "Edit me."
   }
 });
 
