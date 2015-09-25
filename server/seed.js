@@ -10,12 +10,14 @@ Meteor.startup(function(){
         subsections : [
           {
             heading     : "School 1",
+            heading_id  : "school1",
             text_region : "i lernt da codez",
             upvotes     : 5,
             downvotes   : 1
           },
           {
             heading     : "School 2",
+            heading_id  : "school2",
             text_region : "lernt moar cdez",
             upvotes     : 10,
             downvotes   : 0
@@ -28,13 +30,15 @@ Meteor.startup(function(){
         subject     : "coursework",
         subsections : [
           {
-            heading     : "cs101",
+            heading     : "CS 101",
+            heading_id  : "cs101",
             text_region : "i lernt da codez",
             upvotes     : 0,
             downvotes   : 0
           },
           {
-            heading     : "cs102",
+            heading     : "CS 102",
+            heading_id  : "cs102",
             text_region : "lernt moar cdez",
             upvotes     : 0,
             downvotes   : 0
