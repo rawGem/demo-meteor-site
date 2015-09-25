@@ -19,9 +19,10 @@ Template.cardContent.events({
   'click i.fa-paper-plane' : function(e,t) {
     var text = t.$("section.content")
     Messages.insert( {
-                       author : Meteor.userId(),  
-                       date   : new Date(),
-                       text   : text["0"].innerText
+                       author_id      : Meteor.userId(),  
+                       heading_id  : t.data.heading_id,
+                       date        : new Date(),
+                       text        : text["0"].innerText
                       })
     text["0"].innerText = "Edit me."
   }
