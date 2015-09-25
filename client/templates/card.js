@@ -17,8 +17,6 @@ Template.cardContent.events({
   },
 
   'click i.fa-paper-plane' : function(e,t) {
-    console.log("send ", e);
-    console.log("send ", t.$("section.content"));
     var text = t.$("section.content")
     Messages.insert( {
                        author : Meteor.userId(),  
