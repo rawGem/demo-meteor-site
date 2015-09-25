@@ -18,7 +18,13 @@
     <div class="row thumbs">
       {{> thumbsUp}}
       {{> message}}
-      <div class="row">
+      {{> messageForm}}
+    </div>
+  </div>
+</template>
+
+<template name="messageForm">
+<div class="row">
        <div id="modal1" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
           <div class="modal-content">
             <section id="message-modal" contenteditable="true">
@@ -33,8 +39,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </template>
 
 <template name="thumbsDown">
