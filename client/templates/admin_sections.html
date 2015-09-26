@@ -11,10 +11,17 @@
 <div class="row">
 <div class="admin-sec col l12 m12 s12 z-depth-1">
   <h3 class="center-align">{{heading}}</h3>
-  <div><span>title: </span>placeholder</div>
-  <div><span>title: </span>placeholder</div>
-  <div><span>title: </span>placeholder</div>
+  {{> messageList messages=messages}}
 </div>
 </div>
 </div>
+</template>
+
+<template name="messageSection">
+</template>
+
+<template name="messageList">
+ {{#each messages}}
+  <div><span>{{ date }} | {{ author_id }} : </span>{{ text }}</div>
+ {{/each}}
 </template>
