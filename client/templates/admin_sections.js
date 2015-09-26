@@ -42,7 +42,6 @@ Template.adminSection.helpers({
   messages : 
     function() {
         data = Template.currentData();
-        //messages = Messages.find({heading_id : data.heading_id}).fetch()
         messages = Messages.find({ heading_id : data.heading_id })
         return messages
     }
