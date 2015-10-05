@@ -50,6 +50,10 @@ h3#education {
 
 p#education {
   color: $blue-grey-text;
+  span {
+    padding-left: 20px;
+    font-size: 26px; 
+  }
 }
 
 /* tools section*/
@@ -97,5 +101,6 @@ div#experience {
 p#experience {
   color: $yellow-text;
 }
+
 
 
