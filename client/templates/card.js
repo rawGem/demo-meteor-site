@@ -35,7 +35,6 @@ Template.cardContent.onRendered( function() {
       // specify the modal ID that wants to be triggered
       Sections.find().forEach(function(item, index, cursor) {
           _.each(item.subsections, function(subsec, sbindex) {
-          console.log("identifier ",subsec.heading_id+'-'+sbindex);
             var identifier = '#'+subsec.heading_id+'-'+sbindex;
             $(identifier).leanModal();
           });

@@ -43,10 +43,16 @@ Template.side.events({
   }
 })
 
+Template.adminTopNavLink.events({
+  'click': function(e,t) {
+    e.preventDefault();
+    FlowRouter.go('/admin');
+  }
+})
+
 Template.side.helpers({
   admin: function() {
     if (Meteor.user() && Meteor.userId()) {
-      console.log("checking admin for nav")
       return Meteor.user().profile.admin 
     }
   }
@@ -75,7 +81,6 @@ Template.overviewTopNavLink.helpers({
 
 Template.aboutTopNavLink.helpers({
   active: function() {
-    console.log("path: ", FlowRouter.current().path);
     var bool = FlowRouter.getParam("name") == "about" ? "true" : "false";
     return "active-"+bool
   }
