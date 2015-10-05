@@ -43,6 +43,15 @@ Template.side.events({
   }
 })
 
+Template.side.helpers({
+  admin: function() {
+    if (Meteor.user() && Meteor.userId()) {
+      console.log("checking admin for nav")
+      return Meteor.user().profile.admin 
+    }
+  }
+})
+
 Template.educationTopNavLink.helpers({
   active: function() {
     var bool = FlowRouter.getParam("name") == "education" ? "true" : "false";

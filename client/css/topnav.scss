@@ -105,6 +105,17 @@ div.bl-icon {
   top: 0px;
 }
 
+.admin-top-link {
+   position: absolute;
+   right: 50px;
+   top: 0px;
+   font-size: 12px;
+   color: #FF473C;
+   &:hover {
+     color: #FF9479;
+   }
+}
+
 #vsclicons {
   position: absolute;
   right: 20px;

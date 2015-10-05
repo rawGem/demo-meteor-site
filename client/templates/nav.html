@@ -1,7 +1,11 @@
 <template name="side">
   <div class="navbar-fixed">
     <nav class="bottom">
-          {{> atNavButton}}
+          {{> atNavButton}} 
+          {{#if admin}}
+              {{> adminTopNavLink}}
+          {{/if}}
+
       <ul class="hide-on-med-and-down links">
         <div class="row">
           {{> aboutTopNavLink}}
@@ -20,6 +24,16 @@
     </nav>
   </div>
 </template>
+
+
+
+<template name="adminTopNavLink">
+          <a class="admin-top-link" href="">
+            Admin
+          </a>
+</template>
+
+
 
 <template name="educationTopNavLink">
         <li class="top-nav col l2" id="edu-top">
