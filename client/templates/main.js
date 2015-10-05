@@ -17,7 +17,6 @@ Template.sections.helpers({
       })
       return item
     })
-    console.log("sections w/map ", sections)
     return sections
   }
 });

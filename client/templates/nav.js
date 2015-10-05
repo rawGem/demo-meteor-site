@@ -46,7 +46,10 @@ Template.side.events({
 Template.adminTopNavLink.events({
   'click': function(e,t) {
     e.preventDefault();
-    FlowRouter.go('/admin');
+    if (Meteor.user()) {
+       if (Meteor.user().profile.admin)
+          FlowRouter.go('/admin/'+"adminsecretkey");
+    }
   }
 })
 
