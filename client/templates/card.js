@@ -44,10 +44,17 @@ Template.cardContent.onRendered( function() {
 })
 
 Template.cardContent.helpers({
+
   visitor: function() {
   if (!Meteor.user()) return false;
   else {
     return true;
   }
- }
+  },
+
+  withUser: function() {
+    console.log( "withUser helper", Meteor.user());
+    return Meteor.user() ? "with-user" : ""; 
+  }
+ 
 })

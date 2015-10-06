@@ -1,9 +1,14 @@
 @import "colors.scss";
 
-.mycard {
+.mycard.with-user {
   //border-left: solid 5px $greenish-grey-darker;
   background-color: white;
   margin-bottom: 0px;
+}
+
+.mycard {
+  //border-left: solid 5px $greenish-grey-darker;
+  background-color: white;
 }
 
 .msg-icon {
