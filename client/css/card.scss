@@ -1,9 +1,24 @@
 @import "colors.scss";
 
 .mycard {
-  border-left: sold 5px $greenish-grey-darker;
+  border-left: solid 5px $greenish-grey-darker;
   background-color: white;
+  margin-bottom: 0px;
 }
+
+.thumb-container {
+  background-color: $brown;
+}
+
+.msg-icon {
+  background-color: yellow; 
+}
+
+#t-up {
+  background-color: purple;
+}
+
+
 
 .card-title {
   /*color: #B8ADB2 !important;*/

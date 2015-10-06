@@ -3,22 +3,19 @@
 <div class="card white small ">
   <div class="card-content">-->
 
-<div class="container" id="main">
-<div class="row">
-<div class="mycard col l12 m12 s12 z-depth-0">
+<div class="row mycard">
+<div class="col l12 m12 s12 z-depth-0">
     <span class="card-title">{{heading}}</span>
     <h5>Topics</h5><p>python, pymongo, bash</p>
     <h5>Tools</h5><p>{{text_region}}</p>
-  </div>
+</div>
+</div>
   {{#if visitor}}
     {{> thumbs}}
   {{/if}}
-</div>
-</div>
 </template>
 
 <template name="thumbs">
-<div class="card-action white thumbs">
     <div class="row thumbs">
       {{> thumbsUp}}
 
@@ -26,13 +23,38 @@
 
       {{> messageForm heading_id=heading_id heading=heading}}
     </div>
-  </div>
 </template>
+
+
+
+
+<template name="thumbsUp">
+<div class="col l4 m6 s6 center-align" id="t-up">
+  <a href="" class="">
+    <i class="fa fa-thumbs-o-up fa-lg"></i>
+  </a>
+  {{upvotes}}
+</div>
+</template>
+
+
+
+<template name="msgIcon">
+<a href="#modal{{heading_id}}" 
+   class="col l4 m6 s6 modal-trigger msg-icon" 
+   id="{{heading_id}}-{{sindex}}">
+<i class="fa fa-envelope-o fa-lg"></i>
+</a>
+</template>
+
+
+
 
 <template name="messageForm">
 <div class="row">
-<div id="modal{{heading_id}}" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
-<!--<div id="modal-cs101-0" class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">-->
+<div 
+  id="modal{{heading_id}}" 
+  class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
 <div class="modal-content">
   <section class="title" id="message-modal">
     <h5>Subject: {{heading}} </h5>
@@ -53,8 +75,10 @@
 </div>
 </template>
 
+
+<!-- currently not in use --> 
 <template name="thumbsDown">
-<div class="col l3 m2 s3" id="t-dwn">
+<div class="col l6 m6 s6" id="t-dwn">
   <a href="">
     <i class="fa fa-thumbs-o-down fa-lg"></i>
   </a>
@@ -62,24 +86,9 @@
 </div>
 </template>
 
-<template name="thumbsUp">
-<div class="col l3 m2 s3 offset-l3 offset-m4 offset-s3" id="t-up">
-  <a href="">
-    <i class="fa fa-thumbs-o-up fa-lg"></i>
-  </a>
-  {{upvotes}}
-</div>
-</template>
-
 <template name="comment">
-<a href="#" class="col l2  m2 s2" id="cmnt">
+<a href="#" class="col l2 m2 s2" id="cmnt">
   <i class="fa fa-comment fa-lg"></i>
 </a>
 </template>
 
-<template name="msgIcon">
-<a href="#modal{{heading_id}}" class="col l2 m2 s2 modal-trigger " id="{{heading_id}}-{{sindex}}">
-<!--<a href="#modal-cs101-0" class="col l2 m2 s2 modal-trigger " id="cs101-0">-->
-  <i class="fa fa-envelope-o fa-lg"></i>
-</a>
-</template>
