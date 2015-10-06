@@ -1,5 +1,10 @@
 @import "colors.scss";
 
+.mycard {
+  border-left: sold 5px $greenish-grey-darker;
+  background-color: white;
+}
+
 .card-title {
   /*color: #B8ADB2 !important;*/
   color: $bright !important;

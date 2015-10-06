@@ -46,7 +46,7 @@ Meteor.startup(function(){
         ]
       });
   }
-  if (Meteor.users.find({username : "sjb"}).count() === 0) {
+  if (Meteor.users.find({username : "admin"}).count() === 0) {
     var options = { 
                     email : "admin@this.domain",
                     username : "admin",
