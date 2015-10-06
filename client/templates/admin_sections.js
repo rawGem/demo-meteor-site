@@ -21,3 +21,10 @@ Template.adminSections.helpers({
       return Sections.find();
     }
 });
+
+Template.admin.events({
+  'click a': function(e,t) {
+    e.preventDefault();
+    FlowRouter.go(FlowRouter._previous);
+  }
+})
