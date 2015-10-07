@@ -1,12 +1,5 @@
 Template.cardContent.events({
 
-  'click i.fa.fa-thumbs-o-up' : function(e,t) {
-    e.preventDefault();
-    if (Meteor.userId()) {
-        Meteor.call('upvoteWithHeadingField', 
-                [Template.parentData()._id, t.data.heading])
-    }
-  },
 
   'click i.fa.fa-thumbs-o-down' : function(e,t) {
     e.preventDefault();
@@ -16,8 +9,15 @@ Template.cardContent.events({
     }
   },
 
-  'click i.fa-paper-plane' : function(e,t) {
+});
+
+
+Template.msgIcon.events({
+
+  'click' : function(e,t) {
     var text = t.$("section.content")
+    console.log("text ", text);
+    console.log("tpl ", t);
     Messages.insert( {
                        author_id      : Meteor.userId(),  
                        heading_id  : t.data.heading_id,
@@ -26,7 +26,21 @@ Template.cardContent.events({
                       })
     text["0"].innerText = "Edit me."
   }
-});
+
+})
+
+
+Template.thumbsUp.events({
+
+  'click': function(e,t) {    
+    e.preventDefault();
+    if (Meteor.userId()) {
+        Meteor.call('upvoteWithHeadingField', 
+                    [Template.parentData()._id, t.data.heading])
+    }
+  }
+
+})
 
 Template.cardContent.onRendered( function() {
   if (Meteor.userId()) {
