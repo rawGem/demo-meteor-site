@@ -23,15 +23,6 @@
   height: 60px;
 }
 
-.card-title {
-  /*color: #B8ADB2 !important;*/
-  color: $bright !important;
-  color: $greenish-grey-darker !important;
-  font-weight: 600 !important;
-}
-
-
-
 p.content {
   color: #B2827E;
   color: $dark-grey;
@@ -41,15 +32,19 @@ p.content {
 h5.topic {
   color: $medium-grey;
   font-weight: 500;
-  //font-size: 16px;
   line-height: 1em;
   margin-bottom: 0px;
   border-left: 5px solid orange;
   background-color: $light-grey;
   display: inline-block;
-  /*padding-left: 8px;*/
-  /*padding-right: 3px;*/
   padding: 5px 3px 5px 8px;
+}
+
+h1.card-title {
+  /*color: #B8ADB2 !important;*/
+  //color: $greenish-grey-darker !important;
+  color: $dark-grey !important;
+  font-weight: 600 !important;
 }
 
 
