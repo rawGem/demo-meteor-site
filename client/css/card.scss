@@ -13,27 +13,63 @@
   padding-bottom: 50px;
 }
 
+$msg-icon-brown: #ADB240;
+$cool-red: #CB3B35;
+
+.fa-envelope {
+  color: $dark-grey;
+}
+
+
 .msg-icon {
-  padding-top: 20px !important;
-  background-color: $light-grey; 
+  padding-top: 15px !important;
+  background-color: $medium-grey; 
   height: 60px;
+  border-left: 3px solid white;
+  border-right: 6px solid white;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
   &:hover {
     cursor: pointer;
-    background-color: yellow;
+    background-color: #69CB48;
+    .fa-envelope {
+      color: white;
+    }
   }
+}
+
+$mustard: #F0EE30;
+$dull-mustard: #CDD16D;
+
+.fa-thumbs-up {
+  color: $dark-grey;
+  //&:hover {
+  //  color: #516272;
+  //}
 }
 
 #t-up {
-  padding-top: 20px;
-  background-color: $greyish-green-light;
+  padding-top: 15px;
+  //background-color: $medium-light-grey;
+  background-color: $medium-grey;
   height: 60px;
+  border-left: 6px solid white;
+  border-right: 3px solid white;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
   &:hover {
     cursor: pointer;
-    background-color: yellow;
+    background-color: #69CB48;
+    color: white;
+    .fa-thumbs-up {
+      color: white;
+   // -webkit-text-stroke-width: 1px;
+   // -webkit-text-stroke-color: orange;
+   // text-stroke-width: 1px;
+   // text-stroke-color: orange;
+    }
   }
 }
-
-
 
 p.content {
   color: #B2827E;
@@ -57,16 +93,6 @@ h1.card-title {
   font-weight: 600 !important;
 }
 
-.fa-thumbs-o-up {
-  color: $dark-grey;
-  &:hover {
-    color: #516272;
-  }
-}
-
-.fa-envelope-o {
-  color: $dark-grey;
-}
 
 
 /* modal stuff */
