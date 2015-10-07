@@ -53,7 +53,6 @@ Template.cardContent.helpers({
   },
 
   withUser: function() {
-    console.log( "withUser helper", Meteor.user());
     return Meteor.user() ? "with-user" : ""; 
   }
  
