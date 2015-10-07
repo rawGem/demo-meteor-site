@@ -1,6 +1,8 @@
 @import "colors.scss";
 
 $active-link-bb-width : 5px;
+$link-hl-color: #CB3B35; 
+$top-nav-bg: white; 
 
 .backdrop {
   background-color: $greenish-grey-ttbg !important;  
@@ -14,10 +16,10 @@ $active-link-bb-width : 5px;
   a {
     font-size: 16px;
     font-weight: 400;
-    color: white; 
+    color: $greenish-grey-darker; 
     padding: 0;
     &:hover {
-      //color: $bright;
+      color: $link-hl-color;
     }
   }
 }
@@ -27,23 +29,23 @@ li.top-nav {
   letter-spacing: .05em;
   height: 64px;
   box-sizing: border-box;
-  background-color: $greenish-grey-darker;
+  background-color: $top-nav-bg;
   &:hover {
-    background-color: $greenish-grey-darker;
+    background-color: $top-nav-bg;
   }
 }
 
 div.top-link-container.active-true {
-  border-bottom: $active-link-bb-width solid $bright;
+  border-bottom: $active-link-bb-width solid $link-hl-color;
   a {
     //font-weight: 400;
-    color: $icon-grey;
+    color: $link-hl-color;
   }
 }
 
 div.top-link-container.active-false {
   &:hover {
-     border-bottom: $active-link-bb-width solid $bright;
+     border-bottom: $active-link-bb-width solid $link-hl-color;
   }
 }
 
@@ -53,13 +55,13 @@ div.top-link-container.active-false {
 
 nav.top {
   height: 100px;
-  background-color: $greenish-grey-darker !important;
+  background-color: $top-nav-bg !important;
   z-index: 1002;
 }
 
 nav.bottom {
   box-shadow: 0px 10px 5px -8px rgba(0, 0, 0, 0.16), 0px 10px 10px -8px rgba(0, 0, 0, 0.12);
-  background-color: $greenish-grey-darker !important;
+  background-color: $top-nav-bg !important;
 }
 
 div.navbar-fixed {
@@ -103,6 +105,8 @@ div.bl-icon {
   position: absolute;
   right: 100px;
   top: 0px;
+  font-weight: 300;
+  color: #000;
 }
 
 .admin-top-link {
