@@ -51,11 +51,11 @@ div.bl-icon-hoz {
 }
 
 path {
-  stroke: $icon-grey;
+  stroke: #789BB2;
 }
 
 path#ce {
-  fill: $icon-grey;
+  fill: #789BB2;
   stroke: none;
 }
 
@@ -63,13 +63,13 @@ svg {
   &:hover {
     cursor: pointer;
     path {
-      stroke: white; 
+      stroke: $light-grey; 
     }
   }
   &.ce {
     &:hover {
       path#ce {
-        fill: white;
+        fill: $light-grey;
       }
     }
   }
@@ -80,7 +80,7 @@ svg {
   font-size: 63px;
   position: relative;
   bottom: 4px;
-  color: $icon-grey;
+  color: #789BB2;
   &:hover {
     color: white;
     cursor: pointer;
