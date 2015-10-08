@@ -9,7 +9,7 @@ footer.page-footer {
   background-color: $purpleish;
   h1 {
     font-weight: 200;
-    color: white;
+    color: #877AC4;
   }
 }
 
@@ -82,7 +82,7 @@ svg {
   bottom: 4px;
   color: #789BB2;
   &:hover {
-    color: white;
+    color: $light-grey;
     cursor: pointer;
   }
 }
