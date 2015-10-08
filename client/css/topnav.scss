@@ -1,7 +1,7 @@
 @import "colors.scss";
 
 $active-link-bb-width : 5px;
-$link-hl-color: #CB3B35; 
+$link-hl-color: $bright; 
 $top-nav-bg: white; 
 
 .backdrop {
@@ -12,11 +12,11 @@ $top-nav-bg: white;
   height: inherit;
   box-sizing: border-box;
   width: 150px;
-  transition: border-bottom 100ms ease 0s;
+  transition: border-bottom 200ms ease 0s;
   a {
     font-size: 16px;
     font-weight: 400;
-    color: $greenish-grey-darker; 
+    color: $bright; 
     padding: 0;
     &:hover {
       color: $link-hl-color;
