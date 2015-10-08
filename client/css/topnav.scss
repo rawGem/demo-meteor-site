@@ -15,7 +15,7 @@ $top-nav-bg: white;
   transition: border-bottom 200ms ease 0s;
   a {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     color: $bright; 
     padding: 0;
     &:hover {
@@ -106,7 +106,12 @@ div.bl-icon {
   right: 100px;
   top: 0px;
   font-weight: 300;
+  font-size: 12px;
   color: #000;
+}
+
+#at-nav-button:hover {
+  color: #5DA0E5; 
 }
 
 .admin-top-link {
