@@ -7,3 +7,7 @@ Meteor.publish('allsections', function() {
   // check for admin here? 
   return Sections.find();
 })
+
+Meteor.publish('allcontent', function() {
+  return Content.find();
+})

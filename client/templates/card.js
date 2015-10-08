@@ -43,6 +43,7 @@ Template.thumbsUp.events({
 })
 
 Template.cardContent.onRendered( function() {
+  var instance = this;
   if (Meteor.userId()) {
     $(document).ready(function(){
       // the "href" attribute of .modal-trigger must 
@@ -55,6 +56,9 @@ Template.cardContent.onRendered( function() {
       });
     }); 
   }
+  instance.autorun(function() {
+    instance.subscribe('allcontent')
+  })
 })
 
 Template.cardContent.helpers({
@@ -68,6 +72,13 @@ Template.cardContent.helpers({
 
   withUser: function() {
     return Meteor.user() ? "with-user" : ""; 
+  },
+
+  topics: function(id) {
+     console.log("id for topics helper ", id)
+     console.log("cursor: ", Content.find({heading_id: id}).fetch())
+     return Content.find({heading_id: id})
   }
+
  
 })

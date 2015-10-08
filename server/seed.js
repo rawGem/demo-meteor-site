@@ -31,7 +31,7 @@ Meteor.startup(function(){
           },
           {
             heading     : "cs169.1x, SaaS",
-            heading_id  : "cs169",
+            heading_id  : "cs169.1x",
             text_region : "Agile, TDD, BDD, REST",
             upvotes     : 0,
             downvotes   : 0
@@ -45,6 +45,38 @@ Meteor.startup(function(){
           }
         ]
       });
+ 
+      var text_regions = 
+      [{
+        heading_id   : "cs188x",
+        topic        : "Topics",
+        text         : "BFS, DFS, A*, MDPs"
+      },
+      {
+        heading_id   : "cs169.1x",
+        topic        : "Topics",
+        text         : "Agile, TDD, BDD, REST"
+      },
+      {
+        heading_id   : "cs169.1x",
+        topic        : "Tools",
+        text         : "rails, cucumber"
+      },
+      {
+        heading_id   : "school1",
+        topic        : "Major",
+        text         : "Biomedical Engineering"
+      },
+      {
+        heading_id   : "school1",
+        topic        : "Minor",
+        text         : "Organic Chemistry"
+      }]
+
+      _.each(text_regions, function(doc, index, arr) {
+        Content.insert(doc)
+      })
+    
   }
   if (Meteor.users.find({username : "admin"}).count() === 0) {
     var options = { 
