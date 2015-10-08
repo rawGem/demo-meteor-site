@@ -1,8 +1,12 @@
 @import "colors.scss";
 
+$turquoise: #9AC8E5;
+$pinkish: #EF97F2;
+$purpleish: #AD9DFC;
+
 footer.page-footer {
   margin-top: 100px;
-  background-color: $greenish-grey-darker;
+  background-color: $purpleish;
   h1 {
     font-weight: 200;
     color: white;
@@ -12,6 +16,7 @@ footer.page-footer {
 .footer-copyright {
   padding-top: 20px;
   height: 175px !important;
+  background-color: $turquoise !important;
   h6 {
     color: black;
   }
@@ -29,7 +34,8 @@ footer.page-footer {
 
 .very-bottom {
   height: 65px !important;
-  background-color: rgba(51,51,51, .2) !important;
+  //background-color: rgba(51,51,51, .2) !important;
+  background-color: $pinkish !important;
 }
 
 #hsclicons {
