@@ -33,19 +33,13 @@ Template.msgIcon.events({
 Template.thumbsUp.events({
 
   'click': function(e,t) {    
-    //console.log("t-up parentdata", Template.parentData());
-    console.log("t-up p0", t.parent(0));
-    console.log("t-up p1", t.parent(1));
-    console.log("t-up p2", t.parent(2));
-    console.log("t-up p3", t.parent(3));
-    console.log("t-up parentData", Template.parentData());
-    e.preventDefault();
-    if (Meteor.userId()) {
-        var section_id = t.parent(3).data.section_id,
-            heading_id = Template.parentData().heading_id;
-        Meteor.call('upvoteWithHeadingField', 
-                    [section_id, heading_id ])
-    }
+      e.preventDefault();
+      if (Meteor.userId()) {
+          var section_id = t.parent(3).data.section_id,
+              heading_id = Template.parentData().heading_id;
+          Meteor.call('upvoteWithHeadingField', [section_id, heading_id ])
+                      
+      }
   }
 
 })
