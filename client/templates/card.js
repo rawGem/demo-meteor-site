@@ -53,6 +53,7 @@ Template.cardContent.onRendered( function() {
       Sections.find().forEach(function(item, index, cursor) {
           _.each(item.subsections, function(subsec, sbindex) {
             var identifier = '#'+subsec.heading_id+'-'+sbindex;
+            console.log("modal id ", identifier);
             $(identifier).leanModal();
           });
       });

@@ -31,14 +31,14 @@ Meteor.startup(function(){
           },
           {
             heading     : "cs169.1x, SaaS",
-            heading_id  : "cs169.1x",
+            heading_id  : "cs169_1x",
             text_region : "Agile, TDD, BDD, REST",
             upvotes     : 0,
             downvotes   : 0
           },
           {
             heading     : "cs169.2x, SaaS",
-            heading_id  : "cs169",
+            heading_id  : "cs169_2x",
             text_region : "Legacy Code, Design Patterns, Version Control",
             upvotes     : 0,
             downvotes   : 0
@@ -53,12 +53,12 @@ Meteor.startup(function(){
         text         : "BFS, DFS, A*, MDPs"
       },
       {
-        heading_id   : "cs169.1x",
+        heading_id   : "cs169_1x",
         topic        : "Topics",
         text         : "Agile, TDD, BDD, REST"
       },
       {
-        heading_id   : "cs169.1x",
+        heading_id   : "cs169_1x",
         topic        : "Tools",
         text         : "rails, cucumber"
       },
