@@ -2,7 +2,7 @@
 <div class="row mycard {{withUser}}">
 <div class="col l12 m12 s12 z-depth-0">
 <h1 class="card-title">{{title}}</h1>
-{{#each topics heading_id }}
+{{#each topics }}
   <h5 class="topic">{{topic}}</h5>
   <p  class="content">{{text}}</p>
 {{/each}}
@@ -14,19 +14,13 @@
 </template>
 
 
-    <!--<h1 class="card-title">{{heading}}</h1>
-    
-    <h5 class="topic"> Topics </h5><p class="content">python, pymongo, bash {{withUser}}</p>
-    <h5 class="topic">Tools</h5><p>{{text_region}}</p>-->
 
 
 <template name="thumbs">
     <div class="row thumbs">
       {{> thumbsUp}}
-
       {{> msgIcon}}
-
-      {{> messageForm heading_id=heading_id heading=heading}}
+      {{> messageForm heading_id=heading_id heading=title}}
     </div>
 </template>
 
