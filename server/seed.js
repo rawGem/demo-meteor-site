@@ -63,6 +63,16 @@ Meteor.startup(function(){
         text         : "rails, cucumber"
       },
       {
+        heading_id   : "cs169_2x",
+        topic        : "Topics",
+        text         : "legacy code, version control, design patterns"
+      },
+      {
+        heading_id   : "cs169_2x",
+        topic        : "Tools",
+        text         : "rails, git"
+      },
+      {
         heading_id   : "school1",
         topic        : "Major",
         text         : "Biomedical Engineering"
