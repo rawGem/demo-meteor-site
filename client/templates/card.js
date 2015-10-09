@@ -45,9 +45,9 @@ Template.cardContent.events({
 });
 
 
-Template.msgIcon.events({
+Template.messageForm.events({
 
-  'click' : function(e,t) {
+  'click .btn-flat' : function(e,t) {
     var text = t.$("section.content")
     console.log("text ", text);
     console.log("tpl ", t);
