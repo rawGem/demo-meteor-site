@@ -1,3 +1,36 @@
+
+
+Template.sections.onRendered( function() {
+  var instance = this;
+  this.autorun(function() {
+    //instance.subscribe('sections', SBJCTX.get());
+    instance.subscribe('sections', FlowRouter.getParam("name"));
+  });
+});
+
+
+Template.cardContent.onRendered( function() {
+  var instance = this;
+  if (Meteor.userId()) {
+    $(document).ready(function(){
+      // the "href" attribute of .modal-trigger must 
+      // specify the modal ID that wants to be triggered
+      Sections.find().forEach(function(item, index, cursor) {
+          _.each(item.subsections, function(subsec, sbindex) {
+            var identifier = '#'+subsec.heading_id+'-'+sbindex;
+            console.log("modal id ", identifier);
+            $(identifier).leanModal();
+          });
+      });
+    }); 
+  }
+  instance.autorun(function() {
+    instance.subscribe('allcontent');
+  });
+});
+
+
+
 Template.cardContent.events({
 
 
@@ -44,25 +77,7 @@ Template.thumbsUp.events({
 
 })
 
-Template.cardContent.onRendered( function() {
-  var instance = this;
-  if (Meteor.userId()) {
-    $(document).ready(function(){
-      // the "href" attribute of .modal-trigger must 
-      // specify the modal ID that wants to be triggered
-      Sections.find().forEach(function(item, index, cursor) {
-          _.each(item.subsections, function(subsec, sbindex) {
-            var identifier = '#'+subsec.heading_id+'-'+sbindex;
-            console.log("modal id ", identifier);
-            $(identifier).leanModal();
-          });
-      });
-    }); 
-  }
-  instance.autorun(function() {
-    instance.subscribe('allcontent')
-  })
-})
+
 
 Template.cardContent.helpers({
 
@@ -84,4 +99,19 @@ Template.cardContent.helpers({
   }
 
  
-})
+});
+
+Template.sections.helpers({
+  sections: function() {
+    var sections =  Sections.find().map(function(item, index) {
+      _.each(item.subsections, function(subsection, sindex) {
+        subsection.sindex = sindex
+      })
+      return item
+    })
+    return sections
+  }
+});
+
+
+
