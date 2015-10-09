@@ -53,6 +53,11 @@ Meteor.startup(function(){
         text         : "BFS, DFS, A*, MDPs"
       },
       {
+        heading_id   : "cs188x",
+        topic        : "Tools",
+        text         : "python, AI 3rd ed., CLRS"
+      },
+      {
         heading_id   : "cs169_1x",
         topic        : "Topics",
         text         : "Agile, TDD, BDD, REST"
