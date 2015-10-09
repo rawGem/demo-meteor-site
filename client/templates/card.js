@@ -22,9 +22,9 @@ Template.msgIcon.events({
                        author_id      : Meteor.userId(),  
                        heading_id  : t.data.heading_id,
                        date        : new Date(),
-                       text        : text["0"].innerText
+                       text        : text.prevObject["0"].innerText
                       })
-    text["0"].innerText = "Edit me."
+    text.prevObject["0"].innerText = "Edit me."
   }
 
 })
@@ -33,10 +33,18 @@ Template.msgIcon.events({
 Template.thumbsUp.events({
 
   'click': function(e,t) {    
+    //console.log("t-up parentdata", Template.parentData());
+    console.log("t-up p0", t.parent(0));
+    console.log("t-up p1", t.parent(1));
+    console.log("t-up p2", t.parent(2));
+    console.log("t-up p3", t.parent(3));
+    console.log("t-up parentData", Template.parentData());
     e.preventDefault();
     if (Meteor.userId()) {
+        var section_id = t.parent(3).data.section_id,
+            heading_id = Template.parentData().heading_id;
         Meteor.call('upvoteWithHeadingField', 
-                    [Template.parentData()._id, t.data.heading])
+                    [section_id, heading_id ])
     }
   }
 

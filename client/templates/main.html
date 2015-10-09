@@ -13,9 +13,7 @@
     {{#each sections}}
       <div class="container" id="main">
       <div class="row">
-      {{#each  subsections   }}
-        {{> cardContent title=heading heading_id=heading_id }}
-      {{/each}}
+        {{> subsection subsections=subsections section_id=_id}}
       </div>
       </div>
     {{/each}}
@@ -27,17 +25,18 @@
    </div>
    </div>
    </div>
-    <!--<div class="preloader-wrapper big active" id="main">
-    <div class="spinner-layer spinner-blue-only">
-      <div class="circle-clipper center">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>-->
   {{/if}}
 </template>
 
+<template name="subsection">
+  {{#each subsections }}
+   <p>{{section_id}}</p>
+    {{> cardContent 
+        title=heading 
+        heading_id=heading_id 
+        upvotes=upvotes 
+        downvotes=downvotes
+        }}
+        
+  {{/each}}
+</template>
