@@ -44,14 +44,15 @@ Template.cardContent.events({
 Template.messageForm.events({
 
   'click .btn-flat' : function(e,t) {
-    var text = t.$("section.content")
+    var text = t.$("textarea")
+    console.log(text["0"].value)
     Messages.insert( {
                        author_id      : Meteor.userId(),  
                        heading_id  : t.data.heading_id,
                        date        : new Date(),
-                       text        : text.prevObject["0"].innerText
+                       text        : text["0"].value
                       })
-    text.prevObject["0"].innerText = "Edit me."
+    text["0"].value = ""
   }
 
 })
