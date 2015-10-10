@@ -1,6 +1,7 @@
 
 
 Template.sections.onRendered( function() {
+  console.log("sections.onRendered called")
   var instance = this;
   this.autorun(function() {
     instance.subscribe('sections', FlowRouter.getParam("name"));
@@ -45,7 +46,6 @@ Template.messageForm.events({
 
   'click .btn-flat' : function(e,t) {
     var text = t.$("textarea")
-    console.log(text["0"].value)
     Messages.insert( {
                        author_id      : Meteor.userId(),  
                        heading_id  : t.data.heading_id,
