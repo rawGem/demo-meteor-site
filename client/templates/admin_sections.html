@@ -19,6 +19,9 @@
 
 <template name="messageList">
  {{#each messages}}
-  <div><span>{{ date }} | {{ author_id }} : </span>{{ text }}</div>
+  <div>
+  <span class="date">{{ date }}</span>
+  <span class="author"> {{ author_id }}</span> : {{ text }}
+  </div>
  {{/each}}
 </template>

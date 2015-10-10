@@ -9,9 +9,12 @@ div.admin-sec {
   h3 {
     color: $bright;
   }
-  span {
+  span.date {
     font-weight: 400;
-    color: darkgrey;
+    color: $icon-grey;
+  }
+  span.author {
+    color: $bright-green; 
   }
 }
 

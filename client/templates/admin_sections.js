@@ -42,7 +42,14 @@ Template.adminSection.helpers({
   messages : 
     function() {
         data = Template.currentData();
-        messages = Messages.find({ heading_id : data.heading_id })
+        messages = Messages.find({ heading_id : data.heading_id }).map(
+        function(item, index) {
+        if (item) {
+            item.date = item.date.toTimeString().split(" ").slice(0,1).pop();
+            item.author_id = item.author_id.slice(0,5);
+            return item
+           }
+        })
         return messages
     }
 })
