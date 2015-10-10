@@ -3,7 +3,6 @@
 Template.sections.onRendered( function() {
   var instance = this;
   this.autorun(function() {
-    //instance.subscribe('sections', SBJCTX.get());
     instance.subscribe('sections', FlowRouter.getParam("name"));
   });
 });
@@ -18,7 +17,6 @@ Template.cardContent.onRendered( function() {
       Sections.find().forEach(function(item, index, cursor) {
           _.each(item.subsections, function(subsec, sbindex) {
             var identifier = '#'+subsec.heading_id+'-'+sbindex;
-            console.log("modal id ", identifier);
             $(identifier).leanModal();
           });
       });
@@ -30,9 +28,7 @@ Template.cardContent.onRendered( function() {
 });
 
 
-
 Template.cardContent.events({
-
 
   'click i.fa.fa-thumbs-o-down' : function(e,t) {
     e.preventDefault();
@@ -49,8 +45,6 @@ Template.messageForm.events({
 
   'click .btn-flat' : function(e,t) {
     var text = t.$("section.content")
-    console.log("text ", text);
-    console.log("tpl ", t);
     Messages.insert( {
                        author_id      : Meteor.userId(),  
                        heading_id  : t.data.heading_id,
