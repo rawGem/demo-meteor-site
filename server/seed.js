@@ -25,9 +25,7 @@ Meteor.startup(function(){
           {
             heading     : "About",
             heading_id  : "about",
-            text_region : "about his site",
-            upvotes     : 0,
-            downvotes   : 0
+            text_region : "about his site"
           }
         ]
     })
