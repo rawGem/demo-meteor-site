@@ -1,6 +1,7 @@
 @import "colors.scss";
 
 .mycard.with-user {
+  min-height: 407px;
   background-color: white;
   margin-bottom: 0px;
   padding-left: 20px;
@@ -8,6 +9,7 @@
 }
 
 .mycard {
+  min-height: 407px;
   background-color: white;
   padding-left: 20px;
   padding-bottom: 50px;
@@ -117,5 +119,9 @@ section.content {
 }
 
 .placeholder {
-  height: 60px;
+  min-height: 380px;
+  p {
+    position: absolute;
+    top: 290px;
+  }
 }

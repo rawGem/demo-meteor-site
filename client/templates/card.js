@@ -98,7 +98,6 @@ Template.cardContent.helpers({
       if (item.heading_id === "about") return true 
       })
     }*/
-    console.log(FlowRouter.getParam("name") === "about")
     return FlowRouter.getParam("name") === "about" 
   }
 
