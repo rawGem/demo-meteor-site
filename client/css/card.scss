@@ -112,6 +112,22 @@ section.title {
   }
 }
 
+textarea#textarea1 {
+  background-color: #EFEFEF;
+  &:focus {
+    background-color: white;
+  }
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid $bright !important;
+  //box-shadow: 0 1px 0 0 #26a69a;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: $bright !important;
+}
+
 section.content {
   background-color: #EFEFEF;
   &:focus {
