@@ -31,18 +31,30 @@
 
 
 <template name="cardContent">
-<div class="row mycard {{withUser}}">
-<div class="col l12 m12 s12 z-depth-0">
-<h1 class="card-title">{{title}}</h1>
-{{#each topics heading_id }}
-  <h5 class="topic">{{topic}}</h5>
-  <p  class="content">{{text}}</p>
-{{/each}}
-</div>
-</div>
-  {{#if visitor}}
-    {{> thumbs}}
-  {{/if}}
+{{#if isAbout }}
+      <div class="row mycard {{withUser}}">
+      <div class="col l12 m12 s12 z-depth-0">
+      <h1 class="card-title">{{title}}</h1>
+      {{#each topics heading_id }}
+        <h5 class="abttopic">{{topic}}</h5>
+        <p  class="content">{{text}}</p>
+      {{/each}}
+      </div>
+      </div>
+{{else}}
+      <div class="row mycard {{withUser}}">
+      <div class="col l12 m12 s12 z-depth-0">
+      <h1 class="card-title">{{title}}</h1>
+      {{#each topics heading_id }}
+        <h5 class="topic">{{topic}}</h5>
+        <p  class="content">{{text}}</p>
+      {{/each}}
+      </div>
+      </div>
+        {{#if visitor}}
+          {{> thumbs}}
+        {{/if}}
+{{/if}}
 </template>
 
 
@@ -58,22 +70,22 @@
 
 
 <template name="thumbsUp">
-<div class="col l6 m6 s6 center-align" id="t-up">
-  <a href="" class="">
-    <i class="fa fa-thumbs-up fa-lg"></i>
-  </a>
-  {{upvotes}}
-</div>
+    <div class="col l6 m6 s6 center-align" id="t-up">
+      <a href="" class="">
+        <i class="fa fa-thumbs-up fa-lg"></i>
+      </a>
+      {{upvotes}}
+    </div>
 </template>
 
 
 
 <template name="msgIcon">
-<a href="#modal{{heading_id}}" 
-   class="col l6 m6 s6 modal-trigger center-align msg-icon" 
-   id="{{heading_id}}-{{sindex}}">
-<i class="fa fa-envelope fa-lg"></i>
-</a>
+    <a href="#modal{{heading_id}}" 
+       class="col l6 m6 s6 modal-trigger center-align msg-icon" 
+       id="{{heading_id}}-{{sindex}}">
+    <i class="fa fa-envelope fa-lg"></i>
+    </a>
 </template>
 
 

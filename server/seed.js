@@ -19,6 +19,20 @@ Meteor.startup(function(){
       });
 
     Sections.insert(
+    {
+        subject     : "about",
+        subsections : [
+          {
+            heading     : "About",
+            heading_id  : "about",
+            text_region : "about his site",
+            upvotes     : 0,
+            downvotes   : 0
+          }
+        ]
+    })
+
+    Sections.insert(
       {
         subject     : "coursework",
         subsections : [
@@ -86,6 +100,11 @@ Meteor.startup(function(){
         heading_id   : "school1",
         topic        : "Minor",
         text         : "Organic Chemistry"
+      },
+      {
+        heading_id   : "about",
+        topic        : "stuff",
+        text         : "put stuff here"
       }]
 
       _.each(text_regions, function(doc, index, arr) {

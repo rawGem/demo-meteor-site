@@ -87,13 +87,24 @@ Template.cardContent.helpers({
   },
 
   topics: function(id) {
-     console.log("id for topics helper ", id)
-     console.log("cursor: ", Content.find({heading_id: id}).fetch())
      return Content.find({heading_id: id})
+  },
+
+  isAbout: function() {
+  /* i really hate doing it this way */
+  /*if (FlowRouter.getParams("name") === "about") {
+    Content.find().forEach(function(item, index){
+      console.log("item in isAbout ", item.heading_id === "about")
+      if (item.heading_id === "about") return true 
+      })
+    }*/
+    console.log(FlowRouter.getParam("name") === "about")
+    return FlowRouter.getParam("name") === "about" 
   }
 
  
 });
+
 
 Template.sections.helpers({
   sections: function() {
@@ -105,6 +116,7 @@ Template.sections.helpers({
     })
     return sections
   }
+
 });
 
 
