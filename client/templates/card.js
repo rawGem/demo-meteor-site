@@ -67,7 +67,7 @@ Template.thumbsUp.events({
   'click': function(e,t) {    
       e.preventDefault();
       if (Meteor.userId()) {
-          var section_id = t.parent(3).data.section_id,
+          var section_id = Template.parentData(2).section_id,
               heading_id = Template.parentData().heading_id;
           Meteor.call('upvoteWithHeadingField', [section_id, heading_id ])
                       
