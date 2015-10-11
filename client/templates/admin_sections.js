@@ -3,13 +3,17 @@ Template.admin.onRendered( function() {
   this.autorun(function() {
     instance.subscribe('allsections');
     instance.subscribe('allmessages');
+    instance.subscribe('privileges', Meteor.userId());
   })
 });
 
 Template.admin.helpers({
   admin: function() {
     if (Meteor.userId()) {
-      return Meteor.user().profile.admin
+      var q = { user_id : Meteor.userId() };
+      var currentUserPrivileges = Privileges.findOne(q);
+      if (currentUserPrivileges) 
+        return _.contains(currentUserPrivileges.privileges, "admin") 
     } else FlowRouter.go("/sign-in");
   }
 });

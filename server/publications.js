@@ -24,9 +24,13 @@ Meteor.publish('allmessages', function() {
 
 
 
-
-
 Meteor.publish('messages_by_heading', function(heading_id) {
   // check for admin here? 
   return Messages.find({heading_id : heading_id});
+})
+
+
+
+Meteor.publish('privileges', function(user_id) {
+  return Privileges.find({ user_id : user_id })
 })
