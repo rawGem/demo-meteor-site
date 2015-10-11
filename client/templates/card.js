@@ -1,7 +1,6 @@
 
 
 Template.sections.onRendered( function() {
-  console.log("sections.onRendered called")
   var instance = this;
   this.autorun(function() {
     instance.subscribe('sections', FlowRouter.getParam("name"));

@@ -1,3 +1,4 @@
+
 Template.admin.onRendered( function() {
   var instance = this;
   this.autorun(function() {
@@ -6,6 +7,8 @@ Template.admin.onRendered( function() {
     instance.subscribe('privileges', Meteor.userId());
   })
 });
+
+
 
 Template.admin.helpers({
   admin: function() {
@@ -18,6 +21,8 @@ Template.admin.helpers({
   }
 });
 
+
+
 Template.adminSections.helpers({
   sections: function() {
       if (!Meteor.user()) { //add admin check
@@ -25,21 +30,8 @@ Template.adminSections.helpers({
       }
       return Sections.find();
     }
-  /* 
-  /  admin_section wants to subscribe to 
-  /  messages by heading_id
-  //
-  /
-  /  want `heading_id` from `adminSections` helper
-  /  `sections`
-  /*
-  /*messages: function() {
-      if (!Meteor.user()) { //add admin check
-        return null;
-      }
-      return Messages.find();
-  }*/
 });
+
 
 
 Template.adminSection.helpers({
@@ -57,6 +49,7 @@ Template.adminSection.helpers({
         return messages
     }
 })
+
 
 
 Template.admin.events({
