@@ -37,7 +37,7 @@ Template.cardContent.events({
         Meteor.call('downvoteWithHeadingField', 
                 [Template.parentData()._id, t.data.heading])
     }
-  },
+  }
 
 });
 
@@ -46,13 +46,17 @@ Template.messageForm.events({
 
   'click .btn-flat' : function(e,t) {
     var text = t.$("textarea")
-    Messages.insert( {
-                       author_id      : Meteor.userId(),  
-                       heading_id  : t.data.heading_id,
-                       date        : new Date(),
-                       text        : text["0"].value
-                      })
-    text["0"].value = ""
+    if (text["0"].value) {
+        Messages.insert( 
+              {
+               author_id      : Meteor.userId(),  
+               heading_id  : t.data.heading_id,
+               date        : new Date(),
+               text        : text["0"].value
+              })
+
+        text["0"].value = ""
+    }
   }
 
 })
