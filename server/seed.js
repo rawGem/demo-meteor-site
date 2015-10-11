@@ -114,8 +114,8 @@ Meteor.startup(function(){
     var options = { 
                     email : "admin@this.domain",
                     username : "admin",
-                    password : "apple8",
-                    profile : { admin : true }
+                    password : "apple8"
+                    //profile : { admin : true }
                   }
 
     Accounts.createUser(options)
