@@ -10,9 +10,11 @@ Template.side.onRendered( function() {
     $('.tooltipped').tooltip({delay: 10});
   });
 
-  if (Meteor.userId()) {
-    this.subscribe("privileges", Meteor.userId())
-  }
+  instance.autorun(function() {
+      if (Meteor.userId()) {
+        instance.subscribe("privileges", Meteor.userId())
+      }
+  });
 });
 
 
