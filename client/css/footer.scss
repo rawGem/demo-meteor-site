@@ -29,28 +29,33 @@ footer.page-footer {
 }
 
 .footer-copyright {
-  padding-top: 20px;
+  padding-top: 10px;
   height: 175px !important;
   background-color: #6052A2 !important;
   h6 {
-    color: #733075;
+    color: $dark-grey;
   }
   img#mticon {
      margin-bottom: 10px;
+     //margin-right: 7px;
+     //margin-left: 7px;
    }
   img#meicon {
      margin-bottom: 10px;
+     margin-left: 7px;
    }
   img#mgicon {
      margin-bottom: 10px;
-     margin-left: 2px;
+     margin-left: -7px;
+     //margin-left: 2px;
    }
 }
 
 .very-bottom {
   height: 65px !important;
   //background-color: rgba(51,51,51, .2) !important;
-  background-color: $pinkish !important;
+  //background-color: $pinkish !important;
+  background-color: $icon-grey !important;
 }
 
 div.bl-icon-hoz {
