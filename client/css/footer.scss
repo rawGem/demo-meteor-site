@@ -6,17 +6,18 @@ $purpleish: #AD9DFC;
 
 footer.page-footer {
   margin-top: 400px;
-  background-color: $purpleish;
+  background-color: $turquoise;
   h1 {
-    font-weight: 200;
-    color: #877AC4;
+    font-weight: 300;
+    font-size: 35px;
+    color: #6052A2;
   }
 }
 
 .footer-copyright {
   padding-top: 20px;
   height: 175px !important;
-  background-color: $turquoise !important;
+  background-color: $purpleish !important;
   h6 {
     color: black;
   }
@@ -39,7 +40,7 @@ footer.page-footer {
 }
 
 #hsclicons {
-  margin-top: 40px;
+  margin-top: 10px;
   height: 65px;
   line-height: 1.2em;
 }
@@ -51,11 +52,11 @@ div.bl-icon-hoz {
 }
 
 path {
-  stroke: #789BB2;
+  stroke: #6E8EA4; /*darker*/
 }
 
 path#ce {
-  fill: #789BB2;
+  fill: #6E8EA4;
   stroke: none;
 }
 
@@ -80,7 +81,7 @@ svg {
   font-size: 63px;
   position: relative;
   bottom: 4px;
-  color: #789BB2;
+  color: #6E8EA4;
   &:hover {
     color: $light-grey;
     cursor: pointer;
