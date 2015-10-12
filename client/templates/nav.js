@@ -1,10 +1,18 @@
 Template.side.onRendered( function() {
+
+  var instance = this;
+
   $(".button-collapse").sideNav({
     closeOnClick : true
   });
+
   $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 10});
   });
+
+  if (Meteor.userId()) {
+    this.subscribe("privileges", Meteor.userId())
+  }
 });
 
 
@@ -43,23 +51,33 @@ Template.side.events({
   }
 })
 
+
+
 Template.adminTopNavLink.events({
   'click': function(e,t) {
     e.preventDefault();
-    if (Meteor.user()) {
-       if (Meteor.user().profile.admin)
-          FlowRouter.go('/admin/'+"adminsecretkey");
-    }
+    FlowRouter.go('/admin/'+"adminsecretkey");
   }
 })
 
+
+
 Template.side.helpers({
+
   admin: function() {
     if (Meteor.user() && Meteor.userId()) {
-      return Meteor.user().profile.admin 
+
+        var q = { user_id : Meteor.userId() };
+        var currentUserPrivileges = Privileges.findOne(q);
+
+        if (!!currentUserPrivileges) 
+          return _.contains(currentUserPrivileges.privileges, "admin") 
     }
   }
-})
+
+});
+
+
 
 Template.educationTopNavLink.helpers({
   active: function() {
