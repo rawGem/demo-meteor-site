@@ -47,16 +47,6 @@ li.nav-link:hover {
   margin-right: 10px;
 }
 
-
-/* grays
- * dark: 383536
- * mediumdark: 787174
- * medium: B8ADB2
- * mediumlight: DED1D7
- * light: F7E9F0
- */
-
-
 #t-dwn a, #t-up a {
   margin-right: 5px;
 }
@@ -105,69 +95,25 @@ nav .banner-name {
 }
 
 body {
-    //background: lightgrey;
   background-color: $background-grey;
-  //z-index:-5;
 }
 
 main {
   flex: 1 0 auto;
   min-height: 100vh;
 }
-    
-
-#grid {
-    background-size: 5px 5px;    
-    background-image:repeating-linear-gradient(0deg, #fff, #fff 1px, transparent 1px, transparent 40px),repeating-linear-gradient(-90deg, #fff, #fff 1px, transparent 1px, transparent 40px);
-    height:100%;
-    min-height: 100%;
-    width:100%;
-    opacity:0.14;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-4;
-}
-
-// body {
-//  background-image:       linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .15) 25%, rgba(255, 255, 255, .15) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .15) 25%, rgba(255, 255, 255, .15) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent);
-//  height:100%;
-//  background-size:25px 25px;
-//  /*height: 350px;*/
-//  background-color: $greyish-green-light;
-//  width: 100%;
-//}
-
-.test-banner {
-  background-image:       linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .15) 25%, rgba(255, 255, 255, .15) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .15) 25%, rgba(255, 255, 255, .15) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .15) 75%, rgba(255, 255, 255, .15) 76%, transparent 77%, transparent);
-  height:100%;
-  min-height: 100%;
-  background-size:25px 25px;
-  height: 350px;
-  background-color: #5DA0E5;
-  width: 100%;
-}
 
 .row.thumbs {
   margin-bottom: 0px;
 }
 
-
 .fa-thumbs {
   margin-right: 10px;
 }
 
-
-section#message-modal {
-  height: 100px;
-  overflow: hidden;
-}
-
-
 #t-dwn, #t-up {
   color: $greyish-green;
 }
-
 
 .input-field input[type=password]:focus,
              input[type=email]:focus 

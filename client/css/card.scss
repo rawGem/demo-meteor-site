@@ -96,20 +96,9 @@ h1.card-title {
 }
 
 
-
 /* modal stuff */
 section#message-modal {
   overflow: visible !important;
-}
-
-section.title {
-  height: 33px !important;
-  margin-bottom: 20px;
-  h5 {
-    color: black;
-    font-size: 18px;
-    border-bottom: 1px solid $icon-grey;
-  }
 }
 
 textarea#textarea1 {
@@ -126,16 +115,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 textarea.materialize-textarea:focus:not([readonly]) + label {
   color: $bright !important;
-}
-
-section.content {
-  background-color: #EFEFEF;
-  &:focus {
-    outline: none;
-    border: 1px solid $icon-grey;
-    background-color: white;
-    color: darkgrey;
-  }
 }
 
 i.fa-paper-plane {
