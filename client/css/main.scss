@@ -107,14 +107,12 @@ nav .banner-name {
 body {
     //background: lightgrey;
   background-color: $background-grey;
-  z-index:-5;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  //z-index:-5;
 }
 
-#main {
+main {
   flex: 1 0 auto;
+  min-height: 100vh;
 }
     
 
