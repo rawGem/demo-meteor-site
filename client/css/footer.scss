@@ -8,11 +8,12 @@ footer.page-footer {
   margin-top: 200px;
   background-color: $turquoise;
   h3,h5 {
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 5px;
     //font-size: 35px;
     color:white;
     //color: #6052A2;
+    color: #CDC6F0;
   }
   h3 {
     margin-bottom: 5px;
@@ -30,9 +31,9 @@ footer.page-footer {
 .footer-copyright {
   padding-top: 20px;
   height: 175px !important;
-  background-color: $purpleish !important;
+  background-color: #6052A2 !important;
   h6 {
-    color: black;
+    color: #733075;
   }
   img#mticon {
      margin-bottom: 10px;
