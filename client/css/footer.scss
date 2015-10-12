@@ -5,12 +5,14 @@ $pinkish: #EF97F2;
 $purpleish: #AD9DFC;
 
 footer.page-footer {
-  margin-top: 400px;
+  margin-top: 200px;
   background-color: $turquoise;
-  h1 {
+  h3,h5 {
     font-weight: 300;
-    font-size: 35px;
-    color: #6052A2;
+    letter-spacing: 5px;
+    //font-size: 35px;
+    color:white;
+    //color: #6052A2;
   }
 }
 
@@ -43,7 +45,6 @@ footer.page-footer {
   background-color: $pinkish !important;
 }
 
-
 div.bl-icon-hoz {
   margin-left: 30px;
   margin-bottom: 2px;
@@ -54,7 +55,6 @@ div.bl-icon-vert {
   margin-bottom: 2px;
   display: inline-block;
 }
-
 
 #hsclicons {
   margin-top: 10px;
