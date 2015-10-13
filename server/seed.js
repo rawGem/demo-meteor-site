@@ -26,6 +26,16 @@ Meteor.startup(function(){
             heading     : "About",
             heading_id  : "about",
             text_region : "about his site"
+          },
+          {
+            heading     : "Packages",
+            heading_id  : "pkgs",
+            text_region : "about his site"
+          },
+          {
+            heading     : "Features",
+            heading_id  : "ftrs",
+            text_region : "about his site"
           }
         ]
     })
@@ -103,6 +113,16 @@ Meteor.startup(function(){
         heading_id   : "about",
         topic        : "stuff",
         text         : "put stuff here"
+      },
+      {
+        heading_id   : "pkgs",
+        topic        : "Packages",
+        text         : "this is where you add packages"
+      },
+      {
+        heading_id   : "ftrs",
+        topic        : "Features",
+        text         : "this is where you add features"
       }]
 
       _.each(text_regions, function(doc, index, arr) {
