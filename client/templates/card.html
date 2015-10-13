@@ -38,12 +38,28 @@
       <div class="row mycard {{withUser}}">
       <div class="col l12 m12 s12 z-depth-0">
       <h1 class="card-title">{{title}}</h1>
-      {{#each topics heading_id }}
-        <p  class="content">{{text}}</p>
-      {{/each}}
+      {{#if modifiable }}
+
+        {{#each topics heading_id }}
+          <div class="chip">
+            {{text}}
+          </div>
+        {{/each}}
+
+      {{else}}
+
+        {{#each topics heading_id }}
+          <p>
+            {{text}}
+          </p>
+        {{/each}}
+
+      {{/if}}
+
       {{#if modifiable }}
         <div>is modifiable</div>
       {{/if}}
+
       </div>
       </div>
 {{else}}
