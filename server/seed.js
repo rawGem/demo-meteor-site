@@ -25,17 +25,20 @@ Meteor.startup(function(){
           {
             heading     : "About",
             heading_id  : "about",
-            text_region : "about his site"
+            text_region : "about his site",
+            modifiable  : false
           },
           {
             heading     : "Packages",
             heading_id  : "pkgs",
-            text_region : "about his site"
+            text_region : "about his site",
+            modifiable  : true
           },
           {
             heading     : "Features",
             heading_id  : "ftrs",
-            text_region : "about his site"
+            text_region : "about his site",
+            modifiable  : true
           }
         ]
     })
