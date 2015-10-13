@@ -57,7 +57,15 @@
       {{/if}}
 
       {{#if modifiable }}
-        <div>is modifiable</div>
+        <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Add {{title}}" id="first_name" type="text" class="validate">
+            </div>
+          </div>
+        </form>
+        </div>
       {{/if}}
 
       </div>
