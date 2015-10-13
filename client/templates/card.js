@@ -28,15 +28,26 @@ Template.cardContent.onRendered( function() {
 });
 
 
-Template.cardContent.events({
+Template.addToAboutForm.events({
+  
+  'click a.add' : function(e,t) {
+    console.log(e)
+    console.log(t.$("input"))
+    //e.preventDefault();
+    var text = t.$("input")["0"]
+    alert(text.value);
+    text.value = ""
+  },
 
-  'click i.fa.fa-thumbs-o-down' : function(e,t) {
+  'submit .about' : function(e,t) {
+    console.log(e)
+    //console.log(t.$("input"))
     e.preventDefault();
-    if (Meteor.userId()) {
-        Meteor.call('downvoteWithHeadingField', 
-                [Template.parentData()._id, t.data.heading])
-    }
+    //var text = t.$("input")["0"].value
+    var text = e.currentTarget["0"].value
+    e.currentTarget["0"].value = ""
   }
+
 
 });
 
