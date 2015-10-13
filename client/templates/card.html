@@ -34,15 +34,14 @@
 
 <template name="cardContent">
 {{#if isAbout }}
+      {{#each topics heading_id }}
       <div class="row mycard {{withUser}}">
       <div class="col l12 m12 s12 z-depth-0">
-      <h1 class="card-title">{{title}}</h1>
-      {{#each topics heading_id }}
-        <h5 class="abttopic">{{topic}}</h5>
+      <h1 class="card-title">{{topic}}</h1>
         <p  class="content">{{text}}</p>
+      </div>
+      </div>
       {{/each}}
-      </div>
-      </div>
 {{else}}
       <div class="row mycard {{withUser}}">
       <div class="col l12 m12 s12 z-depth-0">
