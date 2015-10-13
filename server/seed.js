@@ -120,12 +120,12 @@ Meteor.startup(function(){
       {
         heading_id   : "pkgs",
         topic        : "Packages",
-        text         : "this is where you add packages"
+        text         : "Blaze"
       },
       {
         heading_id   : "ftrs",
         topic        : "Features",
-        text         : "this is where you add features"
+        text         : "Optimistic UI"
       }]
 
       _.each(text_regions, function(doc, index, arr) {
