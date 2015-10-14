@@ -56,9 +56,11 @@ Template.addToAboutForm.events({
         topic      : t.data.title,
         text       : text
       });
+
+      e.currentTarget["0"].value = "";
+      t.$("input")["0"].blur()
     }
 
-    e.currentTarget["0"].value = "";
   }
 
 
