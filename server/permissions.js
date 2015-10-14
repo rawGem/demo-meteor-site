@@ -6,3 +6,12 @@ Messages.allow({
     }
 
 });
+
+Content.allow({
+    insert: function(userId, doc) {
+      if (userId &&
+          userId === Meteor.userId())
+          return true
+      else return false
+    }
+});
