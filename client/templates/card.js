@@ -30,7 +30,7 @@ Template.cardContent.onRendered( function() {
 
 Template.addToAboutForm.events({
   
-  'click a.add' : function(e,t) {
+  'click div.add-button' : function(e,t) {
 
     var text = t.$("input")["0"];
 
