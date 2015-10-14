@@ -31,21 +31,34 @@ Template.cardContent.onRendered( function() {
 Template.addToAboutForm.events({
   
   'click a.add' : function(e,t) {
-    console.log(e)
-    console.log(t.$("input"))
-    //e.preventDefault();
-    var text = t.$("input")["0"]
-    alert(text.value);
-    text.value = ""
+
+    var text = t.$("input")["0"];
+
+    if (text.value) {
+      Content.insert({
+        heading_id : t.data.heading_id,
+        topic      : t.data.title,
+        text       : text.value
+      });
+    }
+
+    text.value = "";
   },
 
   'submit .about' : function(e,t) {
-    console.log(e)
-    //console.log(t.$("input"))
+
     e.preventDefault();
-    //var text = t.$("input")["0"].value
-    var text = e.currentTarget["0"].value
-    e.currentTarget["0"].value = ""
+    var text = e.currentTarget["0"].value;
+
+    if (text) {
+      Content.insert({
+        heading_id : t.data.heading_id,
+        topic      : t.data.title,
+        text       : text
+      });
+    }
+
+    e.currentTarget["0"].value = "";
   }
 
 
