@@ -41,10 +41,7 @@
       {{#if modifiable }}
 
         {{#each topics heading_id }}
-          <div class="chip">
-            {{text}}
-            <span><i class="mdi-navigation-close"></i></span>
-          </div>
+          {{> aboutChip}}
         {{/each}}
 
       {{else}}
@@ -81,6 +78,13 @@
 {{/if}}
 </template>
 
+
+<template name="aboutChip">
+<div class="chip">
+  {{text}}
+  <span><i class="mdi-navigation-close"></i></span>
+</div>
+</template>
 
 
 <template name="thumbs">
