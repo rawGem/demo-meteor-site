@@ -3,6 +3,7 @@
 Template.sections.onRendered( function() {
   var instance = this;
   this.autorun(function() {
+    console.log("autorun sections")
     instance.subscribe('sections', FlowRouter.getParam("name"));
   });
 });
@@ -23,9 +24,20 @@ Template.cardContent.onRendered( function() {
     }); 
   }
   instance.autorun(function() {
+    console.log("autorun allcontent")
     instance.subscribe('allcontent');
   });
 });
+
+Template.aboutChip.onRendered(function() {
+  console.log("about onRendered")
+})
+
+Template.aboutChip.onDestroyed(function() {
+  console.log("about onDestroyed ", Tracker.active)
+  Tracker.flush()
+  
+})
 
 
 Template.addToAboutForm.events({
@@ -68,7 +80,7 @@ Template.addToAboutForm.events({
 
 Template.aboutChip.events({
   'click .mdi-navigation-close': function(e,t) {
-    t.$(".chip").remove()
+    var removed = Content.remove(t.data._id)
   }
 });
 
