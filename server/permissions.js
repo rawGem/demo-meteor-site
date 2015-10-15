@@ -13,5 +13,12 @@ Content.allow({
           userId === Meteor.userId())
           return true
       else return false
+    },
+
+    remove: function(userId, doc) {
+      if (userId &&
+          userId === Meteor.userId())
+          return true
+      else return false
     }
 });
