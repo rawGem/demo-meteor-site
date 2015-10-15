@@ -40,9 +40,13 @@
       <h1 class="card-title">{{title}}</h1>
       {{#if modifiable }}
 
+        <ul>
         {{#each topics heading_id }}
-          {{> aboutChip}}
+          <li>
+            {{> aboutChip}}
+          </li>
         {{/each}}
+        </ul>
 
       {{else}}
 
