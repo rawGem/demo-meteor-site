@@ -93,6 +93,13 @@ div.add-button {
   }
 }
 
+i.mdi-navigation-close {
+  position: relative;
+  top: 2px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
 p.content {
   color: #B2827E;
   color: $dark-grey;
@@ -159,7 +166,7 @@ i.fa-paper-plane {
   font-size: 13px;
   font-weight: 500;
   color: rgba(0,0,0,.6);
-  line-height: 32px;
+  line-height: 28px;
   padding: 0 12px;
   border-radius: 16px;
   background-color: $icon-grey;
