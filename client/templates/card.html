@@ -82,7 +82,9 @@
 <template name="aboutChip">
 <div class="chip">
   {{text}}
-  <span><i class="mdi-navigation-close"></i></span>
+  {{#if currentUser}}
+    <i class="mdi-navigation-close"></i>
+  {{/if}}
 </div>
 </template>
 
