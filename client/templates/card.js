@@ -66,6 +66,12 @@ Template.addToAboutForm.events({
 
 });
 
+Template.aboutChip.events({
+  'click .mdi-navigation-close': function(e,t) {
+    t.$(".chip").remove()
+  }
+});
+
 
 Template.messageForm.events({
 
