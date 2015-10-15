@@ -96,7 +96,7 @@ div.bl-icon-vert {
   line-height: 1.2em;
 }
 
-path {
+path#block {
   stroke: #6E8EA4; /*darker*/
 }
 
@@ -108,14 +108,14 @@ path#ce {
 svg {
   &:hover {
     cursor: pointer;
-    path {
+    path#block {
       stroke: $light-grey; 
     }
   }
   &.ce {
     &:hover {
-      path#ce {
-        fill: $light-grey;
+      path {
+        fill: $light-grey !important;
       }
     }
   }
