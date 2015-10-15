@@ -3,7 +3,6 @@
 Template.sections.onRendered( function() {
   var instance = this;
   this.autorun(function() {
-    console.log("autorun sections")
     instance.subscribe('sections', FlowRouter.getParam("name"));
   });
 });
@@ -24,20 +23,9 @@ Template.cardContent.onRendered( function() {
     }); 
   }
   instance.autorun(function() {
-    console.log("autorun allcontent")
     instance.subscribe('allcontent');
   });
 });
-
-Template.aboutChip.onRendered(function() {
-  console.log("about onRendered")
-})
-
-Template.aboutChip.onDestroyed(function() {
-  console.log("about onDestroyed ", Tracker.active)
-  Tracker.flush()
-  
-})
 
 
 Template.addToAboutForm.events({
@@ -80,7 +68,7 @@ Template.addToAboutForm.events({
 
 Template.aboutChip.events({
   'click .mdi-navigation-close': function(e,t) {
-    var removed = Content.remove(t.data._id)
+    var removed = Content.remove(t.data._id);
   }
 });
 
@@ -113,10 +101,8 @@ Template.thumbsUp.events({
           var section_id = Template.parentData(2).section_id,
               heading_id = Template.parentData().heading_id;
           Meteor.call('upvoteWithHeadingField', [section_id, heading_id ])
-                      
       }
   }
-
 })
 
 
