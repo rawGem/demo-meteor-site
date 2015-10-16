@@ -7,7 +7,6 @@ Template.sections.onRendered( function() {
   });
 });
 
-
 Template.cardContent.onRendered( function() {
   var instance = this;
   if (Meteor.userId()) {
@@ -27,12 +26,15 @@ Template.cardContent.onRendered( function() {
   });
 });
 
-Template.addContainer.events({
-  'click .mdi-content-add-circle': function(e,t) {
-    t.$(".add-form").toggle()
-  }
+Template.addForm.onRendered( function() {
+  this.$(".tooltip").hide();
 })
 
+Template.addForm.events({
+  'click .add-btn': function(e,t) {
+    t.$(".tooltip").toggle();
+  }
+});
 
 Template.addToAboutForm.events({
   
