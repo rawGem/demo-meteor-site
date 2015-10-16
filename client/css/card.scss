@@ -2,24 +2,22 @@
 
 $button-green: #69CB48;
 $button-hover-green: #45E251;
-
-.mycard.with-user {
-  min-height: 407px;
-  background-color: white;
-  margin-bottom: 0px;
-  padding-left: 20px;
-  padding-bottom: 50px;
-}
+$mustard: #F0EE30;
+$dull-mustard: #CDD16D;
+$msg-icon-brown: #ADB240;
+$cool-red: #CB3B35;
 
 .mycard {
   min-height: 407px;
   background-color: white;
   padding-left: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+  position: relative !important;
+  &.with-user {
+    margin-bottom: 0px;
+  }
 }
 
-$msg-icon-brown: #ADB240;
-$cool-red: #CB3B35;
 
 .fa-envelope {
   color: $dark-grey;
@@ -43,19 +41,13 @@ $cool-red: #CB3B35;
   }
 }
 
-$mustard: #F0EE30;
-$dull-mustard: #CDD16D;
 
 .fa-thumbs-up {
   color: $dark-grey;
-  //&:hover {
-  //  color: #516272;
-  //}
 }
 
 #t-up {
   padding-top: 15px;
-  //background-color: $medium-light-grey;
   background-color: $medium-grey;
   height: 60px;
   border-left: 6px solid white;
@@ -120,7 +112,9 @@ input[type=text]:focus:not([readonly]).about {
     box-shadow: 0 1px 0 0 $bright; 
 }
 
+
 /* modal stuff */
+/******************************************************/
 section#message-modal {
   overflow: visible !important;
 }
@@ -134,7 +128,6 @@ textarea#textarea1 {
 
 textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid $bright !important;
-  //box-shadow: 0 1px 0 0 #26a69a;
 }
 
 textarea.materialize-textarea:focus:not([readonly]) + label {
@@ -152,6 +145,8 @@ i.fa-paper-plane {
     top: 290px;
   }
 }
+/******************************************************/
+
 
 .chip {
   display: inline-block;
@@ -194,11 +189,95 @@ i.fa-paper-plane {
 
 }
 
-.add-form {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
+
+/* Tooltip */
+/******************************************************/
+.tooltip-outer-container {
+  position: absolute;
+  bottom: 50px;
+  width: 90%;
+  background-color: crimson;
 }
+
+text {
+    display: inline-block;
+}
+
+.outer {
+  display: inline-block;
+  position: absolute;
+  //height: 40px;
+  //top: 50px;
+  width: 100%;
+  //background-color: #F9F9F9;
+}
+
+i.mdi-content-add-circle {
+  display: inline-block;
+  top: 100px;
+  font-size: 25px;
+  float: right;
+}
+
+.tooltip {
+  margin-left: 15px;
+  width: 90%;
+  //background: blanchedalmond;
+  //border: 1px solid #CAD5E0;
+  padding: 4px;
+  position: absolute;
+  min-height: 100px;
+  top: -55px;
+  right: 46px;
+  form {
+    width: 90% !important;
+    position: static !important;
+    float: right !important;
+    background-color: #F9F9F9;
+  }
+}
+
+.add-form:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 99%;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #F9F9F9;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.add-btn {
+  float: right;
+}
+
+/******************************************************/
+
+/* background triangle for border */
+/*.add-form:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 99%;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #000;
+  border-style: solid;
+  border-width: 11px;
+}*/
+
+/* no select */
+/*.add-add-form {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid grey;
+}*/
