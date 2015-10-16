@@ -60,7 +60,7 @@
 
       {{#if currentUser }}
         {{#if modifiable }}
-          {{> addToAboutForm }}
+          {{> addContainer }}
         {{/if}}
       {{/if}}
 
@@ -80,6 +80,13 @@
           {{> thumbs}}
         {{/if}}
 {{/if}}
+</template>
+
+<template name="addContainer">
+    <div class="container about-add">
+    <i class="mdi-content-add-circle"></i>
+    {{> addToAboutForm }}
+    </div>
 </template>
 
 
