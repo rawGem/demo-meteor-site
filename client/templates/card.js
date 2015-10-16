@@ -40,9 +40,7 @@ Template.addForm.events({
 Template.addToAboutForm.events({
   
   'click div.add-button' : function(e,t) {
-
     var text = t.$("input")["0"];
-
     if (text.value) {
       Content.insert({
         heading_id : t.data.heading_id,
@@ -50,15 +48,13 @@ Template.addToAboutForm.events({
         text       : text.value
       });
     }
-
     text.value = "";
+    t.view.parentView._templateInstance.$(".tooltip").hide()
   },
 
   'submit .about' : function(e,t) {
-
     e.preventDefault();
     var text = e.currentTarget["0"].value;
-
     if (text) {
       Content.insert({
         heading_id : t.data.heading_id,
@@ -68,8 +64,8 @@ Template.addToAboutForm.events({
 
       e.currentTarget["0"].value = "";
       t.$("input")["0"].blur()
+      t.view.parentView._templateInstance.$(".tooltip").hide()
     }
-
   }
 
 
