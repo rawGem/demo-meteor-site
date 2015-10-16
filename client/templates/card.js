@@ -27,6 +27,12 @@ Template.cardContent.onRendered( function() {
   });
 });
 
+Template.addContainer.events({
+  'click .mdi-content-add-circle': function(e,t) {
+    t.$(".add-form").toggle()
+  }
+})
+
 
 Template.addToAboutForm.events({
   
