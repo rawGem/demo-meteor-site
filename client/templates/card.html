@@ -167,6 +167,26 @@
 </template>
 
 
+<template name="addToAboutForm">
+        <div class="row add-form">
+        <form class="col s12 about">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Add {{title}}" class="about" type="text">
+            </div>
+              <div class="col s6">
+                  <div class="waves-effect waves-light add add-button ">
+                    <div>Add</div>
+                  </div>
+              </div>
+          </div>
+        </form>
+        </div>
+</template>
+
+
+
+
 <!-- currently not in use --> 
 <template name="thumbsDown">
 <div class="col l6 m6 s6" id="t-dwn">
@@ -181,21 +201,4 @@
 <a href="#" class="col l2 m2 s2" id="cmnt">
   <i class="fa fa-comment fa-lg"></i>
 </a>
-</template>
-
-<template name="addToAboutForm">
-        <div class="row">
-        <form class="col s12 about">
-          <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Add {{title}}" class="about" type="text">
-            </div>
-              <div class="col s6">
-                  <div class="waves-effect waves-light add add-button ">
-                    <div>Add</div>
-                  </div>
-              </div>
-          </div>
-        </form>
-        </div>
 </template>
