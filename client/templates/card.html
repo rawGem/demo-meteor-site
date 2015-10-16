@@ -60,7 +60,9 @@
 
       {{#if currentUser }}
         {{#if modifiable }}
-          {{> addContainer }}
+          <div class="tooltip-outer-container">
+            {{> addForm }}
+          </div>
         {{/if}}
       {{/if}}
 
@@ -76,19 +78,33 @@
       {{/each}}
       </div>
       </div>
-        {{#if visitor}}
-          {{> thumbs}}
-        {{/if}}
+      {{#if visitor}}
+        {{> thumbs}}
+      {{/if}}
 {{/if}}
 </template>
 
-<template name="addContainer">
-    <div class="container about-add">
-    <i class="mdi-content-add-circle"></i>
-    {{> addToAboutForm }}
-    </div>
+<template name="addForm">
+<div class="outer">
+    <a class="btn-floating add-btn"><i class="mdi-content-add"></i></a>
+    <div class="tooltip">
+      {{> addToAboutForm}}
+    </div>   
+ </div>
 </template>
 
+<template name="addToAboutForm">
+    <form class="col s8 l8 m8 about add-form">
+    <div class="input-field col s8">
+      <input placeholder="Add {{title}}" class="about" type="text">
+    </div>
+    <div class="col s2">
+        <div class="waves-effect waves-light add add-button ">
+          <div>Add</div>
+        </div>
+    </div>
+    </form>
+</template>
 
 <template name="aboutChip">
 <div class="chip">
@@ -166,23 +182,6 @@
 </div>
 </template>
 
-
-<template name="addToAboutForm">
-        <div class="row add-form">
-        <form class="col s12 about">
-          <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Add {{title}}" class="about" type="text">
-            </div>
-              <div class="col s6">
-                  <div class="waves-effect waves-light add add-button ">
-                    <div>Add</div>
-                  </div>
-              </div>
-          </div>
-        </form>
-        </div>
-</template>
 
 
 
