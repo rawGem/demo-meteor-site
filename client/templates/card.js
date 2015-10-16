@@ -33,6 +33,7 @@ Template.addForm.onRendered( function() {
 Template.addForm.events({
   'click .add-btn': function(e,t) {
     t.$(".tooltip").toggle();
+    t.$("input").focus();
   }
 });
 
