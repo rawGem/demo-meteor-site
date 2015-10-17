@@ -42,12 +42,10 @@ $cool-red: #CB3B35;
 }
 
 
-.fa-thumbs-up {
-  color: $dark-grey;
-}
 
 #t-up {
-  padding-top: 15px;
+  position: relative;
+  padding-top: 2px;
   background-color: $medium-grey;
   height: 60px;
   border-left: 6px solid white;
@@ -58,7 +56,7 @@ $cool-red: #CB3B35;
     cursor: pointer;
     background-color: $button-green;
     color: white;
-    .fa-thumbs-up {
+    .mdi-action-thumb-up {
       color: white;
    // -webkit-text-stroke-width: 1px;
    // -webkit-text-stroke-color: orange;
@@ -67,6 +65,18 @@ $cool-red: #CB3B35;
     }
   }
 }
+
+.mdi-action-thumb-up {
+  font-size: 30px;
+  color: $dark-grey;
+}
+
+span.upvotes {
+  position: relative;
+  bottom: 4px;
+  font-size: 20px;
+}
+
 
 div.add-button {
   background-color: white;
