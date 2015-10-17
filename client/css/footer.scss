@@ -101,9 +101,14 @@ path#block {
   fill: #89A9BF; /*lighter*/
 }
 
-path#ce {
-  fill: #89A9BF !important;
-  stroke: none;
+#blthick {
+  stroke: #89A9BF;
+}
+
+svg.blthick {
+  filter: url(#a);
+  -webkit-filter: url(#a);
+  //stroke: #89A9BF;
 }
 
 path.ce {
@@ -119,27 +124,20 @@ svg.ce {
 svg {
   &:hover {
     cursor: pointer;
-    path#block {
-      fill: $light-grey; 
-      fill: #6E8EA4; 
-      fill: #7C9DB5; /*lightest*/ 
+    path#blthick {
+      stroke: $light-grey; 
+      stroke: #6E8EA4; 
+      stroke: #7C9DB5; /*lightest*/ 
     }
   }
   &.ce {
     &:hover {
-      path#ce {
+      path.ce {
         fill: #6E8EA4 !important;
         fill: #7C9DB5 !important; 
       }
     }
   }
-}
-
-svg.blthick, #blthick {
-  filter: url(#a);
-  -webkit-filter: url(#a);
-  /*fill: white;*/
-  stroke: #89A9BF;
 }
 
 .fa-github {
