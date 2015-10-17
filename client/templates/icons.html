@@ -26,23 +26,60 @@
         width="105" 
         height="105" 
         viewBox="0 0 99.999993 97.235602">
-<defs>
-    <filter id="a" color-interpolation-filters="sRGB">
-      <feFlood result="flood" flood-color="#536E81"/>
-      <feComposite operator="out" result="composite1" in2="flood" in="SourceGraphic"/>
-      <feGaussianBlur stdDeviation=".3" result="blur" in="composite1"/>
-      <feOffset result="offset" dx=".5" dy=".5"/>
-      <feComposite operator="atop" result="fbSourceGraphic" in2="SourceGraphic" in="offset"/>
-      <feColorMatrix values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0" result="fbSourceGraphicAlpha" in="fbSourceGraphic"/>
-      <feFlood result="flood" flood-color="#536E81"/>
-      <feComposite operator="out" result="composite1" in2="fbSourceGraphic" in="flood"/>
-      <feGaussianBlur result="blur" stdDeviation="1" in="composite1"/>
-      <feOffset result="offset" dx=".5" dy=".5"/>
-      <feComposite operator="atop" result="composite2" in2="fbSourceGraphic" in="offset"/>
+    <defs>
+    <filter 
+        id="a"
+        color-interpolation-filters="sRGB">
+      <feFlood 
+        result="flood"
+        flood-color="#536E81"/>
+      <feComposite
+        operator="out"
+        result="composite1"
+        in2="flood"
+        in="SourceGraphic"/>
+      <feGaussianBlur
+        stdDeviation=".3"
+        result="blur"
+        in="composite1"/>
+      <feOffset
+        result="offset"
+        dx=".5"
+        dy=".5"/>
+      <feComposite
+        operator="atop"
+        result="fbSourceGraphic"
+        in2="SourceGraphic"
+        in="offset"/>
+      <feColorMatrix
+        values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0" 
+        result="fbSourceGraphicAlpha"
+        in="fbSourceGraphic"/>
+      <feFlood
+        result="flood"
+        flood-color="#536E81"/>
+      <feComposite
+        operator="out"
+        result="composite1"
+        in2="fbSourceGraphic"
+        in="flood"/>
+      <feGaussianBlur
+        result="blur"
+        stdDeviation="1"
+        in="composite1"/>
+      <feOffset
+        result="offset"
+        dx=".5"
+        dy=".5"/>
+      <feComposite
+        operator="atop"
+        result="composite2"
+        in2="fbSourceGraphic"
+        in="offset"/>
     </filter>
-</defs>
+    </defs>
       <a xlink:href="http://bl.ocks.org/rawGem">
-       <path style="text-decoration-color:#000000;isolation:auto;mix-blend-mode:normal;block-progression:tb;text-decoration-line:none;text-indent:0;text-transform:none;text-decoration-style:solid" d="M28.457 2.856v41.917h41.92V2.853h-41.92zm6.886 6.887H63.49V37.89H35.343V9.742zm18.723 40.674v41.918h41.92v-41.92h-41.92zm6.887 6.886H89.1V85.45H60.952V57.302zm-56.99-6.886v41.918h41.92v-41.92H3.963zm6.886 6.886h28.144V85.45H10.85V57.302z" solid-color="#000000" color="#000" filter="url(#a)" white-space="normal" fill="#6e8ea4"/>
+      <path id="block" style="text-decoration-color:#000000;isolation:auto;mix-blend-mode:normal;block-progression:tb;text-decoration-line:none;text-indent:0;text-transform:none;text-decoration-style:solid" d="M28.457 2.856v41.917h41.92V2.853h-41.92zm6.886 6.887H63.49V37.89H35.343V9.742zm18.723 40.674v41.918h41.92v-41.92h-41.92zm6.887 6.886H89.1V85.45H60.952V57.302zm-56.99-6.886v41.918h41.92v-41.92H3.963zm6.886 6.886h28.144V85.45H10.85V57.302z" solid-color="#000000" color="#000" filter="url(#a)" white-space="normal" fill="#6e8ea4"/>
       </a>
    </svg> 
 </template>

@@ -97,11 +97,12 @@ div.bl-icon-vert {
 }
 
 path#block {
-  stroke: #6E8EA4; /*darker*/
+  fill: #6E8EA4; /*darker*/
+  fill: #89A9BF; /*lighter*/
 }
 
 path#ce {
-  fill: #6E8EA4;
+  fill: #89A9BF;
   stroke: none;
 }
 
@@ -109,13 +110,14 @@ svg {
   &:hover {
     cursor: pointer;
     path#block {
-      stroke: $light-grey; 
+      fill: $light-grey; 
+      fill: #6E8EA4; 
     }
   }
   &.ce {
     &:hover {
       path {
-        fill: $light-grey !important;
+        fill: #6E8EA4 !important;
       }
     }
   }
@@ -126,9 +128,9 @@ svg {
   font-size: 115px;
   position: relative;
   bottom: 4px;
-  color: #6E8EA4;
+  color: #89A9BF;
   &:hover {
-    color: $light-grey;
+    color: #6E8EA4;
     cursor: pointer;
   }
 }
