@@ -245,12 +245,27 @@ i.mdi-content-add-circle {
   }
 }
 
+$break-small: 610px;
+$break-large: 611px;
+
+.profile-pic {
+  float: left;
+  width: 250px;
+  @media screen and (max-width: $break-small) {
+    width: 100px;
+    float: none;
+  }
+  @media screen and (min-width: $break-large) {
+    float: right;
+  }
+}
+
 .add-form:before {
   content: '';
   display: block;
   position: absolute;
   top: 60px;
-  left: 98%;
+  //left: 98%;
   width: 0;
   height: 0;
   border-color: transparent transparent transparent #F9F9F9;
@@ -259,6 +274,12 @@ i.mdi-content-add-circle {
   filter: drop-shadow(-2px 2px 2px rgba(0,0,0,0.2));
   -webkit-filter: drop-shadow(-2px 2px 2px  rgba(0,0,0,0.2));
   z-index: -3;
+  @media screen and (max-width: $break-small) {
+    left: 98%;
+  }
+  @media screen and (min-width: $break-large) {
+    left: 99%;
+  }
 }
 
 .add-btn {
