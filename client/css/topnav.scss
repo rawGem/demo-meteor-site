@@ -12,12 +12,13 @@ $top-nav-bg: white;
   height: inherit;
   box-sizing: border-box;
   width: 150px;
-  transition: border-bottom 200ms ease 0s;
+  transition: border-bottom 100ms ease-in 50ms;
   a {
     font-size: 16px;
     font-weight: 300;
     color: $bright; 
     padding: 0;
+    border-bottom: solid 0px pink;
     &:hover {
       color: $link-hl-color;
     }
@@ -44,6 +45,7 @@ div.top-link-container.active-true {
 }
 
 div.top-link-container.active-false {
+   border-bottom: 0px solid $link-hl-color;
   &:hover {
      border-bottom: $active-link-bb-width solid $link-hl-color;
   }
