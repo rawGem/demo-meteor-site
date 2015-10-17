@@ -99,7 +99,6 @@ div.bl-icon-vert {
 path#block {
   fill: #6E8EA4; /*darker*/
   fill: #89A9BF; /*lighter*/
-  fill: #7C9DB5; /*lighter*/
 }
 
 path#ce {
@@ -107,23 +106,30 @@ path#ce {
   stroke: none;
 }
 
-
-
 svg {
   &:hover {
     cursor: pointer;
     path#block {
       fill: $light-grey; 
       fill: #6E8EA4; 
+      fill: #7C9DB5; /*lightest*/ 
     }
   }
   &.ce {
     &:hover {
       path#ce {
         fill: #6E8EA4 !important;
+        fill: #7C9DB5 !important; 
       }
     }
   }
+}
+
+svg.blthick, #blthick {
+  filter: url(#a);
+  -webkit-filter: url(#a);
+  /*fill: white;*/
+  stroke: #89A9BF;
 }
 
 .fa-github {
@@ -132,8 +138,10 @@ svg {
   position: relative;
   bottom: 4px;
   color: #89A9BF;
+  filter: url(#a);
+  -webkit-filter: url(#a);
   &:hover {
-    color: #6E8EA4;
+    color: #7C9DB5; 
     cursor: pointer;
   }
 }
