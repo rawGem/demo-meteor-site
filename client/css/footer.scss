@@ -7,14 +7,16 @@ $purpleish: #AD9DFC;
 footer.page-footer {
   margin-top: 200px;
   //background-color: $turquoise;
-  background: rgba(208,223,232,1);
-  background: -moz-linear-gradient(top, rgba(208,223,232,1) 0%, rgba(154,200,229,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(208,223,232,1)), color-stop(100%, rgba(154,200,229,1)));
-  background: -webkit-linear-gradient(top, rgba(208,223,232,1) 0%, rgba(154,200,229,1) 100%);
-  background: -o-linear-gradient(top, rgba(208,223,232,1) 0%, rgba(154,200,229,1) 100%);
-  background: -ms-linear-gradient(top, rgba(208,223,232,1) 0%, rgba(154,200,229,1) 100%);
-  background: linear-gradient(to bottom, rgba(208,223,232,1) 0%, rgba(154,200,229,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0dfe8', endColorstr='#9ac8e5', GradientType=0 );
+
+  background: #7db9e8;
+  background: -moz-linear-gradient(top,  #7db9e8 0%, #d0dbe2 0%, #9ac8e5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(0%,#d0dbe2), color-stop(100%,#9ac8e5));
+  background: -webkit-linear-gradient(top,  #7db9e8 0%,#d0dbe2 0%,#9ac8e5 100%);
+  background: -o-linear-gradient(top,  #7db9e8 0%,#d0dbe2 0%,#9ac8e5 100%);
+  background: -ms-linear-gradient(top,  #7db9e8 0%,#d0dbe2 0%,#9ac8e5 100%);
+  background: linear-gradient(to bottom,  #7db9e8 0%,#d0dbe2 0%,#9ac8e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#9ac8e5',GradientType=0 );
+
   h3,h5 {
     font-weight: 400;
     letter-spacing: 5px;
@@ -42,14 +44,16 @@ footer.page-footer {
   height: 250px !important;
   //background-color: #6052A2 !important;
 
-background: rgba(123,110,184,1);
-background: -moz-linear-gradient(top, rgba(123,110,184,1) 0%, rgba(96,82,162,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(123,110,184,1)), color-stop(100%, rgba(96,82,162,1)));
-background: -webkit-linear-gradient(top, rgba(123,110,184,1) 0%, rgba(96,82,162,1) 100%);
-background: -o-linear-gradient(top, rgba(123,110,184,1) 0%, rgba(96,82,162,1) 100%);
-background: -ms-linear-gradient(top, rgba(123,110,184,1) 0%, rgba(96,82,162,1) 100%);
-background: linear-gradient(to bottom, rgba(123,110,184,1) 0%, rgba(96,82,162,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b6eb8', endColorstr='#6052a2', GradientType=0 );
+background: #ffe5e6;
+background: -moz-linear-gradient(top,  #ffe5e6 0%, #f4d9e9 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe5e6), color-stop(100%,#f4d9e9));
+background: -webkit-linear-gradient(top,  #ffe5e6 0%,#f4d9e9 100%);
+background: -o-linear-gradient(top,  #ffe5e6 0%,#f4d9e9 100%);
+background: -ms-linear-gradient(top,  #ffe5e6 0%,#f4d9e9 100%);
+background: linear-gradient(to bottom,  #ffe5e6 0%,#f4d9e9 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe5e6', endColorstr='#f4d9e9',GradientType=0 );
+
+
 
   h6 {
     color: $dark-grey;
