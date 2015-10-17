@@ -106,6 +106,16 @@ path#ce {
   stroke: none;
 }
 
+path.ce {
+  fill: #89A9BF !important;
+  stroke: none;
+}
+
+svg.ce {
+  filter: url(#a);
+  -webkit-filter: url(#a);
+}
+
 svg {
   &:hover {
     cursor: pointer;
