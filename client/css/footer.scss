@@ -86,7 +86,7 @@ div.bl-icon-hoz {
 }
 
 div.bl-icon-vert {
-  margin-bottom: 20px;
+  margin-top: 30px;
   display: inline-block;
 }
 
@@ -99,12 +99,15 @@ div.bl-icon-vert {
 path#block {
   fill: #6E8EA4; /*darker*/
   fill: #89A9BF; /*lighter*/
+  fill: #7C9DB5; /*lighter*/
 }
 
 path#ce {
-  fill: #89A9BF;
+  fill: #89A9BF !important;
   stroke: none;
 }
+
+
 
 svg {
   &:hover {
@@ -116,7 +119,7 @@ svg {
   }
   &.ce {
     &:hover {
-      path {
+      path#ce {
         fill: #6E8EA4 !important;
       }
     }
