@@ -96,6 +96,9 @@ div.bl-icon-vert {
   &#ceIcon {
     margin-bottom: 40px;
   }
+  &#octo {
+    margin-right: 5px;
+  }
 }
 
 #hsclicons {
@@ -129,6 +132,14 @@ svg.ce {
   -webkit-filter: url(#a);
 }
 
+svg.octo {
+  filter: url(#a);
+  -webkit-filter: url(#a);
+  path {
+    fill: #89A9BF !important;
+  }
+}
+
 svg {
   &:hover {
     cursor: pointer;
@@ -141,6 +152,14 @@ svg {
   &.ce {
     &:hover {
       path.ce {
+        fill: #6E8EA4 !important;
+        fill: #7C9DB5 !important; 
+      }
+    }
+  }
+  &.octo {
+    &:hover {
+      path {
         fill: #6E8EA4 !important;
         fill: #7C9DB5 !important; 
       }
