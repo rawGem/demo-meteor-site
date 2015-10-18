@@ -6,8 +6,8 @@
 
 meteor-platform
 materialize:materialize
-fortawesome:fontawesome
 reactive-var
 fourseven:scss
 accounts-password
 useraccounts:materialize
+fortawesome:fontawesome
