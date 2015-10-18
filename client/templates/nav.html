@@ -1,162 +1,148 @@
 <template name="side">
   <div class="navbar-fixed">
-    <nav class="bottom">
-          {{> atNavButton}} 
-          {{#if admin}}
-              {{> adminTopNavLink}}
-          {{/if}}
+  <nav class="bottom">
+      {{> atNavButton}} 
+      {{#if admin}}
+          {{> adminTopNavLink}}
+      {{/if}}
 
-      <ul class="hide-on-med-and-down links">
-        <div class="row">
-          {{> aboutTopNavLink}}
-          {{> educationTopNavLink}}
-          {{> courseworkTopNavLink}}
-          {{> overviewTopNavLink}}
-        </div>
-      </ul>
-      <ul id="slide-out" class="side-nav">
-        {{> educationSideNavLink}}
-        {{> courseworkSideNavLink}}
-        {{> overviewSideNavLink}}
-        {{> aboutSideNavLink}}
-      </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse">
-      <!--<i class="fa fa-bars"></i>-->
-      <i class="mdi-navigation-menu"></i>-->
-      </a>
-    </nav>
+    <ul class="hide-on-med-and-down links">
+      <div class="row">
+      {{> aboutTopNavLink}}
+      {{> educationTopNavLink}}
+      {{> courseworkTopNavLink}}
+      {{> overviewTopNavLink}}
+      </div>
+    </ul>
+    <ul id="slide-out" class="side-nav">
+      {{> educationSideNavLink}}
+      {{> courseworkSideNavLink}}
+      {{> overviewSideNavLink}}
+      {{> aboutSideNavLink}}
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse">
+    <!--<i class="fa fa-bars"></i>-->
+    <i class="mdi-navigation-menu"></i>-->
+    </a>
+  </nav>
   </div>
 </template>
 
 
 
 <template name="adminTopNavLink">
-          <a class="admin-top-link" href="">
-            Admin
-          </a>
+  <a class="admin-top-link" href="">
+    Admin
+  </a>
 </template>
 
 
 
 <template name="educationTopNavLink">
-        <li class="top-nav col l2" id="edu-top">
-        <div class="top-link-container {{active}}">
-          <a class="center-align" href="#!">
-            Education
-          </a>
-        </div>
-        </li>
+  <li class="top-nav col l2" id="edu-top">
+  <div class="top-link-container {{active}}">
+    <a class="center-align" href="#!">
+      Education
+    </a>
+  </div>
+  </li>
 </template>
+
+
 
 <template name="courseworkTopNavLink">
-        <li class="top-nav col l2" id="crswrk-top" >
-          <div class="top-link-container {{active}}">
-            <a class="center-align" href="#!">
-              Coursework
-            </a>
-          </div>
-        </li>
+  <li class="top-nav col l2" id="crswrk-top" >
+    <div class="top-link-container {{active}}">
+      <a class="center-align" href="#!">
+        Coursework
+      </a>
+    </div>
+  </li>
 </template>
+
+
 
 <template name="overviewTopNavLink">
-        <li class="top-nav col l2 " id="ov-top">
-        <div class="top-link-container {{active}}">
-          <a class="center-align" href="#!">
-            Overview
-          </a>
-        </div>
-        </li>
+  <li class="top-nav col l2 " id="ov-top">
+  <div class="top-link-container {{active}}">
+    <a class="center-align" href="#!">
+      Overview
+    </a>
+  </div>
+  </li>
 </template>
 
+
+
 <template name="aboutTopNavLink">
-        <li class="top-nav col l2 offset-l2" id="ab-top">
-        <div class="top-link-container {{active}}">
-          <a class="center-align" href="#!">
-            About
-          </a>
-        </div>
-        </li>
+  <li class="top-nav col l2 offset-l2" id="ab-top">
+  <div class="top-link-container {{active}}">
+    <a class="center-align" href="#!">
+      About
+    </a>
+  </div>
+  </li>
 </template>
+
 
 
 <template name="educationSideNavLink">
-        <li class="nav-side" id="edu-side">
-          <a href="#!">
-            <span>
-              <i class="fa fa-graduation-cap"></i>
-            </span>
-            Education
-          </a>
-        </li>
+  <li class="nav-side" id="edu-side">
+    <a href="#!">
+      <span>
+        <i class="fa fa-graduation-cap"></i>
+      </span>
+      Education
+    </a>
+  </li>
 </template>
+
+
 
 <template name="courseworkSideNavLink">
-        <li class="nav-side" id="crswrk-side">
-          <a href="#!">
-            <span>
-              <i class="fa fa-book"></i>
-            </span>
-            Coursework
-          </a>
-        </li>
+  <li class="nav-side" id="crswrk-side">
+    <a href="#!">
+      <span>
+        <i class="fa fa-book"></i>
+      </span>
+      Coursework
+    </a>
+  </li>
 </template>
+
+
 
 <template name="overviewSideNavLink">
-        <li class= "nav-side" id="ov-side">
-          <a href="#!">
-            <span>
-              <i class="fa fa-file-text-o"></i>
-            </span>
-            Overview
-          </a>
-        </li>
+  <li class= "nav-side" id="ov-side">
+    <a href="#!">
+      <span>
+        <i class="fa fa-file-text-o"></i>
+      </span>
+      Overview
+    </a>
+  </li>
 </template>
 
+
+
 <template name="aboutSideNavLink">
-        <li class= "nav-side" id="ab-side">
-          <a href="#!">
-            <span>
-              <i class="fa fa-info-circle"></i>
-            </span>
-            About
-          </a>
-        </li>
+  <li class= "nav-side" id="ab-side">
+    <a href="#!">
+      <span>
+        <i class="fa fa-info-circle"></i>
+      </span>
+      About
+    </a>
+  </li>
 </template>
+
+
 
 <template name="banner">
   <div class="navbar-fixed top">
-      <nav class="top">
-        {{> atNavButton}}
-      </nav>
-    </div>
+  <nav class="top">
+    {{> atNavButton}}
+  </nav>
+  </div>
 </template>
 
-<template name="vsclIcons">
-<div id="vsclicons">
-  <a href="https://www.github.com/sjbrowne">
-    <i class="fa fa-github tooltipped" data-position="left" data-delay="10" data-tooltip="github"></i>
-  </a>
-  <div class="bl-icon">
- <svg class="tooltipped" data-position="left" data-delay="10" data-tooltip="bl.ocks"
-      xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0, 0, 600, 600">
-      <a xlink:href="http://bl.ocks.org/rawGem">
-      <g stroke="#000" stroke-width="41" fill="none">
-      <path d="M47.065 351.794h208.57v208.568H47.064V351.794zM345.366 351.794h208.57v208.568h-208.57V351.794zM192.898 68.638h208.57v208.568h-208.57V68.638z"/>
-      </g>
-      </a>
-  </svg> 
-  </div> 
-  <div class="bl-icon">
-<!--a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">Hover me!</a>-->
-  <svg  class="tooltipped" data-position="left" data-delay="10" data-tooltip="CodeEval"
-        width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-        <a xlink:href="https://www.codeeval.com">
-        <g fill="none" stroke="#000">
-        <path d="M27.1 15.02A12.1 11.8 0 0 1 15 26.82 12.1 11.8 0 0 1 2.9 15 12.1 11.8 0 0 1 15 3.22a12.1 11.8 0 0 1 12.1 11.8z" stroke-width="5.06"/>
-        <path d="M25.17 12.1h-8.04V7.43l-5.2 7.24 5.18 7.92.14-4.7 8.16.1 1.77-1.5" stroke-width="1.9"/>
-        </g>
-        </a>
-  </svg>
-  </div> 
-</div>
-</template>
