@@ -18,14 +18,8 @@ $cool-red: #CB3B35;
   }
 }
 
-
-.fa-envelope {
-  color: $dark-grey;
-}
-
-
 .msg-icon {
-  padding-top: 15px !important;
+  padding-top: 2px !important;
   background-color: $medium-grey; 
   height: 60px;
   border-left: 3px solid white;
@@ -35,13 +29,11 @@ $cool-red: #CB3B35;
   &:hover {
     cursor: pointer;
     background-color: $button-green;
-    .fa-envelope {
+    .mdi-content-mail {
       color: white;
     }
   }
 }
-
-
 
 #t-up {
   position: relative;
@@ -70,6 +62,12 @@ $cool-red: #CB3B35;
   font-size: 30px;
   color: $dark-grey;
 }
+
+.mdi-content-mail {
+  color: $dark-grey;
+  font-size: 30px;
+}
+
 
 span.upvotes {
   position: relative;
