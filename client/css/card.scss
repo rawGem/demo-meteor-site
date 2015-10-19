@@ -165,17 +165,17 @@ i.mdi-content-send {
 
 .chip {
   display: inline-block;
-  height: 32px;
-  font-size: 13px;
+  height: 42px;
+  font-size: 18px;
   font-weight: 500;
   color: rgba(0,0,0,.6);
-  line-height: 32px;
+  line-height: 41px;
   padding: 0 12px;
   border-radius: 5px;
   background-color: $icon-grey;
   margin-bottom: 5px;
   &.with-user {
-    line-height: 25px;
+    line-height: 32px;
   }
   img {
     float: left;
@@ -195,8 +195,8 @@ i.mdi-content-send {
 
   i.mdi-navigation-close {
     position: relative;
-    top: 3px;
-    font-size: 18px;
+    top: 5px;
+    font-size: 24px;
     margin-left: 10px;
     &:hover {
       cursor: pointer;
