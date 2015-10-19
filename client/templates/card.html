@@ -114,12 +114,18 @@
 
 
 <template name="aboutChip">
-<div class="chip">
-  {{text}}
   {{#if currentUser}}
-    <i class="mdi-navigation-close"></i>
+    <div class="chip with-user">
+      {{text}}
+      {{#if currentUser}}
+        <i class="mdi-navigation-close"></i>
+      {{/if}}
+    </div>
+  {{else}}
+    <div class="chip">
+      {{text}}
+    </div>
   {{/if}}
-</div>
 </template>
 
 
