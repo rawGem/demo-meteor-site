@@ -10,8 +10,9 @@ $cool-red: #CB3B35;
 .mycard {
   min-height: 407px;
   background-color: white;
-  padding-left: 20px;
+  padding-left: 5%;
   padding-bottom: 100px;
+  padding-right: 10%;
   position: relative !important;
   &.with-user {
     margin-bottom: 0px;
@@ -111,6 +112,9 @@ h5.topic {
   margin-top: 20px;
   border-left: 5px solid $button-green;
   padding: 5px 3px 5px 8px;
+  &.about {
+    border-left: 5px solid #CFBBBB;
+  }
 }
 
 h1.card-title {
@@ -167,7 +171,7 @@ i.mdi-content-send {
   display: inline-block;
   height: 42px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(0,0,0,.6);
   line-height: 41px;
   padding: 0 12px;
@@ -301,6 +305,42 @@ $break-large: 611px;
   background-color: #DE7872;
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
 }
+
+
+ul.dummy-users {
+  //margin-left: 25px;
+  background-color: #FFFBFB;
+  width: 270px;
+  padding-top: 10px;
+  padding-bottom: 38px;
+  padding-left: 7px;
+  line-height: 1.3em;
+  span {
+    height: 100%;
+    padding-right: 5px;
+    margin-right: 3px;
+    //color: #939393;
+    color: #C98B8B;
+    font-weight: 300;
+  }
+  li.dummy-user {
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 2px;
+    //background-color: $light-grey;
+    color: $medium-dark-grey;
+    font-weight: 200;
+    h5 { 
+      color: #939191;
+      font-size: 18px;
+      line-height: 0.5em;
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
 
 /******************************************************/
 

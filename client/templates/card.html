@@ -50,11 +50,49 @@
 
       {{else}}
 
-        {{#each topics heading_id }}
-          <p>
-            {{text}}
-          </p>
-        {{/each}}
+        <p>
+        Welcome! This interactive résumé is built on the <a href="https://www.meteor.com">Meteor</a>
+        platform.
+        </p>
+        <h5 class="topic about">Registration</h5>
+        <p>
+        The email verification process is not active, so a valid or invalid
+        email address will be accepted by the registration system. User
+        registration is not mandatory to
+        view the behavior of the site. Two accounts are available by
+        default.
+        <!--Feel free to register with a valid or invalid email address;
+        the email verification process is not active. Aternatively, the
+        site can be explored with the two accounts that are available 
+        by default.-->
+        </p>
+        <ul class="dummy-users">
+          <li class="dummy-user">
+            <h5 class="user-type">Admin</h5>
+            <span class="field">email: </span>admin@this.domain
+            <br>
+            <span class="field">password: </span>admin
+          </li>
+          <li class="dummy-user">
+            <h5 class="user-type">General</h5>
+            <span class="field">email: </span>general@this.domain  
+            <br>
+            <span class="field">password: </span>general
+          </li>
+        </ul>
+        <h5 class="topic about">Authorization</h5>
+        <p>
+        There are three access levels: two for registered users, general and admin,
+        and one for non-registered users. Registered users with general access 
+        can send messages  (see "Education" and "Coursework" sections) 
+        and add or remove chips  (see
+        below). In addition to having general access privileges, 
+        users with admin
+        privileges have access to a section that lists all messages by topic.
+        Non-registered users have read-only access to non-admin sections.
+        </p>
+        
+        
 
       {{/if}}
 
