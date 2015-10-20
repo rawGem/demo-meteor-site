@@ -11,60 +11,19 @@ li.nav-side {
   border-bottom: 1px solid #ececec;
   a {
     color: #696969; 
+    margin-left: 28px;
   }
   &:hover {
     background-color: $light-grey;
   }
-}
-
-li#edu-side a span {
-  margin-right: 10px;
-  margin-left: 23px;
-}
-
-li#crswrk-side a span {
-  margin-right: 14px;
-  margin-left: 27px;
-}
-
-li#ov-side a span {
-  margin-right: 14px;
-  margin-left: 27px;
-}
-
-li#ab-side a span {
-  margin-right: 14px;
-  margin-left: 27px;
-}
-
-.mdi-av-my-library-books {
-  //padding-left: 30px !important;
-  //color: $greenish-grey;
-  color: $dark-grey;
-  font-size: 18px;
-  transform: translate(0px, 2px);
-}
-
-.mdi-social-school {
-  //margin-left: 20px;
-  //color: $brownish-maroon;
-  font-size: 20px;
-  color: $dark-grey;
-  transform: translate(0px, 2px);
-}
-
-.mdi-action-assignment {
-  //margin-left: 20px;
-  //color: $brownish-maroon;
-  font-size: 20px;
-  color: $dark-grey;
-  transform: translate(0px, 2px);
-}
-
-.mdi-action-info {
-  //margin-left: 20px;
-  //color: $brownish-maroon;
-  font-size: 23px;
-  color: $dark-grey;
-  transform: translate(0px, 2px);
+  i {
+    color: $dark-grey;
+    font-size: 20px;
+  }
+  span {
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+    color: $dark-grey;
+  }
 }
