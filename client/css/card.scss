@@ -117,6 +117,13 @@ h5.topic {
   }
 }
 
+span.topic.about {
+  position: relative;
+  top: -2px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 h1.card-title {
   color: $dark-grey !important;
   font-weight: 600 !important;
@@ -309,7 +316,7 @@ $break-large: 611px;
 
 ul.dummy-users {
   //margin-left: 25px;
-  background-color: #FFFBFB;
+  background-color: #FCEAEA;
   width: 270px;
   padding-top: 10px;
   padding-bottom: 38px;
