@@ -182,10 +182,11 @@ i.mdi-content-send {
   font-size: 18px;
   font-weight: 400;
   color: rgba(0,0,0,.6);
+  color: #A8A68A;
   line-height: 41px;
   padding: 0 12px;
   border-radius: 5px;
-  background-color: $icon-grey;
+  background-color: #F0EFE4;
   margin-bottom: 5px;
   &.with-user {
     line-height: 33px;
@@ -213,7 +214,7 @@ i.mdi-content-send {
     margin-left: 10px;
     &:hover {
       cursor: pointer;
-      color: #DE7872;
+      color: #FF3828;
     }
   }
 
