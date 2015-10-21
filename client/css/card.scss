@@ -130,10 +130,13 @@ h1.card-title {
   color: $dark-grey !important;
   font-weight: 600 !important;
 }
+input[type=text].about {
+  border-bottom: 1px solid #DCDADA;
+}
 
 input[type=text]:focus:not([readonly]).about {
-    border-bottom: 1px solid $bright;
-    box-shadow: 0 1px 0 0 $bright; 
+    border-bottom: 1px solid $medium-dark-grey;
+    box-shadow: 0 1px 0 0 $medium-dark-grey; 
 }
 
 
