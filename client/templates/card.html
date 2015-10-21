@@ -165,12 +165,16 @@
 
 <template name="aboutChip">
   {{#if currentUser}}
-    <div class="chip with-user">
-      {{text}}
-      {{#if currentUser}}
+    {{#unless permanent}}
+      <div class="chip with-user">
+        {{text}}
         <i class="mdi-navigation-close"></i>
-      {{/if}}
-    </div>
+      </div>
+    {{else}}
+      <div class="chip">
+        {{text}}
+      </div>
+    {{/unless}}
   {{else}}
     <div class="chip">
       {{text}}

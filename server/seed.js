@@ -120,13 +120,52 @@ Meteor.startup(function(){
       {
         heading_id   : "pkgs",
         topic        : "Packages",
-        text         : "Blaze"
+        text         : "blaze",
+        permanent    : true
+      },
+      {
+        heading_id   : "pkgs",
+        topic        : "Packages",
+        text         : "useraccounts:materialize",
+        permanent    : true
+      },
+      {
+        heading_id   : "pkgs",
+        topic        : "Packages",
+        text         : "kadira:flow-router",
+        permanent    : true
+      },
+      {
+        heading_id   : "pkgs",
+        topic        : "Packages",
+        text         : "kadira:blaze-layout",
+        permanent    : true
+      },
+      {
+        heading_id   : "pkgs",
+        topic        : "Packages",
+        text         : "fourseven:scss",
+        permanent    : true
       },
       {
         heading_id   : "ftrs",
         topic        : "Features",
-        text         : "Optimistic UI"
-      }]
+        text         : "Optimistic UI",
+        permanent    : true
+      },
+      {
+        heading_id   : "ftrs",
+        topic        : "Features",
+        text         : "Dynamic UI",
+        permanent    : true
+      },
+      {
+        heading_id   : "ftrs",
+        topic        : "Features",
+        text         : "DDP",
+        permanent    : true
+      }
+      ]
 
       _.each(text_regions, function(doc, index, arr) {
         Content.insert(doc)
