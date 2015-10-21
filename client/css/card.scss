@@ -110,10 +110,10 @@ h5.topic {
   line-height: 1em;
   margin-bottom: 0px;
   margin-top: 20px;
-  border-left: 5px solid $button-green;
-  padding: 5px 3px 5px 8px;
+  //border-left: 5px solid $button-green;
+  padding: 5px 3px 5px 0px;
   &.about {
-    border-left: 5px solid #CFBBBB;
+    //border-left: 5px solid #CFBBBB;
     margin-top: 80px;
     margin-bottom: 10px;
   }
