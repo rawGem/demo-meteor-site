@@ -22,18 +22,48 @@ div.ov-container {
   padding-bottom: 300px;
   padding-top: 300px;
   text-align: center;
+  &#education {
+    background: $blue-grey;
+  }
+  &#tools {
+    background: $green;
+  }
+  &#skills {
+    background: $maroon;
+  }
+  &#experience {
+    background: $yellow; 
+  }
 }
 
 h3.ov {
   font-family: Gravitas One, Helvetica;
   font-size: 80px;
   margin-bottom: 85px;
-  //margin-left: 0.55em;
+  &#tools{ 
+    text-shadow: 0px 1px 1px $green-light,
+                 0px -2px 2px black;
+    color: $green-dark;
+  }
+  &#education {
+    text-shadow: 0px 1px 1px $blue-grey-light,
+                 0px -2px 2px black;
+    color: $blue-grey-dark;
+  }
+  &#skills {
+    text-shadow: 0px 1px 1px $maroon-light,
+                 0px -2px 2px black;
+    color: $maroon-dark;
+  }
+  &#experience {
+    text-shadow: 0px 1px 1px $yellow-light,
+                 0px -2px 2px black;
+    color: $yellow-dark 
+  }
 }
 
 p.overview {
   margin-top: 18px;
-  //margin-left: 5em;
   margin-bottom: 50px;
   font-size: 33px;
   &.tools {
@@ -49,58 +79,3 @@ p.overview {
     color: $blue-grey-text;
   }
 }
-
-/* education section*/
-div#education {
-  background: $blue-grey;
-}
-
-h3#education {
-  text-shadow: 0px 1px 1px $blue-grey-light,
-               0px -2px 2px black;
-  color: $blue-grey-dark;
-}
-
-p#education {
-  color: $blue-grey-text;
-  span {
-    font-size: 26px; 
-  }
-}
-
-/* tools section*/
-h3#tools {
-  text-shadow: 0px 1px 1px $green-light,
-               0px -2px 2px black;
-  color: $green-dark;
-}
-
-div#tools {
-  background: $green;
-}
-
-/* skills section*/
-h3#skills {
-  text-shadow: 0px 1px 1px $maroon-light,
-               0px -2px 2px black;
-  color: $maroon-dark;
-}
-
-div#skills {
-  background: $maroon;
-}
-
-/* experience section*/
-h3#experience {
-  text-shadow: 0px 1px 1px $yellow-light,
-               0px -2px 2px black;
-  color: $yellow-dark 
-}
-
-div#experience {
-  background: $yellow; 
-}
-
-
-
-
