@@ -77,8 +77,6 @@ footer.page-footer {
 
 .very-bottom {
   height: 65px !important;
-  //background-color: rgba(51,51,51, .2) !important;
-  //background-color: $pinkish !important;
   background-color: $icon-grey !important;
   background-color: #f2f4ea !important;
   background: none;
@@ -112,28 +110,24 @@ path#block {
   fill: #89A9BF; /*lighter*/
 }
 
-#blthick {
-  stroke: #89A9BF;
-}
-
-svg.blthick {
-  filter: url(#a);
-  -webkit-filter: url(#a);
-  //stroke: #89A9BF;
-}
-
 path.ce {
   fill: #89A9BF !important;
   stroke: none;
 }
 
-svg.ce {
-  filter: url(#a);
+#blthick {
+  stroke: #89A9BF;
+}
+
+svg.blthick {
   -webkit-filter: url(#a);
 }
 
+svg.ce {
+  -webkit-filter: url("#a");
+}
+
 svg.octo {
-  filter: url(#a);
   -webkit-filter: url(#a);
   path {
     fill: #89A9BF !important;
@@ -164,19 +158,5 @@ svg {
         fill: #7C9DB5 !important; 
       }
     }
-  }
-}
-
-.fa-github {
-  display: inline-block;
-  font-size: 115px;
-  position: relative;
-  bottom: 4px;
-  color: #89A9BF;
-  filter: url(#a);
-  -webkit-filter: url(#a);
-  &:hover {
-    color: #7C9DB5; 
-    cursor: pointer;
   }
 }
