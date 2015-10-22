@@ -80,20 +80,22 @@ span.upvotes {
 div.add-button {
   background-color: white;
   color: $button-green;
-  border: 1px solid $button-green;
-  height: 25px;
-  width: 60px; 
-  margin-top: 35px;
+  color: white;
+  border: 1px solid #DE7872;
+  height: 35px;
+  width: 100%; 
+  margin-top: 27px;
   border-radius: 8px;
-  transition: background-color 0.3s; 
-  -webkit-transition: background-color 0.3s; 
+  background-color: #DE7872;
+  transition: background-color 0.2s; 
+  -webkit-transition: background-color 0.2s; 
   &:hover {
-    background-color: $button-hover-green;
-    color: white;
+    background-color: white;
+    color: #DE7872;
   }
   div {
-    margin-left: 15.2px;
-    margin-top: 1px;
+    //margin-left: 15.2px;
+    margin-top: 5px;
   }
 }
 
