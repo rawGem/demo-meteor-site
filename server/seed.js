@@ -67,6 +67,13 @@ Meteor.startup(function(){
             text_region : "Legacy Code, Design Patterns, Version Control",
             upvotes     : 0,
             downvotes   : 0
+          },
+          {
+            heading     : "Data Wrangling With MongoDB, Udacity",
+            heading_id  : "ud_mongo",
+            text_region : "Legacy Code, Design Patterns, Version Control",
+            upvotes     : 0,
+            downvotes   : 0
           }
         ]
       });
@@ -75,12 +82,17 @@ Meteor.startup(function(){
       [{
         heading_id   : "cs188x",
         topic        : "Topics",
-        text         : "BFS, DFS, A*, MDPs"
+        text         : "BFS, DFS, A*, MDPs, CSPs, RL"
       },
       {
         heading_id   : "cs188x",
         topic        : "Tools",
-        text         : "python, AI 3rd ed., CLRS"
+        text         : "Python2,"
+      },
+      {
+        heading_id   : "cs188x",
+        topic        : "Resources",
+        text         : "Artificial Intelligence: A Modern Approach, Russell and Norvig;\nIntroduction to Algorithms, Cormen, Leiserson, Rivet, and Stein"
       },
       {
         heading_id   : "cs169_1x",
@@ -90,7 +102,12 @@ Meteor.startup(function(){
       {
         heading_id   : "cs169_1x",
         topic        : "Tools",
-        text         : "rails, cucumber"
+        text         : "Ubuntu, Ruby on Rails, Cucumber, RSpec"
+      },
+      {
+        heading_id   : "cs169_1x",
+        topic        : "Resources",
+        text         : "Engineering Long-Lasting Software, Fox and Patterson"
       },
       {
         heading_id   : "cs169_2x",
@@ -100,7 +117,22 @@ Meteor.startup(function(){
       {
         heading_id   : "cs169_2x",
         topic        : "Tools",
-        text         : "rails, git"
+        text         : "Ruby on Rails, git"
+      },
+      {
+        heading_id   : "cs169_2x",
+        topic        : "Resources",
+        text         : "Engineering Long-Lasting Software, Fox and Patterson"
+      },
+      {
+        heading_id   : "ud_mongo",
+        topic        : "Tools",
+        text         : "python, pymongo, BeautifulSoup"
+      },
+      {
+        heading_id   : "ud_mongo",
+        topic        : "Topics",
+        text         : "web scraping, data cleaning, data validation"
       },
       {
         heading_id   : "school1",
@@ -176,7 +208,7 @@ Meteor.startup(function(){
     var options = { 
                     email : "admin@this.domain",
                     username : "admin",
-                    password : "apple8"
+                    password : "admin123"
                     //profile : { admin : true }
                   }
 
