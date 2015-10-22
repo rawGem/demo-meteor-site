@@ -47,9 +47,9 @@ Template.addToAboutForm.events({
         topic      : t.data.title,
         text       : text.value
       });
+      text.value = "";
+      t.view.parentView._templateInstance.$(".tooltip").hide()
     }
-    text.value = "";
-    t.view.parentView._templateInstance.$(".tooltip").hide()
   },
 
   'submit .about' : function(e,t) {
