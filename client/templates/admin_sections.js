@@ -28,7 +28,7 @@ Template.adminSections.helpers({
       if (!Meteor.user()) { //add admin check
         return null;
       }
-      return Sections.find();
+      return Sections.find( { subject : { $in : ["education", "coursework"] } });
     }
 });
 
