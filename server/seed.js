@@ -11,7 +11,6 @@ Meteor.startup(function(){
           {
             heading     : "Georgia Institute of Technology",
             heading_id  : "school1",
-            text_region : "Major: Biomedical Engineering\n Minor: Organic Chemistry",
             upvotes     : 5,
             downvotes   : 1
           }
@@ -25,19 +24,16 @@ Meteor.startup(function(){
           {
             heading     : "About",
             heading_id  : "about",
-            text_region : "about his site",
             modifiable  : false
           },
           {
             heading     : "Packages",
             heading_id  : "pkgs",
-            text_region : "about his site",
             modifiable  : true
           },
           {
             heading     : "Features",
             heading_id  : "ftrs",
-            text_region : "about his site",
             modifiable  : true
           }
         ]
@@ -48,33 +44,42 @@ Meteor.startup(function(){
         subject     : "coursework",
         subsections : [
           {
-            heading     : "cs188.1x, Artificial Intelligence",
+            heading     : "cs188.1x Artificial Intelligence, BerkeleyX",
             heading_id  : "cs188x",
-            text_region : "BFS, DFS, A*, MDPs",
-            upvotes     : 0,
+            upvotes     : 3,
             downvotes   : 0
           },
           {
-            heading     : "cs169.1x, SaaS",
+            heading     : "cs169.1x SaaS I, BerkeleyX",
             heading_id  : "cs169_1x",
-            text_region : "Agile, TDD, BDD, REST",
-            upvotes     : 0,
+            upvotes     : 1,
             downvotes   : 0
           },
           {
-            heading     : "cs169.2x, SaaS",
+            heading     : "cs169.2x SaaS II, BerkeleyX",
             heading_id  : "cs169_2x",
-            text_region : "Legacy Code, Design Patterns, Version Control",
-            upvotes     : 0,
+            upvotes     : 1,
             downvotes   : 0
           },
           {
             heading     : "Data Wrangling With MongoDB, Udacity",
             heading_id  : "ud_mongo",
-            text_region : "Legacy Code, Design Patterns, Version Control",
-            upvotes     : 0,
+            upvotes     : 2,
+            downvotes   : 0
+          },
+          {
+            heading     : "Intro to Machine Learning, Udacity",
+            heading_id  : "ud_ml",
+            upvotes     : 2,
+            downvotes   : 0
+          },
+          {
+            heading     : "Tackling the Challenges of Big Data, MITx",
+            heading_id  : "mitx",
+            upvotes     : 1,
             downvotes   : 0
           }
+
         ]
       });
  
@@ -82,17 +87,17 @@ Meteor.startup(function(){
       [{
         heading_id   : "cs188x",
         topic        : "Topics",
-        text         : "BFS, DFS, A*, MDPs, CSPs, RL"
+        text         : "BFS, DFS, A-Star, Adversarial Search, Markov Decision Processes, Constraint Satisfaction Problems, Reinforcement Learning"
       },
       {
         heading_id   : "cs188x",
         topic        : "Tools",
-        text         : "Python2,"
+        text         : "Python"
       },
       {
         heading_id   : "cs188x",
         topic        : "Resources",
-        text         : "Artificial Intelligence: A Modern Approach, Russell and Norvig;\nIntroduction to Algorithms, Cormen, Leiserson, Rivet, and Stein"
+        text         : "Artificial Intelligence: A Modern Approach, Russell and Norvig; Introduction to Algorithms, Cormen, Leiserson, Rivet, and Stein"
       },
       {
         heading_id   : "cs169_1x",
@@ -112,12 +117,12 @@ Meteor.startup(function(){
       {
         heading_id   : "cs169_2x",
         topic        : "Topics",
-        text         : "legacy code, version control, design patterns"
+        text         : "Legacy Code, Version Control, Design Patterns"
       },
       {
         heading_id   : "cs169_2x",
         topic        : "Tools",
-        text         : "Ruby on Rails, git"
+        text         : "Ruby on Rails, Git"
       },
       {
         heading_id   : "cs169_2x",
@@ -127,12 +132,27 @@ Meteor.startup(function(){
       {
         heading_id   : "ud_mongo",
         topic        : "Tools",
-        text         : "python, pymongo, BeautifulSoup"
+        text         : "Python, PyMongo, BeautifulSoup, OpenStreetMap"
       },
       {
         heading_id   : "ud_mongo",
         topic        : "Topics",
-        text         : "web scraping, data cleaning, data validation"
+        text         : "Data Extraction/Web Scraping, Data Parsing/Cleaning, Data Validation, Field/Projection Queries, Aggregation Pipeline"
+      },
+      {
+        heading_id   : "ud_ml",
+        topic        : "Topics",
+        text         : "Supervised Learning, Unsupervised Learning, Regressions, Feature Selection, Testing/Validation"
+      },
+      {
+        heading_id   : "ud_ml",
+        topic        : "Tools",
+        text         : "Python, Scikit-Learn"
+      },
+      {
+        heading_id   : "mitx",
+        topic        : "Topics",
+        text         : "Data Collection/Integration, Data Storage, Data Analytics"
       },
       {
         heading_id   : "school1",
@@ -143,11 +163,6 @@ Meteor.startup(function(){
         heading_id   : "school1",
         topic        : "Minor",
         text         : "Organic Chemistry"
-      },
-      {
-        heading_id   : "about",
-        topic        : "stuff",
-        text         : "put stuff here"
       },
       {
         heading_id   : "pkgs",
@@ -194,7 +209,7 @@ Meteor.startup(function(){
       {
         heading_id   : "ftrs",
         topic        : "Features",
-        text         : "DDP",
+        text         : "Distributed Data Protocol",
         permanent    : true
       }
       ]
