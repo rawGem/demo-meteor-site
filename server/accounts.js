@@ -1,5 +1,4 @@
 Accounts.onCreateUser(function(options, user) {
-   //if (!options.hasOwnProperty("profile")) { 
    if (options.username !== "admin") { 
      Privileges.insert({ 
                         user_id : user._id, 
