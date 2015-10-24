@@ -88,20 +88,28 @@ nav .banner-name {
   font-size: 30px;
 }
 
-#__blaze-root {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
+//#__blaze-root {
+//  display: flex;
+//  min-height: 100vh;
+//  flex-direction: column;
+//}
+
 
 body {
   background-color: $background-grey;
+  height: 100%;
+}
+html {
+  height: 100%;
 }
 
 main {
-  flex: 1 0 auto;
-  min-height: 100vh;
+  //flex: 1 0 auto;
+  //min-height: 100vh;
+ 	min-height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
 }
+
 
 .row.thumbs {
   margin-bottom: 0px;
