@@ -1,0 +1,100 @@
+<template name="cardContent">
+{{#if isAbout }}
+      <div class="row mycard">
+      <div class="col l12 m12 s12 z-depth-0">
+      <h1 class="card-title">{{title}}</h1>
+      {{#if modifiable }}
+
+        <ul>
+        {{#each topics heading_id }}
+          <li>
+            {{> aboutChip}}
+          </li>
+        {{/each}}
+        </ul>
+
+      {{else}}
+
+        <p>
+        Welcome! This interactive résumé is built on the 
+        <a href="https://www.meteor.com">Meteor</a> platform and is best
+        viewed in a modern web browser.
+        
+        </p>
+        <h5 class="topic about">Registration</h5>
+        <p>
+        User registration is not mandatory to view the behavior of the site.
+        Two accounts are available by default.
+        </p>
+
+        <ul class="dummy-users">
+          <li class="dummy-user">
+            <h5 class="user-type">Admin</h5>
+            <span class="field">email: </span>admin@this.domain
+            <br>
+            <span class="field">password: </span>admin123
+          </li>
+          <li class="dummy-user">
+            <h5 class="user-type">General</h5>
+            <span class="field">email: </span>general@this.domain  
+            <br>
+            <span class="field">password: </span>general123
+          </li>
+        </ul>
+        <p>
+        The user account system is functional, but a verifiable email address
+        is not required (email verification is disabled).
+        </p>
+        <h5 class="topic about">Authorization</h5>
+        <p>
+        There are three levels of access: non-registered,
+        registered with general access, and registered with admin access. 
+        Non-registered users have read-only access to non-admin sections.
+        Users with general access 
+        can send messages and add or remove chips. Users with admin
+        access have general access and can view all messages 
+        by topic.
+        </p>
+        <h5 class="topic about">Packages <span class="topic about">(see below)</span></h5>
+        <p>
+        (If you are not familiar with Meteor, the package names may
+        have little meaning to you, but feel free to experiment with the UI.)
+        <br>
+        <br>
+        The package footprint is small in order to demonstrate
+        Meteor fundamentals. The source code is on
+        <a href="https://www.github.com/sjbrowne">github</a>. 
+        </p>
+        <h5 class="topic about">Features <span class="topic about">(see below)</span></h5>
+        <p>
+        For those not familiar with Meteor, provided is a list of patterns and 
+        features in general terms. 
+        </p>
+
+      {{/if}}
+
+      {{#if currentUser }}
+        {{#if modifiable }}
+          <div class="tooltip-outer-container">
+            {{> addForm }}
+          </div>
+        {{/if}}
+      {{/if}}
+
+      </div>
+      </div>
+{{else}}
+      <div class="row mycard {{withUser}}">
+      <div class="col l12 m12 s12 z-depth-0">
+      <h1 class="card-title">{{title}}</h1>
+      {{#each topics heading_id }}
+        <h5 class="topic">{{topic}}</h5>
+        <p  class="content">{{text}}</p>
+      {{/each}}
+      </div>
+      </div>
+      {{#if visitor}}
+        {{> thumbs}}
+      {{/if}}
+{{/if}}
+</template>

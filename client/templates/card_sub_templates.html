@@ -1,0 +1,112 @@
+
+<template name="addForm">
+<div class="outer">
+    <a class="btn-floating waves-effect waves-light add-btn"><i class="mdi-content-add"></i></a>
+    <div class="tooltip">
+      {{> addToAboutForm}}
+    </div>   
+ </div>
+</template>
+
+
+
+<template name="addToAboutForm">
+    <form class="col s8 l8 m8 about add-form">
+    <div class="input-field col s8">
+      <input placeholder="Add {{title}}" class="about" type="text">
+    </div>
+    <div class="col l3 m4 s4">
+        <div class="waves-effect waves-red add add-button ">
+          <div class="center-align">Add</div>
+        </div>
+    </div>
+    </form>
+</template>
+
+
+
+
+<template name="aboutChip">
+  {{#if currentUser}}
+    {{#unless permanent}}
+      <div class="chip with-user">
+        {{text}}
+        <i class="mdi-navigation-close"></i>
+      </div>
+    {{else}}
+      <div class="chip">
+        {{text}}
+      </div>
+    {{/unless}}
+  {{else}}
+    <div class="chip">
+      {{text}}
+    </div>
+  {{/if}}
+</template>
+
+
+<template name="thumbs">
+  <div class="row thumbs">
+    {{> thumbsUp}}
+    {{> msgIcon}}
+    {{> messageForm heading_id=heading_id heading=title}}
+  </div>
+</template>
+
+
+
+<template name="thumbsUp">
+  <div class="col l6 m6 s6 center-align" id="t-up">
+    <a href="" class="">
+      <!--<i class="fa fa-thumbs-up fa-lg"></i>-->
+      <i class="mdi-action-thumb-up"></i>
+    </a>
+    <span class="upvotes">{{upvotes}}</span>
+  </div>
+</template>
+
+
+
+<template name="msgIcon">
+  <a href="#modal{{heading_id}}" 
+     class="col l6 m6 s6 modal-trigger center-align msg-icon" 
+     id="{{heading_id}}-{{sindex}}">
+  <i class="mdi-content-mail"></i>
+  </a>
+</template>
+
+
+
+
+<template name="messageForm">
+  <div class="row">
+  <div 
+    id="modal{{heading_id}}" 
+    class="col l6 offset-l3 m8 offset-m2 modal bottom-sheet">
+  <div class="modal-content">
+    <form class="col s12">
+    <div class="row">
+    <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Subject: {{heading}} </label>
+    </div>
+    </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">
+      Send <i class="mdi-content-send"></i>
+    </a>
+  </div>
+  </div>
+  </div>
+</template>
+
+
+
+
+<template name="placeholder">
+  <div style="height: 600px;"></div>
+</template>
+

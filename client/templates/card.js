@@ -12,6 +12,8 @@ Template.sections.onRendered( function() {
   });
 });
 
+
+
 Template.cardContent.onRendered( function() {
   var instance = this;
   if (Meteor.userId()) {
@@ -30,6 +32,8 @@ Template.cardContent.onRendered( function() {
     instance.subscribe('allcontent');
   });
 });
+
+
 
 Template.addForm.onRendered( function() {
   this.$(".tooltip").hide();
@@ -135,13 +139,6 @@ Template.cardContent.helpers({
   },
 
   isAbout: function() {
-  /* i really hate doing it this way */
-  /*if (FlowRouter.getParams("name") === "about") {
-    Content.find().forEach(function(item, index){
-      console.log("item in isAbout ", item.heading_id === "about")
-      if (item.heading_id === "about") return true 
-      })
-    }*/
     return FlowRouter.getParam("name") === "about" 
   }
 

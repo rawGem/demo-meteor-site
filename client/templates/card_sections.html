@@ -1,0 +1,31 @@
+
+<template name="sections">
+    {{#each sections}}
+      <div class="container">
+      <div class="row">
+      {{#if Template.subscriptionsReady}}
+        {{> subsection subsections=subsections section_id=_id}}
+      {{else}}
+        {{> placeholder }}
+      {{/if}}
+      </div>
+      </div>
+    {{/each}}
+    <div class="space" style="height: {{spacerHeight}};"></div>
+</template>
+
+
+
+<template name="subsection">
+  {{#each subsections }}
+    {{> cardContent 
+        title=heading 
+        heading_id=heading_id 
+        upvotes=upvotes 
+        downvotes=downvotes
+        sindex=sindex
+        modifiable=modifiable
+        }}
+        
+  {{/each}}
+</template>
