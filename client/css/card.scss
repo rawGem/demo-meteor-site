@@ -51,11 +51,6 @@ $cool-red: #CB3B35;
     color: white;
     .mdi-action-thumb-up {
       color: white;
-   // -webkit-text-stroke-width: 1px;
-   // -webkit-text-stroke-color: orange;
-   // text-stroke-width: 1px;
-   // text-stroke-color: orange;
-    }
   }
 }
 
@@ -94,7 +89,6 @@ div.add-button {
     color: #DE7872;
   }
   div {
-    //margin-left: 15.2px;
     margin-top: 5px;
   }
 }
@@ -116,10 +110,8 @@ h5.topic {
   line-height: 1em;
   margin-bottom: 0px;
   margin-top: 20px;
-  //border-left: 5px solid $button-green;
   padding: 5px 3px 5px 0px;
   &.about {
-    //border-left: 5px solid #CFBBBB;
     margin-top: 80px;
     margin-bottom: 10px;
   }
@@ -328,7 +320,6 @@ $break-large: 611px;
 
 
 ul.dummy-users {
-  //margin-left: 25px;
   background-color: #FFFBFA;
   width: 270px;
   padding-top: 10px;
@@ -341,7 +332,6 @@ ul.dummy-users {
     height: 100%;
     padding-right: 5px;
     margin-right: 3px;
-    //color: #939393;
     color: #C98B8B;
     font-weight: 300;
   }
@@ -349,7 +339,6 @@ ul.dummy-users {
     width: 100%;
     padding-left: 10px;
     margin-bottom: 2px;
-    //background-color: $light-grey;
     color: $medium-dark-grey;
     font-weight: 300;
     letter-spacing: 0.02em;
