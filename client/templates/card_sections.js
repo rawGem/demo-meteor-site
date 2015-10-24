@@ -2,11 +2,6 @@
 Template.sections.onRendered( function() {
   var instance = this;
 
-  Meteor.setTimeout(
-    function() {
-      $(".space").css("height", "200");
-    }, 50)
-
   this.autorun(function() {
     instance.subscribe('sections', FlowRouter.getParam("name"));
   });
@@ -21,10 +16,6 @@ Template.sections.helpers({
       return item
     })
     return sections
-  },
-
-  spacerHeight: function() {
-    return "600px"
   }
 
 });
