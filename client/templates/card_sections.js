@@ -1,6 +1,7 @@
 
 Template.sections.onRendered( function() {
   var instance = this;
+  $(".layout-spacer").remove();
 
   this.autorun(function() {
     instance.subscribe('sections', FlowRouter.getParam("name"));
