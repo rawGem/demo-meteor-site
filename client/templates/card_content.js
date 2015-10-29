@@ -13,9 +13,6 @@ Template.cardContent.onRendered( function() {
       });
     }); 
   }
-  instance.autorun(function() {
-    instance.subscribe('allcontent');
-  });
 });
 
 
