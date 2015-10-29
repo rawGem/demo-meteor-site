@@ -10,7 +10,7 @@ $cool-red: #CB3B35;
 .mycard {
   min-height: 407px;
   background-color: white;
-  padding-left: 5%;
+  padding-left: 10%;
   padding-bottom: 100px;
   padding-right: 10%;
   position: relative !important;
@@ -102,7 +102,7 @@ p.content, p {
   color: #B2827E;
   color: $dark-grey;
   font-size: 16px;
-  font-weight: 300; /*font weight*/
+  font-weight: 300; 
 }
 
 h5.topic {
@@ -316,6 +316,7 @@ $break-large: 611px;
 
 .add-btn {
   float: right;
+  margin-right: 20px;
   background-color: #DE7872;
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
 }
@@ -323,11 +324,11 @@ $break-large: 611px;
 
 ul.dummy-users {
   background-color: #FFFBFA;
-  width: 270px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 38px;
-  padding-left: 7px;
-  line-height: 1.3em;
+  //padding-left: 7px;
+  line-height: 1.8em;
   margin-top: 30px;
   margin-bottom: 30px;
   span {
@@ -342,14 +343,16 @@ ul.dummy-users {
     padding-left: 10px;
     margin-bottom: 2px;
     color: $medium-dark-grey;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 0.02em;
+    font-size: 16px;
     h5 { 
       color: #939191;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 0.5em;
       margin-top: 35px;
       margin-bottom: 15px;
+      font-weight: 300;
     }
   }
 }
