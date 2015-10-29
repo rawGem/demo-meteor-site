@@ -98,16 +98,17 @@ div.add-button {
   background-color: rgba(222, 120, 114, 0.2);
 }
 
-p.content {
+p.content, p {
   color: #B2827E;
   color: $dark-grey;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300; /*font weight*/
 }
 
 h5.topic {
   display: inline-block;
   color: $dark-grey;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1em;
   margin-bottom: 0px;
   margin-top: 20px;
@@ -127,7 +128,7 @@ span.topic.about {
 
 h1.card-title {
   color: $dark-grey !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 input[type=text].about {
   border-bottom: 1px solid #DCDADA;
