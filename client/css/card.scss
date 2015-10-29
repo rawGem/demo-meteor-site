@@ -128,8 +128,9 @@ span.topic.about {
 
 h1.card-title {
   color: $dark-grey !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
+
 input[type=text].about {
   border-bottom: 1px solid #DCDADA;
 }
@@ -327,7 +328,7 @@ ul.dummy-users {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 38px;
-  //padding-left: 7px;
+  padding-left: 18px;
   line-height: 1.8em;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -344,7 +345,7 @@ ul.dummy-users {
     margin-bottom: 2px;
     color: $medium-dark-grey;
     font-weight: 200;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.09em;
     font-size: 16px;
     h5 { 
       color: #939191;
