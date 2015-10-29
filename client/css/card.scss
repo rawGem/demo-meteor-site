@@ -184,7 +184,7 @@ i.mdi-content-send {
   display: inline-block;
   height: 42px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   color: rgba(0,0,0,.6);
   color: #44514E;
   line-height: 41px;
@@ -265,7 +265,7 @@ i.mdi-content-add-circle {
   position: absolute;
   min-height: 100px;
   top: -55px;
-  right: 46px;
+  right: 66px;
   z-index: 100 !important;
   form {
     width: 90% !important;
@@ -273,7 +273,7 @@ i.mdi-content-add-circle {
     float: right !important;
     background-color: #F9F9F9;
     //box-shadow: -2px 2px 3px 0px rgba(0,0,0,0.12);
-    box-shadow: -5px 3px 10px -3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.12);
     z-index: 100 !important;
   }
 }
