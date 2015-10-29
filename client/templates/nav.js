@@ -83,29 +83,29 @@ Template.side.helpers({
 
 Template.educationTopNavLink.helpers({
   active: function() {
-    var bool = FlowRouter.getParam("name") == "education" ? "true" : "false";
-    return "active-"+bool
+    var active = FlowRouter.getParam("name") === "education" ? "active" : "";
+    return active
   }
 });
 
 Template.courseworkTopNavLink.helpers({
   active: function() {
-    var bool = FlowRouter.getParam("name") == "coursework" ? "true" : "false";
-    return "active-"+bool
+    var active = FlowRouter.getParam("name") === "coursework" ? "active" : "";
+    return active
   }
 });
 
 Template.overviewTopNavLink.helpers({
   active: function() {
-    var bool = FlowRouter.getParam("name") == "overview" ? "true" : "false";
-    return "active-"+bool
+    var active = FlowRouter.getParam("name") === "overview" ? "active" : "";
+    return active
   }
 });
 
 Template.aboutTopNavLink.helpers({
   active: function() {
-    var bool = FlowRouter.getParam("name") == "about" ? "true" : "false";
-    return "active-"+bool
+    var active = FlowRouter.getParam("name") === "about" ? "active" : "";
+    return active
   }
 });
 

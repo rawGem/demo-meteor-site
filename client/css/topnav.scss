@@ -30,11 +30,56 @@ li.top-nav {
   letter-spacing: .05em;
   height: 64px;
   box-sizing: border-box;
-  background-color: $top-nav-bg;
-  &:hover {
-    background-color: $top-nav-bg;
+  i.top {
+    color: #fff;
+    font-size: 32px;
+  }
+  a {
+    color: #000;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  &#edu-top {
+    background-color: rgba(216, 127, 52, 0.3);
+    &:hover {
+      background-color: rgba(216, 127, 52, 0.8);
+    }
+    &.active {
+      background-color: rgba(216, 127, 52, 0.8);
+    }
+  }
+  &#crswrk-top {
+    background-color: rgba(97, 52, 216, 0.3);
+    &:hover {
+      background-color: rgba(97, 52, 216, 0.8);
+    }
+    &.active {
+      background-color: rgba(97, 52, 216, 0.8);
+    }
+  }
+
+  &#ov-top {
+    background-color: rgba(71, 216, 138, 0.3);
+    &:hover {
+      background-color: rgba(71, 216, 138, 0.8);
+    }
+    &.active {
+      background-color: rgba(71, 216, 138, 0.8);
+    }
+  }
+
+  &#ab-top {
+    background-color: rgba(216, 52, 148, 0.3);
+    &:hover {
+      background-color: rgba(216, 52, 148, 0.8);
+    }
+    &.active {
+      background-color: rgba(216, 52, 148, 0.8);
+    }
   }
 }
+
+
 
 div.top-link-container.active-true {
   border-bottom: $active-link-bb-width solid $link-hl-color;
