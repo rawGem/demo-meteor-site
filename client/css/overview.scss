@@ -79,3 +79,44 @@ p.overview {
     color: $blue-grey-text;
   }
 }
+
+.resume-wrapper {
+  margin-bottom: 300px;
+  margin-top: 300px;
+  color: #042B3B;
+}
+
+.section-container {
+  margin-left: 30%;
+  margin-bottom: 10%;
+  &.personal {
+    margin-bottom: 5%;
+    h1 {
+      font-weight: 300;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 0px;
+  }
+  h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+}
+
+.info-container {
+  position: relative;
+  left: 20px;
+  ul {
+    margin-top: 3px;
+  }
+  li {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
