@@ -35,50 +35,59 @@ li.top-nav {
     font-size: 32px;
   }
   a {
-    color: #fff;
+    color: #000;
     font-weight: 300;
     font-size: 18px;
     height: 45px !important;
     line-height: 47px;
   }
-  &#edu-top {
-    background-color: rgba(252, 123, 3, 0.2);
-    &:hover {
-      background-color: rgba(252, 123, 3, 0.8);
-    }
-    &.active {
-      background-color: rgba(252, 123, 3, 0.8);
-    }
+  &:hover {
+    background-color: #F7F7F7;
   }
-  &#crswrk-top {
-    background-color: rgba(97, 52, 216, 0.2);
-    &:hover {
-      background-color: rgba(97, 52, 216, 0.8);
-    }
-    &.active {
-      background-color: rgba(97, 52, 216, 0.8);
-    }
+  &.active {
+    background-color: #F7F7F7;
   }
 
-  &#ov-top {
-    background-color: rgba(71, 216, 138, 0.3);
-    &:hover {
-      background-color: rgba(71, 216, 138, 0.8);
-    }
-    &.active {
-      background-color: rgba(71, 216, 138, 0.8);
-    }
-  }
 
-  &#ab-top {
-    background-color: rgba(216, 52, 148, 0.2);
-    &:hover {
-      background-color: rgba(216, 52, 148, 0.8);
-    }
-    &.active {
-      background-color: rgba(216, 52, 148, 0.8);
-    }
-  }
+
+  //&#edu-top {
+  //  background-color: rgba(252, 123, 3, 0.2);
+  //  &:hover {
+  //    background-color: rgba(252, 123, 3, 0.8);
+  //  }
+  //  &.active {
+  //    background-color: rgba(252, 123, 3, 0.8);
+  //  }
+  //}
+  //&#crswrk-top {
+  //  background-color: rgba(97, 52, 216, 0.2);
+  //  &:hover {
+  //    background-color: rgba(97, 52, 216, 0.8);
+  //  }
+  //  &.active {
+  //    background-color: rgba(97, 52, 216, 0.8);
+  //  }
+  //}
+
+  //&#ov-top {
+  //  background-color: rgba(71, 216, 138, 0.3);
+  //  &:hover {
+  //    background-color: rgba(71, 216, 138, 0.8);
+  //  }
+  //  &.active {
+  //    background-color: rgba(71, 216, 138, 0.8);
+  //  }
+  //}
+
+  //&#ab-top {
+  //  background-color: rgba(216, 52, 148, 0.2);
+  //  &:hover {
+  //    background-color: rgba(216, 52, 148, 0.8);
+  //  }
+  //  &.active {
+  //    background-color: rgba(216, 52, 148, 0.8);
+  //  }
+  //}
 }
 
 
