@@ -96,8 +96,8 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h1",
-        topic        : "Resources",
-        text         : ""
+        topic        : "Outro",
+        text         : "Ut justo sem, viverra ut commodo vel, efficitur et neque. Praesent vestibulum magna elit, eget semper enim tempus nec. Aliquam luctus, ex sit amet pulvinar tincidunt, nisl est lacinia tortor, ut congue velit augue in felis. Nullam lorem mauris, gravida a dui quis, blandit aliquet lorem. Fusce quis nisi vitae nunc pellentesque suscipit. In et finibus mi, sed tempor nulla. Phasellus cursus felis fermentum felis dictum, sit amet mattis ligula porta. Fusce molestie lobortis urna. Nullam tristique dui sit amet libero ultrices, et ultricies ante maximus. Praesent auctor fringilla diam sit amet suscipit."
       },
       {
         heading_id   : "s2h2",
@@ -108,12 +108,12 @@ Meteor.startup(function(){
         heading_id   : "s2h2",
         topic        : "List",
         as_list      : true,
-        text         : ["Item 1", "Item 2", "Item 3"]
+        text         : ["Thing 1", "Thing 2", "Thing 3"]
       },
       {
         heading_id   : "s2h2",
-        topic        : "Resources",
-        text         : "Engineering Long-Lasting Software, Fox and Patterson"
+        topic        : "Outro",
+        text         : "Ut justo sem, viverra ut commodo vel, efficitur et neque. Praesent vestibulum magna elit, eget semper enim tempus nec. Aliquam luctus, ex sit amet pulvinar tincidunt, nisl est lacinia tortor, ut congue velit augue in felis. Nullam lorem mauris, gravida a dui quis, blandit aliquet lorem. Fusce quis nisi vitae nunc pellentesque suscipit. In et finibus mi, sed tempor nulla. Phasellus cursus felis fermentum felis dictum, sit amet mattis ligula porta. Fusce molestie lobortis urna. Nullam tristique dui sit amet libero ultrices, et ultricies ante maximus. Praesent auctor fringilla diam sit amet suscipit."
       },
       {
         heading_id   : "s2h3",
@@ -124,12 +124,12 @@ Meteor.startup(function(){
         heading_id   : "s2h3",
         topic        : "List",
         as_list      : true,
-        text         : ["Item 1", "Item 2", "Item 3"]
+        text         : ["Article 1", "Article 2"]
       },
       {
         heading_id   : "s2h3",
-        topic        : "Resources",
-        text         : "Engineering Long-Lasting Software, Fox and Patterson"
+        topic        : "Outro",
+        text         : "Ut justo sem, viverra ut commodo vel, efficitur et neque. Praesent vestibulum magna elit, eget semper enim tempus nec. Aliquam luctus, ex sit amet pulvinar tincidunt, nisl est lacinia tortor, ut congue velit augue in felis. Nullam lorem mauris, gravida a dui quis, blandit aliquet lorem. Fusce quis nisi vitae nunc pellentesque suscipit. In et finibus mi, sed tempor nulla. Phasellus cursus felis fermentum felis dictum, sit amet mattis ligula porta. Fusce molestie lobortis urna. Nullam tristique dui sit amet libero ultrices, et ultricies ante maximus. Praesent auctor fringilla diam sit amet suscipit."
       },
       {
         heading_id   : "s2h4",
@@ -140,7 +140,7 @@ Meteor.startup(function(){
         heading_id   : "s2h4",
         topic        : "List",
         as_list      : true,
-        text         : ["Item 1", "Item 2", "Item 3", "Item 4"]
+        text         : ["Bullet 1", "Bullet 2", "Bullet 3", "Bullet 4"]
       },
       {
         heading_id   : "s2h5",
