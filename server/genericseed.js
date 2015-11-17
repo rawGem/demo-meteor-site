@@ -50,7 +50,7 @@ Meteor.startup(function(){
           },
           {
             heading     : "cs169.1x SaaS I, BerkeleyX",
-            heading_id  : "cs169_1x",
+            heading_id  : "s2h2",
             upvotes     : 1,
             downvotes   : 0
           },
@@ -99,17 +99,17 @@ Meteor.startup(function(){
         text         : "Artificial Intelligence: A Modern Approach, Russell and Norvig; Introduction to Algorithms, Cormen, Leiserson, Rivet, and Stein"
       },
       {
-        heading_id   : "cs169_1x",
+        heading_id   : "s2h2",
         topic        : "Topics",
         text         : "Agile, TDD, BDD, REST"
       },
       {
-        heading_id   : "cs169_1x",
+        heading_id   : "s2h2",
         topic        : "Tools",
         text         : "Ubuntu, Ruby on Rails, Cucumber, RSpec"
       },
       {
-        heading_id   : "cs169_1x",
+        heading_id   : "s2h2",
         topic        : "Resources",
         text         : "Engineering Long-Lasting Software, Fox and Patterson"
       },
