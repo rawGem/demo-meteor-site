@@ -43,38 +43,38 @@ Meteor.startup(function(){
         subject     : "section2",
         subsections : [
           {
-            heading     : "cs188.1x Artificial Intelligence, BerkeleyX",
+            heading     : "Heading 1",
             heading_id  : "s2h1",
             upvotes     : 3,
             downvotes   : 0
           },
           {
-            heading     : "cs169.1x SaaS I, BerkeleyX",
+            heading     : "Heading 2",
             heading_id  : "s2h2",
             upvotes     : 1,
             downvotes   : 0
           },
           {
-            heading     : "cs169.2x SaaS II, BerkeleyX",
+            heading     : "Heading 3",
             heading_id  : "s2h3",
             upvotes     : 1,
             downvotes   : 0
           },
           {
-            heading     : "Data Wrangling With MongoDB, Udacity",
+            heading     : "Heading 4",
             heading_id  : "s2h4",
             upvotes     : 2,
             downvotes   : 0
           },
           {
-            heading     : "Intro to Machine Learning, Udacity",
+            heading     : "Heading 5",
             heading_id  : "s2h5",
             upvotes     : 2,
             downvotes   : 0
           },
           {
-            heading     : "Tackling the Challenges of Big Data, MITx",
-            heading_id  : "mitx",
+            heading     : "Heading 6",
+            heading_id  : "s2h6",
             upvotes     : 1,
             downvotes   : 0
           }
@@ -149,7 +149,7 @@ Meteor.startup(function(){
         text         : "Python, Scikit-Learn"
       },
       {
-        heading_id   : "mitx",
+        heading_id   : "s2h6",
         topic        : "Topics",
         text         : "Data Collection/Integration, Data Storage, Data Analytics"
       },
