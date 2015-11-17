@@ -8,7 +8,7 @@ Meteor.startup(function(){
         subject: "section1",
         subsections : [
           {
-            heading     : "Section 1",
+            heading     : "Heading 1",
             heading_id  : "sect1",
             upvotes     : 5,
             downvotes   : 1
