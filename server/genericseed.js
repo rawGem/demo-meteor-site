@@ -8,7 +8,7 @@ Meteor.startup(function(){
         subject: "section1",
         subsections : [
           {
-            heading     : "Heading 1",
+            heading     : "S1 Heading 1",
             heading_id  : "sect1",
             upvotes     : 5,
             downvotes   : 1
@@ -43,37 +43,37 @@ Meteor.startup(function(){
         subject     : "section2",
         subsections : [
           {
-            heading     : "Heading 1",
+            heading     : "S2 Heading 1",
             heading_id  : "s2h1",
             upvotes     : 3,
             downvotes   : 0
           },
           {
-            heading     : "Heading 2",
+            heading     : "S2 Heading 2",
             heading_id  : "s2h2",
             upvotes     : 1,
             downvotes   : 0
           },
           {
-            heading     : "Heading 3",
+            heading     : "S2 Heading 3",
             heading_id  : "s2h3",
             upvotes     : 1,
             downvotes   : 0
           },
           {
-            heading     : "Heading 4",
+            heading     : "S2 Heading 4",
             heading_id  : "s2h4",
             upvotes     : 2,
             downvotes   : 0
           },
           {
-            heading     : "Heading 5",
+            heading     : "S2 Heading 5",
             heading_id  : "s2h5",
             upvotes     : 2,
             downvotes   : 0
           },
           {
-            heading     : "Heading 6",
+            heading     : "S2 Heading 6",
             heading_id  : "s2h6",
             upvotes     : 1,
             downvotes   : 0
