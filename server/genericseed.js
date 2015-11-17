@@ -62,13 +62,13 @@ Meteor.startup(function(){
           },
           {
             heading     : "Data Wrangling With MongoDB, Udacity",
-            heading_id  : "ud_mongo",
+            heading_id  : "s2h4",
             upvotes     : 2,
             downvotes   : 0
           },
           {
             heading     : "Intro to Machine Learning, Udacity",
-            heading_id  : "ud_ml",
+            heading_id  : "s2h5",
             upvotes     : 2,
             downvotes   : 0
           },
@@ -129,22 +129,22 @@ Meteor.startup(function(){
         text         : "Engineering Long-Lasting Software, Fox and Patterson"
       },
       {
-        heading_id   : "ud_mongo",
+        heading_id   : "s2h4",
         topic        : "Tools",
         text         : "Python, PyMongo, BeautifulSoup, OpenStreetMap"
       },
       {
-        heading_id   : "ud_mongo",
+        heading_id   : "s2h4",
         topic        : "Topics",
         text         : "Data Extraction/Web Scraping, Data Parsing/Cleaning, Data Validation, Field/Projection Queries, Aggregation Pipeline"
       },
       {
-        heading_id   : "ud_ml",
+        heading_id   : "s2h5",
         topic        : "Topics",
         text         : "Supervised Learning, Unsupervised Learning, Regressions, Feature Selection, Testing/Validation"
       },
       {
-        heading_id   : "ud_ml",
+        heading_id   : "s2h5",
         topic        : "Tools",
         text         : "Python, Scikit-Learn"
       },
