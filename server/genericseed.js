@@ -85,8 +85,8 @@ Meteor.startup(function(){
       var text_regions = 
       [{
         heading_id   : "s2h1",
-        topic        : "Topics",
-        text         : "BFS, DFS, A-Star, Adversarial Search, Markov Decision Processes, Constraint Satisfaction Problems, Reinforcement Learning"
+        topic        : "Intro",
+        text         : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est commodo, sodales dolor sed, consectetur mauris. Sed varius tempus tortor, sed fermentum ipsum consectetur sed.\nVestibulum a tincidunt urna. Donec gravida risus eget facilisis varius."
       },
       {
         heading_id   : "s2h1",
@@ -96,12 +96,12 @@ Meteor.startup(function(){
       {
         heading_id   : "s2h1",
         topic        : "Resources",
-        text         : "Artificial Intelligence: A Modern Approach, Russell and Norvig; Introduction to Algorithms, Cormen, Leiserson, Rivet, and Stein"
+        text         : ""
       },
       {
         heading_id   : "s2h2",
-        topic        : "Topics",
-        text         : "Agile, TDD, BDD, REST"
+        topic        : "Intro",
+        text         : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est commodo, sodales dolor sed, consectetur mauris. Sed varius tempus tortor, sed fermentum ipsum consectetur sed.\nVestibulum a tincidunt urna. Donec gravida risus eget facilisis varius."
       },
       {
         heading_id   : "s2h2",
@@ -115,8 +115,8 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h3",
-        topic        : "Topics",
-        text         : "Legacy Code, Version Control, Design Patterns"
+        topic        : "Intro",
+        text         : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est commodo, sodales dolor sed, consectetur mauris. Sed varius tempus tortor, sed fermentum ipsum consectetur sed.\nVestibulum a tincidunt urna. Donec gravida risus eget facilisis varius."
       },
       {
         heading_id   : "s2h3",
@@ -130,18 +130,18 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h4",
+        topic        : "Intro",
+        text         : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est commodo, sodales dolor sed, consectetur mauris. Sed varius tempus tortor, sed fermentum ipsum consectetur sed.\nVestibulum a tincidunt urna. Donec gravida risus eget facilisis varius."
+      },
+      {
+        heading_id   : "s2h4",
         topic        : "Tools",
         text         : "Python, PyMongo, BeautifulSoup, OpenStreetMap"
       },
       {
-        heading_id   : "s2h4",
-        topic        : "Topics",
-        text         : "Data Extraction/Web Scraping, Data Parsing/Cleaning, Data Validation, Field/Projection Queries, Aggregation Pipeline"
-      },
-      {
         heading_id   : "s2h5",
-        topic        : "Topics",
-        text         : "Supervised Learning, Unsupervised Learning, Regressions, Feature Selection, Testing/Validation"
+        topic        : "Intro",
+        text         : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est commodo, sodales dolor sed, consectetur mauris. Sed varius tempus tortor, sed fermentum ipsum consectetur sed.\nVestibulum a tincidunt urna. Donec gravida risus eget facilisis varius."
       },
       {
         heading_id   : "s2h5",
@@ -150,8 +150,8 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h6",
-        topic        : "Topics",
-        text         : "Data Collection/Integration, Data Storage, Data Analytics"
+        topic        : "Intro",
+        text         : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est commodo, sodales dolor sed, consectetur mauris. Sed varius tempus tortor, sed fermentum ipsum consectetur sed.\nVestibulum a tincidunt urna. Donec gravida risus eget facilisis varius."
       },
       {
         heading_id   : "sect1",
