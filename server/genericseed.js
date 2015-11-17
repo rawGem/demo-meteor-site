@@ -40,11 +40,11 @@ Meteor.startup(function(){
 
     Sections.insert(
       {
-        subject     : "coursework",
+        subject     : "section2",
         subsections : [
           {
             heading     : "cs188.1x Artificial Intelligence, BerkeleyX",
-            heading_id  : "cs188x",
+            heading_id  : "s2h1",
             upvotes     : 3,
             downvotes   : 0
           },
@@ -84,17 +84,17 @@ Meteor.startup(function(){
  
       var text_regions = 
       [{
-        heading_id   : "cs188x",
+        heading_id   : "s2h1",
         topic        : "Topics",
         text         : "BFS, DFS, A-Star, Adversarial Search, Markov Decision Processes, Constraint Satisfaction Problems, Reinforcement Learning"
       },
       {
-        heading_id   : "cs188x",
+        heading_id   : "s2h1",
         topic        : "Tools",
         text         : "Python"
       },
       {
-        heading_id   : "cs188x",
+        heading_id   : "s2h1",
         topic        : "Resources",
         text         : "Artificial Intelligence: A Modern Approach, Russell and Norvig; Introduction to Algorithms, Cormen, Leiserson, Rivet, and Stein"
       },

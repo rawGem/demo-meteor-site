@@ -29,7 +29,7 @@ Template.side.events({
   },
   'click li#crswrk-side': function(e,t) {
     e.preventDefault();
-    FlowRouter.go('/section/coursework');
+    FlowRouter.go('/section/section2');
   },
   'click li#ab-side': function(e,t) {
     e.preventDefault();
@@ -41,7 +41,7 @@ Template.side.events({
   },
   'click li#crswrk-top': function(e,t) {
     e.preventDefault();
-    FlowRouter.go('/section/coursework');
+    FlowRouter.go('/section/section2');
   },
   'click li#ov-top': function(e,t) {
     e.preventDefault();
@@ -90,7 +90,7 @@ Template.educationTopNavLink.helpers({
 
 Template.courseworkTopNavLink.helpers({
   active: function() {
-    var active = FlowRouter.getParam("name") === "coursework" ? "active" : "";
+    var active = FlowRouter.getParam("name") === "section2" ? "active" : "";
     return active
   }
 });
