@@ -90,7 +90,13 @@
       <h1 class="card-title">{{title}}</h1>
       {{#each topics heading_id }}
         <h5 class="topic">{{topic}}</h5>
-        <p  class="content">{{text}}</p>
+        {{#if as_list }} 
+          {{#each text}}
+          <li>{{this}}</li>
+          {{/each}}
+        {{else}}
+          <p  class="content">{{text}}</p>
+        {{/if}}
       {{/each}}
       </div>
       </div>

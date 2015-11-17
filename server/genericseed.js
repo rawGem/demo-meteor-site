@@ -90,8 +90,9 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h1",
-        topic        : "Tools",
-        text         : "Python"
+        topic        : "List",
+        as_list      : true,
+        text         : ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
       },
       {
         heading_id   : "s2h1",
@@ -105,8 +106,9 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h2",
-        topic        : "Tools",
-        text         : "Ubuntu, Ruby on Rails, Cucumber, RSpec"
+        topic        : "List",
+        as_list      : true,
+        text         : ["Item 1", "Item 2", "Item 3"]
       },
       {
         heading_id   : "s2h2",
@@ -120,8 +122,9 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h3",
-        topic        : "Tools",
-        text         : "Ruby on Rails, Git"
+        topic        : "List",
+        as_list      : true,
+        text         : ["Item 1", "Item 2", "Item 3"]
       },
       {
         heading_id   : "s2h3",
@@ -135,8 +138,9 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h4",
-        topic        : "Tools",
-        text         : "Python, PyMongo, BeautifulSoup, OpenStreetMap"
+        topic        : "List",
+        as_list      : true,
+        text         : ["Item 1", "Item 2", "Item 3", "Item 4"]
       },
       {
         heading_id   : "s2h5",
@@ -145,8 +149,9 @@ Meteor.startup(function(){
       },
       {
         heading_id   : "s2h5",
-        topic        : "Tools",
-        text         : "Python, Scikit-Learn"
+        topic        : "List",
+        as_list      : true,
+        text         : ["Item 1", "Item 2", "Item 3"]
       },
       {
         heading_id   : "s2h6",
