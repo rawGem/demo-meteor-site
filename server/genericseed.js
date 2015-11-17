@@ -28,12 +28,14 @@ Meteor.startup(function(){
           {
             heading     : "Packages",
             heading_id  : "pkgs",
-            modifiable  : true
+            modifiable  : true,
+            is_pkg      : true
           },
           {
             heading     : "Features",
             heading_id  : "ftrs",
-            modifiable  : true
+            modifiable  : true,
+            is_pkg      : false
           }
         ]
     })

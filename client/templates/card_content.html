@@ -4,7 +4,18 @@
       <div class="col l12 m12 s12 z-depth-0">
       <h1 class="card-title">{{title}}</h1>
       {{#if modifiable }}
-
+        {{#if is_pkg}}
+          <p>
+          The package footprint is small in order to demonstrate
+          Meteor fundamentals. Whether or not you are familiar with Meteor, log in 
+          add a package!
+          </p>
+        {{else}}
+          <p>
+          Here is a list of patterns and features in general terms. Log in and add 
+          a feature!
+          </p>
+        {{/if}}
         <ul>
         {{#each topics heading_id }}
           <li>
@@ -18,15 +29,13 @@
         <p>
         This demo is built on the 
         <a href="https://www.meteor.com">Meteor</a> platform and is best
-        viewed in a modern web browser. Only registered users who are logged in
-        can upvote or comment on sections.
-        
-        </p>
+        viewed in a modern web browser.  The source code is on
+        <a href="https://www.github.com/sjbrowne">github</a>.         </p>
         <h5 class="topic about">Registration</h5>
         <p>
-        User registration is only required to make changes and/or view the
-        admin section. Two default accounts are available so you don't have to
-        register.
+         You can use the accounts that are 
+        available by default, or you can create an account with verifiable or 
+        unverifiable account credentials. Email verification is disabled. 
         </p>
 
         <ul class="dummy-users">
@@ -45,28 +54,9 @@
         </ul>
         <h5 class="topic about">Authorization</h5>
         <p>
-        There are three levels of access: non-registered,
-        registered with general access, and registered with admin access. 
-        Non-registered users have read-only access to non-admin sections.
-        Users with general access 
-        can send messages and add or remove chips. Users with admin
-        access have general access and can view all messages 
-        by topic.
-        </p>
-        <h5 class="topic about">Packages <span class="topic about">(see below)</span></h5>
-        <p>
-        (If you are not familiar with Meteor, the package names may
-        have little meaning to you, but feel free to experiment with the UI.)
-        <br>
-        <br>
-        The package footprint is small in order to demonstrate
-        Meteor fundamentals. The source code is on
-        <a href="https://www.github.com/sjbrowne">github</a>. 
-        </p>
-        <h5 class="topic about">Features <span class="topic about">(see below)</span></h5>
-        <p>
-        For those not familiar with Meteor, provided is a list of patterns and 
-        features in general terms. 
+        Only registered users can upvote sections, leave comments for sections, or  
+        view the admin section (admin user only). Registered users can also add and 
+        remove chips (see below).
         </p>
 
       {{/if}}
