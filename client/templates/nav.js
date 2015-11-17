@@ -83,7 +83,7 @@ Template.side.helpers({
 
 Template.educationTopNavLink.helpers({
   active: function() {
-    var active = FlowRouter.getParam("name") === "education" ? "active" : "";
+    var active = FlowRouter.getParam("name") === "section1" ? "active" : "";
     return active
   }
 });
