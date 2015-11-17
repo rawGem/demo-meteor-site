@@ -21,7 +21,7 @@ Template.side.onRendered( function() {
 Template.side.events({
   'click li#edu-side': function(e,t) {
     e.preventDefault();
-    FlowRouter.go('/section/education');
+    FlowRouter.go('/section/section1');
   },
   'click li#ov-side': function(e,t) {
     e.preventDefault();
@@ -37,7 +37,7 @@ Template.side.events({
   },
   'click li#edu-top': function(e,t) {
     e.preventDefault();
-    FlowRouter.go('/section/education');
+    FlowRouter.go('/section/section1');
   },
   'click li#crswrk-top': function(e,t) {
     e.preventDefault();
