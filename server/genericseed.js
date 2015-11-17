@@ -56,7 +56,7 @@ Meteor.startup(function(){
           },
           {
             heading     : "cs169.2x SaaS II, BerkeleyX",
-            heading_id  : "cs169_2x",
+            heading_id  : "s2h3",
             upvotes     : 1,
             downvotes   : 0
           },
@@ -114,17 +114,17 @@ Meteor.startup(function(){
         text         : "Engineering Long-Lasting Software, Fox and Patterson"
       },
       {
-        heading_id   : "cs169_2x",
+        heading_id   : "s2h3",
         topic        : "Topics",
         text         : "Legacy Code, Version Control, Design Patterns"
       },
       {
-        heading_id   : "cs169_2x",
+        heading_id   : "s2h3",
         topic        : "Tools",
         text         : "Ruby on Rails, Git"
       },
       {
-        heading_id   : "cs169_2x",
+        heading_id   : "s2h3",
         topic        : "Resources",
         text         : "Engineering Long-Lasting Software, Fox and Patterson"
       },
